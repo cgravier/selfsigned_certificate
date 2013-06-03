@@ -4,6 +4,7 @@ This cookbook allow you to create a self signed certificate using openssl. The c
 
 # Requirements
 
+No requirement. Openssl package will be installed along the default recipe.
 
 # Usage
 
@@ -28,7 +29,7 @@ This cookbook allow you to create a self signed certificate using openssl. The c
 
 Default recipe in current version.
 
-# TODO
+# Todo
 
 * Test vagrant file
 * Foodcritic report on the cookbook and fixes.
@@ -37,4 +38,5 @@ Default recipe in current version.
 # Author
 
 Author:: Christophe Gravier (<christophe.gravier@univ-st-etienne.fr>)
+
 Licence:: [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
