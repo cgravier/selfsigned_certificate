@@ -31,7 +31,6 @@ Default recipe in current version.
 # TODO
 
 * Test vagrant file
-* Foodcritic report on the cookbook and fixes.
 * Unit tests
 
 # Author
