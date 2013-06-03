@@ -8,8 +8,16 @@ No requirement. Openssl package will be installed along the default recipe.
 
 # Usage
 
-1. Make your cookbook depends on this cookbook.
-2. You _must_ override all the attributes as described below.
+## Testing 
+
+You can test the cookbook using the provided <code>Vagrantfile</code>. Make sure you edit sample attribute provided in the Vagrantfile to match your test needs.
+
+Beware: vagrant 1.2.x aka Vagrant 2 is mandatory.
+
+## Depending on this cookbook
+
+1. Make your cookbook depends on this cookbook (e.g. in your Berksfile if you are using berkshelf, and in your metadata).
+2. You _must_ override all the attributes as described below, except <code>node.selfsigned_certifcate[:destination]</code> which is recommended but not compulsory.
 3. Call the recipe using <code>include_recipe 'selfsigned_certificate'</code>
 4. You can then use the generated certificate in your own template using the attribute <code>node.selfsigned_certifcate[:destination]/server.crt</code> (and <code>.key</code>), for instance for nginx or Apache configuration.
 
@@ -31,7 +39,6 @@ Default recipe in current version.
 
 # Todo
 
-* Test vagrant file
 * Unit tests
 
 # Author
