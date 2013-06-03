@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "selfsigned-certificate-berkshelf"
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "Berkshelf-CentOS-6.3-x86_64-minimal"
+  config.vm.box = "precise64"
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
@@ -68,10 +68,16 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision :chef_solo do |chef|
     chef.json = {
-      :mysql => {
-        :server_root_password => 'rootpass',
-        :server_debian_password => 'debpass',
-        :server_repl_password => 'replpass'
+	:selfsigned_certificate => {
+		"country" => "FR",
+		"state" => "My state",
+		"city" => "City I live in",
+        	"orga"=> "Big Corporation LTD",
+        	"depart" => "my dept",
+		"cn" => "My very own Cert Authoritate",
+        	"email" => "some@host.com",
+		"destination" => "/usr/local/nginx/ssl/",
+        	"sslpassphrase" => "reallychangethis"
       }
     }
 
