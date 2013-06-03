@@ -29,4 +29,3 @@ default['selfsigned_certificate']['orga'] = "OR"
 default['selfsigned_certificate']['depart'] = "DE"
 default['selfsigned_certificate']['cn'] = "CN"
 default['selfsigned_certificate']['email'] = "EMAIL"
-
