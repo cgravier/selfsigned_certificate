@@ -1,0 +1,31 @@
+{
+  "name": "selfsigned_certificate",
+  "description": "Creates/Installs/Configures a selfsigned certificate",
+  "long_description": "# selfsigned_certificate cookbook\n\nThis cookbook allow you to create a self signed certificate using openssl. The certificate is configured using the provided attributes.\n\n# Requirements\n\nNo requirement. Openssl package will be installed along the default recipe.\n\n# Usage\n\n## Testing \n\nYou can test the cookbook using the provided <code>Vagrantfile</code>. Make sure you edit sample attribute provided in the Vagrantfile to match your test needs.\n\nBeware: vagrant 1.2.x aka Vagrant 2 is mandatory.\n\n## Depending on this cookbook\n\n1. Make your cookbook depends on this cookbook (e.g. in your Berksfile if you are using berkshelf, and in your metadata).\n2. You _must_ override all the attributes as described below, except <code>node.selfsigned_certifcate[:destination]</code> which is recommended but not compulsory.\n3. Call the recipe using <code>include_recipe 'selfsigned_certificate'</code>\n4. You can then use the generated certificate in your own template using the attribute <code>node.selfsigned_certifcate[:destination]/server.crt</code> (and <code>.key</code>), for instance for nginx or Apache configuration.\n\n# Attributes\n\n* <code>node.selfsigned_certifcate[:destination]</code> : Where to store the created self-signed certificate.\n* <code>node.selfsigned_certifcate[:passphrase]</code> : The passphrase used to generate the request for signature and self CA signature. Obviously very sensible, you should configure it in your attribute files using a databag.\n* <code>node.selfsigned_certifcate[:country]</code> : Country code for the certificate.\n* <code>node.selfsigned_certifcate[:state]</code> : State for the certificate.\n* <code>node.selfsigned_certifcate[:city]</code> : City for the certificate.\n* <code>node.selfsigned_certifcate[:orga]</code> : Organisation for the certificate.\n* <code>node.selfsigned_certifcate[:depart]</code> : Departement for the certificate.\n* <code>node.selfsigned_certifcate[:cn]</code> : Common name for the certificate.\n* <code>node.selfsigned_certifcate[:email]</code> : Contact email for the certificate.\n\n# Recipes\n\nDefault recipe in current version.\n\n# Todo\n\n* Unit tests\n\n# Author\n\nAuthor:: Christophe Gravier (<christophe.gravier@univ-st-etienne.fr>)\n\nLicence:: [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)\n",
+  "maintainer": "Christophe Gravier",
+  "maintainer_email": "christophe.gravier@univ-st-etienne.fr",
+  "license": "All rights reserved",
+  "platforms": {
+    "ubuntu": ">= 0.0.0",
+    "debian": ">= 0.0.0"
+  },
+  "dependencies": {
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+  },
+  "version": "0.1.0"
+}
