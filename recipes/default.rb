@@ -8,7 +8,7 @@
 #
 
 # install openssl if not present
-apt_package "openssl" do
+package "openssl" do
   action :install
 end
 
