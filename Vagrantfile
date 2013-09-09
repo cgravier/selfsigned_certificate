@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
   config.vm.box_url = "https://dl.dropbox.com/u/31081437/Berkshelf-CentOS-6.3-x86_64-minimal.box"
 
   # Want a proxy server ?
-  # config.vm.provision :shell, :inline => "echo 'export http_proxy=http://cache.univ-st-etienne.fr:3128' >> /etc/profile.d/proxy.sh"
+  # config.vm.provision :shell, :inline => "echo 'export http_proxy=http://yourserver.domain.extension:3128' >> /etc/profile.d/proxy.sh"
 
   # Assign this VM to a host-only network IP, allowing you to access it
   # via the IP. Host-only networks can talk to the host machine as well as
@@ -84,7 +84,7 @@ Vagrant.configure("2") do |config|
       }
 	#,
 	#:proxy => {
-	#    :http_proxy => "http://cache.univ-st-etienne.fr:3128",
+	#    :http_proxy => "http://yourserver.domain.extension:3128",
     	#}
     }
 
