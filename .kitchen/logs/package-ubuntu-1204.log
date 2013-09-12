@@ -1,0 +1,982 @@
+I, [2013-09-12T21:14:48.097781 #64782]  INFO -- package-ubuntu-1204: -----> Cleaning up any prior instances of <package-ubuntu-1204>
+I, [2013-09-12T21:14:48.098048 #64782]  INFO -- package-ubuntu-1204: -----> Destroying <package-ubuntu-1204>
+I, [2013-09-12T21:14:48.100059 #64782]  INFO -- package-ubuntu-1204: Finished destroying <package-ubuntu-1204> (0m0.00s).
+I, [2013-09-12T21:14:48.100356 #64782]  INFO -- package-ubuntu-1204: -----> Testing <package-ubuntu-1204>
+I, [2013-09-12T21:14:48.100563 #64782]  INFO -- package-ubuntu-1204: -----> Creating <package-ubuntu-1204>
+I, [2013-09-12T21:14:48.102271 #64782]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant up --no-provision)
+I, [2013-09-12T21:14:49.844376 #64782]  INFO -- package-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2013-09-12T21:14:50.413056 #64782]  INFO -- package-ubuntu-1204: [default] Box 'opscode-ubuntu-12.04' was not found. Fetching box from specified URL for
+I, [2013-09-12T21:14:50.413140 #64782]  INFO -- package-ubuntu-1204: the provider 'virtualbox'. Note that if the URL does not have
+I, [2013-09-12T21:14:50.413184 #64782]  INFO -- package-ubuntu-1204: a box for this provider, you should interrupt Vagrant now and add
+I, [2013-09-12T21:14:50.413229 #64782]  INFO -- package-ubuntu-1204: the box yourself. Otherwise Vagrant will attempt to download the
+I, [2013-09-12T21:14:50.413264 #64782]  INFO -- package-ubuntu-1204: full box prior to discovering this error.
+I, [2013-09-12T21:14:50.454698 #64782]  INFO -- package-ubuntu-1204: Downloading or copying the box...
+Progress: 0% (Rate: 0/s, Estimated time remaining: --:--:--)Progress: 0% (Rate: 6997/s, Estimated time remaining: 38:25:55)Progress: 0% (Rate: 54380/s, Estimated time remaining: 3:45:48)Progress: 0% (Rate: 47167/s, Estimated time remaining: 3:49:52)Progress: 0% (Rate: 46490/s, Estimated time remaining: 3:37:55)Progress: 0% (Rate: 45730/s, Estimated time remaining: 3:36:06)Progress: 0% (Rate: 49102/s, Estimated time remaining: 3:46:38)Progress: 0% (Rate: 33633/s, Estimated time remaining: 3:45:32)Progress: 0% (Rate: 35613/s, Estimated time remaining: 3:40:41)Progress: 0% (Rate: 33849/s, Estimated time remaining: 3:40:43)Progress: 0% (Rate: 30552/s, Estimated time remaining: 3:48:34)Progress: 0% (Rate: 34686/s, Estimated time remaining: 3:43:20)Progress: 0% (Rate: 34973/s, Estimated time remaining: 3:42:08)Progress: 0% (Rate: 36842/s, Estimated time remaining: 3:35:16)Progress: 0% (Rate: 31451/s, Estimated time remaining: 3:47:20)Progress: 0% (Rate: 40672/s, Estimated time remaining: 3:33:48)Progress: 0% (Rate: 47113/s, Estimated time remaining: 3:21:13)E, [2013-09-12T21:15:09.425665 #64782] ERROR -- package-ubuntu-1204: Create failed on instance <package-ubuntu-1204>.
+E, [2013-09-12T21:15:09.425940 #64782] ERROR -- package-ubuntu-1204: ------Exception-------
+E, [2013-09-12T21:15:09.426045 #64782] ERROR -- package-ubuntu-1204: Class: SystemExit
+E, [2013-09-12T21:15:09.426147 #64782] ERROR -- package-ubuntu-1204: Message: exit
+E, [2013-09-12T21:15:09.426244 #64782] ERROR -- package-ubuntu-1204: ------Backtrace-------
+E, [2013-09-12T21:15:09.426319 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:6:in `exit'
+E, [2013-09-12T21:15:09.426393 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:6:in `block in <top (required)>'
+E, [2013-09-12T21:15:09.426438 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/mixlib-shellout-1.1.0/lib/mixlib/shellout/unix.rb:51:in `call'
+E, [2013-09-12T21:15:09.426478 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/mixlib-shellout-1.1.0/lib/mixlib/shellout/unix.rb:51:in `select'
+E, [2013-09-12T21:15:09.426528 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/mixlib-shellout-1.1.0/lib/mixlib/shellout/unix.rb:51:in `run_command'
+E, [2013-09-12T21:15:09.426568 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/mixlib-shellout-1.1.0/lib/mixlib/shellout.rb:222:in `run_command'
+E, [2013-09-12T21:15:09.426850 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/shell_out.rb:68:in `run_command'
+E, [2013-09-12T21:15:09.426966 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/base.rb:147:in `run_command'
+E, [2013-09-12T21:15:09.427105 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2013-09-12T21:15:09.427193 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:54:in `create'
+E, [2013-09-12T21:15:09.427265 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-09-12T21:15:09.427324 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-09-12T21:15:09.427405 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:295:in `call'
+E, [2013-09-12T21:15:09.427486 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:295:in `block in synchronize_or_call'
+E, [2013-09-12T21:15:09.427559 #64782] ERROR -- package-ubuntu-1204: <internal:prelude>:10:in `synchronize'
+E, [2013-09-12T21:15:09.427629 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:293:in `synchronize_or_call'
+E, [2013-09-12T21:15:09.427708 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-09-12T21:15:09.427789 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T21:15:09.427867 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:272:in `action'
+E, [2013-09-12T21:15:09.427920 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-09-12T21:15:09.427986 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:242:in `create_action'
+E, [2013-09-12T21:15:09.428064 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-09-12T21:15:09.428111 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:235:in `each'
+E, [2013-09-12T21:15:09.428151 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-09-12T21:15:09.428199 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:124:in `verify'
+E, [2013-09-12T21:15:09.428240 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:153:in `block in test'
+E, [2013-09-12T21:15:09.428279 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T21:15:09.428328 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:149:in `test'
+E, [2013-09-12T21:15:09.428384 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-09-12T21:15:09.428437 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-09-12T21:15:09.428486 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `map'
+E, [2013-09-12T21:15:09.428525 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-09-12T21:15:09.428566 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:114:in `block in test'
+E, [2013-09-12T21:15:09.428632 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T21:15:09.428674 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:105:in `test'
+E, [2013-09-12T21:15:09.428723 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-09-12T21:15:09.428763 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-09-12T21:15:09.428802 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-09-12T21:15:09.428840 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-09-12T21:15:09.428903 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-09-12T21:15:09.428962 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-09-12T21:15:09.429003 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-09-12T21:15:09.429033 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:13:in `<top (required)>'
+E, [2013-09-12T21:15:09.429056 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-09-12T21:15:09.429079 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-09-12T21:15:09.429101 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `eval'
+E, [2013-09-12T21:15:09.429128 #64782] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `<main>'
+E, [2013-09-12T21:15:09.429151 #64782] ERROR -- package-ubuntu-1204: ----------------------
+I, [2013-09-12T21:15:27.330135 #64841]  INFO -- package-ubuntu-1204: -----> Cleaning up any prior instances of <package-ubuntu-1204>
+I, [2013-09-12T21:15:27.332357 #64841]  INFO -- package-ubuntu-1204: -----> Destroying <package-ubuntu-1204>
+I, [2013-09-12T21:15:27.334159 #64841]  INFO -- package-ubuntu-1204: Finished destroying <package-ubuntu-1204> (0m0.00s).
+I, [2013-09-12T21:15:27.335523 #64841]  INFO -- package-ubuntu-1204: -----> Testing <package-ubuntu-1204>
+I, [2013-09-12T21:15:27.335712 #64841]  INFO -- package-ubuntu-1204: -----> Creating <package-ubuntu-1204>
+I, [2013-09-12T21:15:27.336448 #64841]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant up --no-provision)
+I, [2013-09-12T21:15:29.074423 #64841]  INFO -- package-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2013-09-12T21:15:29.478368 #64841]  INFO -- package-ubuntu-1204: [default] Box 'ubuntu-12.04' was not found. Fetching box from specified URL for
+I, [2013-09-12T21:15:29.478446 #64841]  INFO -- package-ubuntu-1204: the provider 'virtualbox'. Note that if the URL does not have
+I, [2013-09-12T21:15:29.478480 #64841]  INFO -- package-ubuntu-1204: a box for this provider, you should interrupt Vagrant now and add
+I, [2013-09-12T21:15:29.478517 #64841]  INFO -- package-ubuntu-1204: the box yourself. Otherwise Vagrant will attempt to download the
+I, [2013-09-12T21:15:29.478566 #64841]  INFO -- package-ubuntu-1204: full box prior to discovering this error.
+I, [2013-09-12T21:15:29.488755 #64841]  INFO -- package-ubuntu-1204: Downloading or copying the box...
+Progress: 0% (Rate: 0/s, Estimated time remaining: --:--:--)I, [2013-09-12T21:15:30.053387 #64841]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m2.46s)
+E, [2013-09-12T21:15:30.053980 #64841] ERROR -- package-ubuntu-1204: Create failed on instance <package-ubuntu-1204>.
+E, [2013-09-12T21:15:30.054093 #64841] ERROR -- package-ubuntu-1204: ------Exception-------
+E, [2013-09-12T21:15:30.054129 #64841] ERROR -- package-ubuntu-1204: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2013-09-12T21:15:30.054161 #64841] ERROR -- package-ubuntu-1204: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+[default] Box 'ubuntu-12.04' was not found. Fetching box from specified URL for
+the provider 'virtualbox'. Note that if the URL does not have
+a box for this provider, you should interrupt Vagrant now and add
+the box yourself. Otherwise Vagrant will attempt to download the
+full box prior to discovering this error.
+Downloading or copying the box...
+Progress: 0% (Rate: 0/s, Estimated time remaining: --:--:--)
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+error:1409441B:SSL routines:SSL3_READ_BYTES:tlsv1 alert decrypt error
+---- End output of vagrant up --no-provision ----
+Ran vagrant up --no-provision returned 1
+E, [2013-09-12T21:15:30.054218 #64841] ERROR -- package-ubuntu-1204: ---Nested Exception---
+E, [2013-09-12T21:15:30.054248 #64841] ERROR -- package-ubuntu-1204: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2013-09-12T21:15:30.054279 #64841] ERROR -- package-ubuntu-1204: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+[default] Box 'ubuntu-12.04' was not found. Fetching box from specified URL for
+the provider 'virtualbox'. Note that if the URL does not have
+a box for this provider, you should interrupt Vagrant now and add
+the box yourself. Otherwise Vagrant will attempt to download the
+full box prior to discovering this error.
+Downloading or copying the box...
+Progress: 0% (Rate: 0/s, Estimated time remaining: --:--:--)
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+error:1409441B:SSL routines:SSL3_READ_BYTES:tlsv1 alert decrypt error
+---- End output of vagrant up --no-provision ----
+Ran vagrant up --no-provision returned 1
+E, [2013-09-12T21:15:30.054317 #64841] ERROR -- package-ubuntu-1204: ------Backtrace-------
+E, [2013-09-12T21:15:30.054349 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/shell_out.rb:73:in `rescue in run_command'
+E, [2013-09-12T21:15:30.054384 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/shell_out.rb:61:in `run_command'
+E, [2013-09-12T21:15:30.054413 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/base.rb:147:in `run_command'
+E, [2013-09-12T21:15:30.054468 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2013-09-12T21:15:30.054500 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:54:in `create'
+E, [2013-09-12T21:15:30.054536 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-09-12T21:15:30.054570 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-09-12T21:15:30.054613 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:295:in `call'
+E, [2013-09-12T21:15:30.054648 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:295:in `block in synchronize_or_call'
+E, [2013-09-12T21:15:30.054683 #64841] ERROR -- package-ubuntu-1204: <internal:prelude>:10:in `synchronize'
+E, [2013-09-12T21:15:30.054712 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:293:in `synchronize_or_call'
+E, [2013-09-12T21:15:30.054747 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-09-12T21:15:30.054797 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T21:15:30.054829 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:272:in `action'
+E, [2013-09-12T21:15:30.054873 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-09-12T21:15:30.054912 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:242:in `create_action'
+E, [2013-09-12T21:15:30.054939 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-09-12T21:15:30.054973 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:235:in `each'
+E, [2013-09-12T21:15:30.055000 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-09-12T21:15:30.055033 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:124:in `verify'
+E, [2013-09-12T21:15:30.055065 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:153:in `block in test'
+E, [2013-09-12T21:15:30.055093 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T21:15:30.055122 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:149:in `test'
+E, [2013-09-12T21:15:30.055151 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-09-12T21:15:30.055183 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-09-12T21:15:30.055218 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `map'
+E, [2013-09-12T21:15:30.055258 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-09-12T21:15:30.055291 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:114:in `block in test'
+E, [2013-09-12T21:15:30.055320 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T21:15:30.055354 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:105:in `test'
+E, [2013-09-12T21:15:30.055386 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-09-12T21:15:30.055412 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-09-12T21:15:30.055441 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-09-12T21:15:30.055471 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-09-12T21:15:30.055499 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-09-12T21:15:30.055529 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-09-12T21:15:30.055555 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-09-12T21:15:30.055587 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:13:in `<top (required)>'
+E, [2013-09-12T21:15:30.055613 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-09-12T21:15:30.055644 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-09-12T21:15:30.055675 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `eval'
+E, [2013-09-12T21:15:30.055697 #64841] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `<main>'
+E, [2013-09-12T21:15:30.055726 #64841] ERROR -- package-ubuntu-1204: ----------------------
+I, [2013-09-12T21:17:31.305723 #64967]  INFO -- package-ubuntu-1204: -----> Cleaning up any prior instances of <package-ubuntu-1204>
+I, [2013-09-12T21:17:31.309510 #64967]  INFO -- package-ubuntu-1204: -----> Destroying <package-ubuntu-1204>
+I, [2013-09-12T21:17:31.313070 #64967]  INFO -- package-ubuntu-1204: Finished destroying <package-ubuntu-1204> (0m0.00s).
+I, [2013-09-12T21:17:31.313397 #64967]  INFO -- package-ubuntu-1204: -----> Testing <package-ubuntu-1204>
+I, [2013-09-12T21:17:31.313605 #64967]  INFO -- package-ubuntu-1204: -----> Creating <package-ubuntu-1204>
+I, [2013-09-12T21:17:31.316954 #64967]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant up --no-provision)
+I, [2013-09-12T21:17:33.215523 #64967]  INFO -- package-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2013-09-12T21:17:33.647586 #64967]  INFO -- package-ubuntu-1204: [default] Importing base box 'precise64'...
+Progress: 40%Progress: 50%Progress: 60%Progress: 70%Progress: 80%Progress: 90%I, [2013-09-12T21:17:41.085467 #64967]  INFO -- package-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2013-09-12T21:17:41.768770 #64967]  INFO -- package-ubuntu-1204: [default] Setting the name of the VM...
+I, [2013-09-12T21:17:41.817101 #64967]  INFO -- package-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2013-09-12T21:17:42.081050 #64967]  INFO -- package-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2013-09-12T21:17:42.876736 #64967]  INFO -- package-ubuntu-1204: [default] Creating shared folders metadata...
+I, [2013-09-12T21:17:42.876956 #64967]  INFO -- package-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2013-09-12T21:17:42.929554 #64967]  INFO -- package-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2013-09-12T21:17:42.983305 #64967]  INFO -- package-ubuntu-1204: [default] Forwarding ports...
+I, [2013-09-12T21:17:43.060533 #64967]  INFO -- package-ubuntu-1204: [default] -- 22 => 2222 (adapter 1)
+I, [2013-09-12T21:17:43.288005 #64967]  INFO -- package-ubuntu-1204: [default] Running any VM customizations...
+I, [2013-09-12T21:17:43.380859 #64967]  INFO -- package-ubuntu-1204: [default] Booting VM...
+I, [2013-09-12T21:17:43.774017 #64967]  INFO -- package-ubuntu-1204: [default] Waiting for VM to boot. This can take a few minutes.
+I, [2013-09-12T21:18:03.892894 #64967]  INFO -- package-ubuntu-1204: [default] VM booted and ready for use!
+I, [2013-09-12T21:18:04.724500 #64967]  INFO -- package-ubuntu-1204: [default] Setting hostname...
+I, [2013-09-12T21:18:05.046435 #64967]  INFO -- package-ubuntu-1204: [default] Configuring and enabling network interfaces...
+I, [2013-09-12T21:18:05.209737 #64967]  INFO -- package-ubuntu-1204: [default] Mounting shared folders...
+I, [2013-09-12T21:18:05.285210 #64967]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m31.12s)
+I, [2013-09-12T21:18:05.285443 #64967]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant ssh-config)
+I, [2013-09-12T21:18:07.746348 #64967]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m2.25s)
+I, [2013-09-12T21:18:07.746787 #64967]  INFO -- package-ubuntu-1204: Vagrant instance <package-ubuntu-1204> created.
+I, [2013-09-12T21:18:07.748151 #64967]  INFO -- package-ubuntu-1204: Finished creating <package-ubuntu-1204> (0m36.43s).
+I, [2013-09-12T21:18:07.748297 #64967]  INFO -- package-ubuntu-1204: -----> Converging <package-ubuntu-1204>
+I, [2013-09-12T21:18:07.982422 #64967]  INFO -- package-ubuntu-1204: -----> Installing Chef Omnibus (true)
+I, [2013-09-12T21:18:07.988769 #64967]  INFO -- package-ubuntu-1204: --2013-09-12 19:18:06--  https://www.opscode.com/chef/install.sh
+Resolving www.opscode.com (www.opscode.com)... I, [2013-09-12T21:18:08.411817 #64967]  INFO -- package-ubuntu-1204: 184.106.28.83
+I, [2013-09-12T21:18:08.411886 #64967]  INFO -- package-ubuntu-1204: Connecting to www.opscode.com (www.opscode.com)|184.106.28.83|:443... 
+I, [2013-09-12T21:18:08.590956 #64967]  INFO -- package-ubuntu-1204: connected.
+HTTP request sent, awaiting response... I, [2013-09-12T21:18:09.412500 #64967]  INFO -- package-ubuntu-1204: 200 OK
+I, [2013-09-12T21:18:09.412596 #64967]  INFO -- package-ubuntu-1204: Length: 6790 (6.6K) [application/x-sh]
+I, [2013-09-12T21:18:09.412647 #64967]  INFO -- package-ubuntu-1204: Saving to: `STDOUT'
+I, [2013-09-12T21:18:09.412697 #64967]  INFO -- package-ubuntu-1204: 
+I, [2013-09-12T21:18:09.412744 #64967]  INFO -- package-ubuntu-1204:  0% [                                       ] 0           --.-K/s              
+I, [2013-09-12T21:18:09.413083 #64967]  INFO -- package-ubuntu-1204: 100%[======================================>] 6,790       --.-K/s   in 0s      
+I, [2013-09-12T21:18:09.413139 #64967]  INFO -- package-ubuntu-1204: 
+I, [2013-09-12T21:18:09.413397 #64967]  INFO -- package-ubuntu-1204: 2013-09-12 19:18:07 (662 MB/s) - written to stdout [6790/6790]
+I, [2013-09-12T21:18:09.413431 #64967]  INFO -- package-ubuntu-1204: 
+I, [2013-09-12T21:18:09.430767 #64967]  INFO -- package-ubuntu-1204: Downloading Chef  for ubuntu...
+E, [2013-09-12T21:26:47.855108 #64967] ERROR -- package-ubuntu-1204: Converge failed on instance <package-ubuntu-1204>.
+E, [2013-09-12T21:26:47.855792 #64967] ERROR -- package-ubuntu-1204: ------Exception-------
+E, [2013-09-12T21:26:47.855822 #64967] ERROR -- package-ubuntu-1204: Class: SystemExit
+E, [2013-09-12T21:26:47.855854 #64967] ERROR -- package-ubuntu-1204: Message: exit
+E, [2013-09-12T21:26:47.855882 #64967] ERROR -- package-ubuntu-1204: ------Backtrace-------
+E, [2013-09-12T21:26:47.855905 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:6:in `exit'
+E, [2013-09-12T21:26:47.855927 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:6:in `block in <top (required)>'
+E, [2013-09-12T21:26:47.855954 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.6.6/lib/net/ssh/ruby_compat.rb:30:in `call'
+E, [2013-09-12T21:26:47.855977 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.6.6/lib/net/ssh/ruby_compat.rb:30:in `select'
+E, [2013-09-12T21:26:47.855999 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.6.6/lib/net/ssh/ruby_compat.rb:30:in `io_select'
+E, [2013-09-12T21:26:47.856021 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.6.6/lib/net/ssh/connection/session.rb:201:in `process'
+E, [2013-09-12T21:26:47.856049 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.6.6/lib/net/ssh/connection/session.rb:161:in `block in loop'
+E, [2013-09-12T21:26:47.856072 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.6.6/lib/net/ssh/connection/session.rb:161:in `loop'
+E, [2013-09-12T21:26:47.856099 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.6.6/lib/net/ssh/connection/session.rb:161:in `loop'
+E, [2013-09-12T21:26:47.856122 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/ssh.rb:162:in `exec_with_exit'
+E, [2013-09-12T21:26:47.856150 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/ssh.rb:54:in `exec'
+E, [2013-09-12T21:26:47.856177 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:112:in `run_remote'
+E, [2013-09-12T21:26:47.856201 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:42:in `block in converge'
+E, [2013-09-12T21:26:47.856224 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-09-12T21:26:47.856252 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:41:in `new'
+E, [2013-09-12T21:26:47.856275 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:41:in `converge'
+E, [2013-09-12T21:26:47.856305 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:64:in `converge'
+E, [2013-09-12T21:26:47.856333 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-09-12T21:26:47.856356 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-09-12T21:26:47.856384 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:298:in `call'
+E, [2013-09-12T21:26:47.856414 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:298:in `synchronize_or_call'
+E, [2013-09-12T21:26:47.856438 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-09-12T21:26:47.856466 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T21:26:47.856489 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:272:in `action'
+E, [2013-09-12T21:26:47.856511 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-09-12T21:26:47.856533 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:246:in `converge_action'
+E, [2013-09-12T21:26:47.856560 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-09-12T21:26:47.856588 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:235:in `each'
+E, [2013-09-12T21:26:47.856611 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-09-12T21:26:47.856633 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:124:in `verify'
+E, [2013-09-12T21:26:47.856660 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:153:in `block in test'
+E, [2013-09-12T21:26:47.856683 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T21:26:47.856705 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:149:in `test'
+E, [2013-09-12T21:26:47.856732 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-09-12T21:26:47.856766 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-09-12T21:26:47.856793 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `map'
+E, [2013-09-12T21:26:47.856814 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-09-12T21:26:47.856840 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:114:in `block in test'
+E, [2013-09-12T21:26:47.856861 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T21:26:47.856882 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:105:in `test'
+E, [2013-09-12T21:26:47.856908 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-09-12T21:26:47.856929 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-09-12T21:26:47.856950 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-09-12T21:26:47.856981 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-09-12T21:26:47.857003 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-09-12T21:26:47.857024 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-09-12T21:26:47.857045 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-09-12T21:26:47.857069 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:13:in `<top (required)>'
+E, [2013-09-12T21:26:47.857096 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-09-12T21:26:47.857117 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-09-12T21:26:47.857144 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `eval'
+E, [2013-09-12T21:26:47.857165 #64967] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `<main>'
+E, [2013-09-12T21:26:47.857190 #64967] ERROR -- package-ubuntu-1204: ----------------------
+I, [2013-09-12T21:28:41.259077 #65159]  INFO -- package-ubuntu-1204: -----> Cleaning up any prior instances of <package-ubuntu-1204>
+I, [2013-09-12T21:28:41.260783 #65159]  INFO -- package-ubuntu-1204: -----> Destroying <package-ubuntu-1204>
+I, [2013-09-12T21:28:41.262563 #65159]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant destroy -f)
+I, [2013-09-12T21:28:44.120412 #65159]  INFO -- package-ubuntu-1204: [default] Forcing shutdown of VM...
+I, [2013-09-12T21:28:45.303613 #65159]  INFO -- package-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2013-09-12T21:28:46.188304 #65159]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m4.51s)
+I, [2013-09-12T21:28:46.189585 #65159]  INFO -- package-ubuntu-1204: Vagrant instance <package-ubuntu-1204> destroyed.
+I, [2013-09-12T21:28:46.191221 #65159]  INFO -- package-ubuntu-1204: Finished destroying <package-ubuntu-1204> (0m4.93s).
+I, [2013-09-12T21:28:46.192764 #65159]  INFO -- package-ubuntu-1204: -----> Testing <package-ubuntu-1204>
+I, [2013-09-12T21:28:46.192913 #65159]  INFO -- package-ubuntu-1204: -----> Creating <package-ubuntu-1204>
+I, [2013-09-12T21:28:46.193369 #65159]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant up --no-provision)
+I, [2013-09-12T21:28:48.011620 #65159]  INFO -- package-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2013-09-12T21:28:48.219471 #65159]  INFO -- package-ubuntu-1204: [default] Importing base box 'precise64'...
+Progress: 40%Progress: 50%Progress: 60%Progress: 70%Progress: 80%Progress: 90%I, [2013-09-12T21:28:54.909086 #65159]  INFO -- package-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2013-09-12T21:28:55.565081 #65159]  INFO -- package-ubuntu-1204: [default] Setting the name of the VM...
+I, [2013-09-12T21:28:55.615670 #65159]  INFO -- package-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2013-09-12T21:28:55.882781 #65159]  INFO -- package-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2013-09-12T21:28:56.650058 #65159]  INFO -- package-ubuntu-1204: [default] Creating shared folders metadata...
+I, [2013-09-12T21:28:56.650256 #65159]  INFO -- package-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2013-09-12T21:28:56.698556 #65159]  INFO -- package-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2013-09-12T21:28:56.753610 #65159]  INFO -- package-ubuntu-1204: [default] Forwarding ports...
+I, [2013-09-12T21:28:56.861467 #65159]  INFO -- package-ubuntu-1204: [default] -- 22 => 2222 (adapter 1)
+I, [2013-09-12T21:28:57.054525 #65159]  INFO -- package-ubuntu-1204: [default] Running any VM customizations...
+I, [2013-09-12T21:28:57.144252 #65159]  INFO -- package-ubuntu-1204: [default] Booting VM...
+I, [2013-09-12T21:28:57.383869 #65159]  INFO -- package-ubuntu-1204: [default] Waiting for VM to boot. This can take a few minutes.
+I, [2013-09-12T21:29:17.374407 #65159]  INFO -- package-ubuntu-1204: [default] VM booted and ready for use!
+I, [2013-09-12T21:29:18.169330 #65159]  INFO -- package-ubuntu-1204: [default] Setting hostname...
+I, [2013-09-12T21:29:18.530377 #65159]  INFO -- package-ubuntu-1204: [default] Configuring and enabling network interfaces...
+I, [2013-09-12T21:29:18.689421 #65159]  INFO -- package-ubuntu-1204: [default] Mounting shared folders...
+I, [2013-09-12T21:29:18.776559 #65159]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m29.77s)
+I, [2013-09-12T21:29:18.776865 #65159]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant ssh-config)
+I, [2013-09-12T21:29:21.110799 #65159]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m2.13s)
+I, [2013-09-12T21:29:21.111537 #65159]  INFO -- package-ubuntu-1204: Vagrant instance <package-ubuntu-1204> created.
+I, [2013-09-12T21:29:21.113180 #65159]  INFO -- package-ubuntu-1204: Finished creating <package-ubuntu-1204> (0m34.92s).
+I, [2013-09-12T21:29:21.113333 #65159]  INFO -- package-ubuntu-1204: -----> Converging <package-ubuntu-1204>
+I, [2013-09-12T21:29:21.191511 #65159]  INFO -- package-ubuntu-1204: -----> Installing Chef Omnibus (true)
+I, [2013-09-12T21:29:21.197725 #65159]  INFO -- package-ubuntu-1204: --2013-09-12 19:29:19--  https://www.opscode.com/chef/install.sh
+I, [2013-09-12T21:29:21.197802 #65159]  INFO -- package-ubuntu-1204: Resolving www.opscode.com (www.opscode.com)... 
+I, [2013-09-12T21:29:21.579131 #65159]  INFO -- package-ubuntu-1204: 184.106.28.83
+I, [2013-09-12T21:29:21.579207 #65159]  INFO -- package-ubuntu-1204: Connecting to www.opscode.com (www.opscode.com)|184.106.28.83|:443... 
+I, [2013-09-12T21:29:21.759455 #65159]  INFO -- package-ubuntu-1204: connected.
+HTTP request sent, awaiting response... I, [2013-09-12T21:29:22.419316 #65159]  INFO -- package-ubuntu-1204: 200 OK
+I, [2013-09-12T21:29:22.419407 #65159]  INFO -- package-ubuntu-1204: Length: 6790 (6.6K) [application/x-sh]
+I, [2013-09-12T21:29:22.419454 #65159]  INFO -- package-ubuntu-1204: Saving to: `STDOUT'
+I, [2013-09-12T21:29:22.419756 #65159]  INFO -- package-ubuntu-1204: 
+ 0% [                                       ] 0           --.-K/s              I, [2013-09-12T21:29:22.420412 #65159]  INFO -- package-ubuntu-1204: 100%[======================================>] 6,790       --.-K/s   in 0s      
+I, [2013-09-12T21:29:22.420469 #65159]  INFO -- package-ubuntu-1204: 
+I, [2013-09-12T21:29:22.420713 #65159]  INFO -- package-ubuntu-1204: 2013-09-12 19:29:21 (799 MB/s) - written to stdout [6790/6790]
+I, [2013-09-12T21:29:22.420770 #65159]  INFO -- package-ubuntu-1204: 
+I, [2013-09-12T21:29:22.432765 #65159]  INFO -- package-ubuntu-1204: Downloading Chef  for ubuntu...
+I, [2013-09-12T21:39:15.229277 #65159]  INFO -- package-ubuntu-1204: Installing Chef 
+I, [2013-09-12T21:39:15.278575 #65159]  INFO -- package-ubuntu-1204: Selecting previously unselected package chef.
+I, [2013-09-12T21:39:15.278673 #65159]  INFO -- package-ubuntu-1204: (Reading database ... 
+(Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%I, [2013-09-12T21:39:15.373282 #65159]  INFO -- package-ubuntu-1204: (Reading database ... 100%(Reading database ... 51095 files and directories currently installed.)
+I, [2013-09-12T21:39:15.375650 #65159]  INFO -- package-ubuntu-1204: Unpacking chef (from .../tmp.VpbrrLem/chef__amd64.deb) ...
+I, [2013-09-12T21:39:18.387232 #65159]  INFO -- package-ubuntu-1204: Setting up chef (11.6.0-1.ubuntu.12.04) ...
+I, [2013-09-12T21:39:18.410860 #65159]  INFO -- package-ubuntu-1204: Thank you for installing Chef!
+I, [2013-09-12T21:39:18.446759 #65159]  INFO -- package-ubuntu-1204: Resolving cookbook dependencies with Berkshelf
+F, [2013-09-12T21:39:18.449389 #65159] FATAL -- package-ubuntu-1204: The `berkself' gem is missing and must be installed. Run `gem install berkshelf` or add the following to your Gemfile if you are using Bundler: `gem 'berkshelf'`.
+E, [2013-09-12T21:39:18.449925 #65159] ERROR -- package-ubuntu-1204: Converge failed on instance <package-ubuntu-1204>.
+E, [2013-09-12T21:39:18.449992 #65159] ERROR -- package-ubuntu-1204: ------Exception-------
+E, [2013-09-12T21:39:18.450020 #65159] ERROR -- package-ubuntu-1204: Class: Kitchen::UserError
+E, [2013-09-12T21:39:18.450042 #65159] ERROR -- package-ubuntu-1204: Message: Could not load Berkshelf
+E, [2013-09-12T21:39:18.450068 #65159] ERROR -- package-ubuntu-1204: ---Nested Exception---
+E, [2013-09-12T21:39:18.450090 #65159] ERROR -- package-ubuntu-1204: Class: Gem::LoadError
+E, [2013-09-12T21:39:18.450111 #65159] ERROR -- package-ubuntu-1204: Message: Unable to activate berkshelf-1.3.1, because thor-0.18.1 conflicts with thor (~> 0.16.0)
+E, [2013-09-12T21:39:18.450138 #65159] ERROR -- package-ubuntu-1204: ------Backtrace-------
+E, [2013-09-12T21:39:18.450160 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:257:in `rescue in resolve_with_berkshelf'
+E, [2013-09-12T21:39:18.450182 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:251:in `resolve_with_berkshelf'
+E, [2013-09-12T21:39:18.450208 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:149:in `prepare_cookbooks'
+E, [2013-09-12T21:39:18.450233 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:91:in `create_chef_sandbox'
+E, [2013-09-12T21:39:18.450258 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_solo.rb:31:in `create_sandbox'
+E, [2013-09-12T21:39:18.450284 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:44:in `block in converge'
+E, [2013-09-12T21:39:18.450313 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-09-12T21:39:18.450337 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:41:in `new'
+E, [2013-09-12T21:39:18.450359 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:41:in `converge'
+E, [2013-09-12T21:39:18.450385 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:64:in `converge'
+E, [2013-09-12T21:39:18.450411 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-09-12T21:39:18.450434 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-09-12T21:39:18.450469 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:298:in `call'
+E, [2013-09-12T21:39:18.450492 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:298:in `synchronize_or_call'
+E, [2013-09-12T21:39:18.450513 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-09-12T21:39:18.450540 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T21:39:18.450562 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:272:in `action'
+E, [2013-09-12T21:39:18.450583 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-09-12T21:39:18.450609 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:246:in `converge_action'
+E, [2013-09-12T21:39:18.450630 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-09-12T21:39:18.450652 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:235:in `each'
+E, [2013-09-12T21:39:18.450679 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-09-12T21:39:18.450700 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:124:in `verify'
+E, [2013-09-12T21:39:18.450725 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:153:in `block in test'
+E, [2013-09-12T21:39:18.450747 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T21:39:18.450775 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:149:in `test'
+E, [2013-09-12T21:39:18.450816 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-09-12T21:39:18.450839 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-09-12T21:39:18.450877 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `map'
+E, [2013-09-12T21:39:18.450900 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-09-12T21:39:18.450922 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:114:in `block in test'
+E, [2013-09-12T21:39:18.450949 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T21:39:18.450970 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:105:in `test'
+E, [2013-09-12T21:39:18.450995 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-09-12T21:39:18.451017 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-09-12T21:39:18.451045 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-09-12T21:39:18.451073 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-09-12T21:39:18.451099 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-09-12T21:39:18.451121 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-09-12T21:39:18.451147 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-09-12T21:39:18.451174 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:13:in `<top (required)>'
+E, [2013-09-12T21:39:18.451200 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-09-12T21:39:18.451222 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-09-12T21:39:18.451243 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `eval'
+E, [2013-09-12T21:39:18.451269 #65159] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `<main>'
+E, [2013-09-12T21:39:18.451293 #65159] ERROR -- package-ubuntu-1204: ----------------------
+I, [2013-09-12T22:05:01.326351 #65414]  INFO -- package-ubuntu-1204: -----> Cleaning up any prior instances of <package-ubuntu-1204>
+I, [2013-09-12T22:05:01.328115 #65414]  INFO -- package-ubuntu-1204: -----> Destroying <package-ubuntu-1204>
+I, [2013-09-12T22:05:01.329871 #65414]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant destroy -f)
+I, [2013-09-12T22:05:04.065427 #65414]  INFO -- package-ubuntu-1204: [default] Forcing shutdown of VM...
+I, [2013-09-12T22:05:05.238446 #65414]  INFO -- package-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2013-09-12T22:05:06.128723 #65414]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m4.39s)
+I, [2013-09-12T22:05:06.129793 #65414]  INFO -- package-ubuntu-1204: Vagrant instance <package-ubuntu-1204> destroyed.
+I, [2013-09-12T22:05:06.131620 #65414]  INFO -- package-ubuntu-1204: Finished destroying <package-ubuntu-1204> (0m4.80s).
+I, [2013-09-12T22:05:06.133070 #65414]  INFO -- package-ubuntu-1204: -----> Testing <package-ubuntu-1204>
+I, [2013-09-12T22:05:06.133254 #65414]  INFO -- package-ubuntu-1204: -----> Creating <package-ubuntu-1204>
+I, [2013-09-12T22:05:06.133800 #65414]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant up --no-provision)
+I, [2013-09-12T22:05:08.065132 #65414]  INFO -- package-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2013-09-12T22:05:08.279440 #65414]  INFO -- package-ubuntu-1204: [default] Importing base box 'precise64'...
+Progress: 40%Progress: 50%Progress: 60%Progress: 70%Progress: 80%Progress: 90%I, [2013-09-12T22:05:14.963479 #65414]  INFO -- package-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2013-09-12T22:05:15.623297 #65414]  INFO -- package-ubuntu-1204: [default] Setting the name of the VM...
+I, [2013-09-12T22:05:15.670340 #65414]  INFO -- package-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2013-09-12T22:05:15.934370 #65414]  INFO -- package-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2013-09-12T22:05:16.683283 #65414]  INFO -- package-ubuntu-1204: [default] Creating shared folders metadata...
+I, [2013-09-12T22:05:16.683497 #65414]  INFO -- package-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2013-09-12T22:05:16.729811 #65414]  INFO -- package-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2013-09-12T22:05:16.782159 #65414]  INFO -- package-ubuntu-1204: [default] Forwarding ports...
+I, [2013-09-12T22:05:16.859464 #65414]  INFO -- package-ubuntu-1204: [default] -- 22 => 2222 (adapter 1)
+I, [2013-09-12T22:05:17.083614 #65414]  INFO -- package-ubuntu-1204: [default] Running any VM customizations...
+I, [2013-09-12T22:05:17.176216 #65414]  INFO -- package-ubuntu-1204: [default] Booting VM...
+I, [2013-09-12T22:05:17.421566 #65414]  INFO -- package-ubuntu-1204: [default] Waiting for VM to boot. This can take a few minutes.
+I, [2013-09-12T22:05:37.385357 #65414]  INFO -- package-ubuntu-1204: [default] VM booted and ready for use!
+I, [2013-09-12T22:05:38.113603 #65414]  INFO -- package-ubuntu-1204: [default] Setting hostname...
+I, [2013-09-12T22:05:38.395770 #65414]  INFO -- package-ubuntu-1204: [default] Configuring and enabling network interfaces...
+I, [2013-09-12T22:05:38.547443 #65414]  INFO -- package-ubuntu-1204: [default] Mounting shared folders...
+I, [2013-09-12T22:05:38.623204 #65414]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m29.66s)
+I, [2013-09-12T22:05:38.623640 #65414]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant ssh-config)
+I, [2013-09-12T22:05:40.666385 #65414]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m1.87s)
+I, [2013-09-12T22:05:40.666945 #65414]  INFO -- package-ubuntu-1204: Vagrant instance <package-ubuntu-1204> created.
+I, [2013-09-12T22:05:40.668358 #65414]  INFO -- package-ubuntu-1204: Finished creating <package-ubuntu-1204> (0m34.53s).
+I, [2013-09-12T22:05:40.668484 #65414]  INFO -- package-ubuntu-1204: -----> Converging <package-ubuntu-1204>
+I, [2013-09-12T22:05:40.738521 #65414]  INFO -- package-ubuntu-1204: -----> Installing Chef Omnibus (true)
+I, [2013-09-12T22:05:40.742723 #65414]  INFO -- package-ubuntu-1204: --2013-09-12 20:05:39--  https://www.opscode.com/chef/install.sh
+Resolving www.opscode.com (www.opscode.com)... I, [2013-09-12T22:05:41.239933 #65414]  INFO -- package-ubuntu-1204: 184.106.28.82
+I, [2013-09-12T22:05:41.239999 #65414]  INFO -- package-ubuntu-1204: Connecting to www.opscode.com (www.opscode.com)|184.106.28.82|:443... 
+I, [2013-09-12T22:05:42.501042 #65414]  INFO -- package-ubuntu-1204: connected.
+HTTP request sent, awaiting response... I, [2013-09-12T22:05:43.217101 #65414]  INFO -- package-ubuntu-1204: 200 OK
+I, [2013-09-12T22:05:43.217188 #65414]  INFO -- package-ubuntu-1204: Length: 6790 (6.6K) [application/x-sh]
+I, [2013-09-12T22:05:43.217240 #65414]  INFO -- package-ubuntu-1204: Saving to: `STDOUT'
+I, [2013-09-12T22:05:43.217829 #65414]  INFO -- package-ubuntu-1204: 
+ 0% [                                       ] 0           --.-K/s              I, [2013-09-12T22:05:43.218248 #65414]  INFO -- package-ubuntu-1204: 100%[======================================>] 6,790       --.-K/s   in 0s      
+I, [2013-09-12T22:05:43.218309 #65414]  INFO -- package-ubuntu-1204: 
+I, [2013-09-12T22:05:43.218365 #65414]  INFO -- package-ubuntu-1204: 2013-09-12 20:05:41 (463 MB/s) - written to stdout [6790/6790]
+I, [2013-09-12T22:05:43.218419 #65414]  INFO -- package-ubuntu-1204: 
+I, [2013-09-12T22:05:43.230182 #65414]  INFO -- package-ubuntu-1204: Downloading Chef  for ubuntu...
+I, [2013-09-12T22:13:38.629283 #65414]  INFO -- package-ubuntu-1204: Installing Chef 
+I, [2013-09-12T22:13:38.682927 #65414]  INFO -- package-ubuntu-1204: Selecting previously unselected package chef.
+I, [2013-09-12T22:13:38.683210 #65414]  INFO -- package-ubuntu-1204: (Reading database ... 
+(Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%I, [2013-09-12T22:13:38.771031 #65414]  INFO -- package-ubuntu-1204: (Reading database ... 100%(Reading database ... 51095 files and directories currently installed.)
+I, [2013-09-12T22:13:38.772967 #65414]  INFO -- package-ubuntu-1204: Unpacking chef (from .../tmp.j7pMKDqQ/chef__amd64.deb) ...
+I, [2013-09-12T22:13:41.773108 #65414]  INFO -- package-ubuntu-1204: Setting up chef (11.6.0-1.ubuntu.12.04) ...
+I, [2013-09-12T22:13:41.795755 #65414]  INFO -- package-ubuntu-1204: Thank you for installing Chef!
+I, [2013-09-12T22:13:41.833417 #65414]  INFO -- package-ubuntu-1204: Resolving cookbook dependencies with Berkshelf
+F, [2013-09-12T22:13:41.835186 #65414] FATAL -- package-ubuntu-1204: The `berkself' gem is missing and must be installed. Run `gem install berkshelf` or add the following to your Gemfile if you are using Bundler: `gem 'berkshelf'`.
+E, [2013-09-12T22:13:41.835662 #65414] ERROR -- package-ubuntu-1204: Converge failed on instance <package-ubuntu-1204>.
+E, [2013-09-12T22:13:41.835728 #65414] ERROR -- package-ubuntu-1204: ------Exception-------
+E, [2013-09-12T22:13:41.835754 #65414] ERROR -- package-ubuntu-1204: Class: Kitchen::UserError
+E, [2013-09-12T22:13:41.835792 #65414] ERROR -- package-ubuntu-1204: Message: Could not load Berkshelf
+E, [2013-09-12T22:13:41.835815 #65414] ERROR -- package-ubuntu-1204: ---Nested Exception---
+E, [2013-09-12T22:13:41.835837 #65414] ERROR -- package-ubuntu-1204: Class: Gem::LoadError
+E, [2013-09-12T22:13:41.835871 #65414] ERROR -- package-ubuntu-1204: Message: Unable to activate berkshelf-1.3.1, because thor-0.18.1 conflicts with thor (~> 0.16.0)
+E, [2013-09-12T22:13:41.835912 #65414] ERROR -- package-ubuntu-1204: ------Backtrace-------
+E, [2013-09-12T22:13:41.835946 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:257:in `rescue in resolve_with_berkshelf'
+E, [2013-09-12T22:13:41.835987 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:251:in `resolve_with_berkshelf'
+E, [2013-09-12T22:13:41.836026 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:149:in `prepare_cookbooks'
+E, [2013-09-12T22:13:41.836061 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:91:in `create_chef_sandbox'
+E, [2013-09-12T22:13:41.836095 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_solo.rb:31:in `create_sandbox'
+E, [2013-09-12T22:13:41.836145 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:44:in `block in converge'
+E, [2013-09-12T22:13:41.836176 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-09-12T22:13:41.836207 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:41:in `new'
+E, [2013-09-12T22:13:41.836229 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:41:in `converge'
+E, [2013-09-12T22:13:41.836253 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:64:in `converge'
+E, [2013-09-12T22:13:41.836275 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-09-12T22:13:41.836296 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-09-12T22:13:41.836330 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:298:in `call'
+E, [2013-09-12T22:13:41.836353 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:298:in `synchronize_or_call'
+E, [2013-09-12T22:13:41.836374 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-09-12T22:13:41.836400 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T22:13:41.836428 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:272:in `action'
+E, [2013-09-12T22:13:41.836450 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-09-12T22:13:41.836470 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:246:in `converge_action'
+E, [2013-09-12T22:13:41.836495 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-09-12T22:13:41.836517 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:235:in `each'
+E, [2013-09-12T22:13:41.836542 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-09-12T22:13:41.836564 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:124:in `verify'
+E, [2013-09-12T22:13:41.836584 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:153:in `block in test'
+E, [2013-09-12T22:13:41.836605 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T22:13:41.836645 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:149:in `test'
+E, [2013-09-12T22:13:41.836668 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-09-12T22:13:41.836693 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-09-12T22:13:41.836714 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `map'
+E, [2013-09-12T22:13:41.836738 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-09-12T22:13:41.836761 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:114:in `block in test'
+E, [2013-09-12T22:13:41.836782 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T22:13:41.836808 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:105:in `test'
+E, [2013-09-12T22:13:41.836829 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-09-12T22:13:41.836859 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-09-12T22:13:41.836881 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-09-12T22:13:41.836907 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-09-12T22:13:41.836929 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-09-12T22:13:41.836954 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-09-12T22:13:41.836975 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-09-12T22:13:41.837001 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:13:in `<top (required)>'
+E, [2013-09-12T22:13:41.837022 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-09-12T22:13:41.837042 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-09-12T22:13:41.837080 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `eval'
+E, [2013-09-12T22:13:41.837103 #65414] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `<main>'
+E, [2013-09-12T22:13:41.837125 #65414] ERROR -- package-ubuntu-1204: ----------------------
+I, [2013-09-12T22:57:00.881075 #71085]  INFO -- package-ubuntu-1204: -----> Cleaning up any prior instances of <package-ubuntu-1204>
+I, [2013-09-12T22:57:00.891741 #71085]  INFO -- package-ubuntu-1204: -----> Destroying <package-ubuntu-1204>
+I, [2013-09-12T22:57:00.904590 #71085]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant destroy -f)
+I, [2013-09-12T22:57:03.698156 #71085]  INFO -- package-ubuntu-1204: [default] Forcing shutdown of VM...
+I, [2013-09-12T22:57:04.878531 #71085]  INFO -- package-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2013-09-12T22:57:05.778373 #71085]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m4.46s)
+I, [2013-09-12T22:57:05.779547 #71085]  INFO -- package-ubuntu-1204: Vagrant instance <package-ubuntu-1204> destroyed.
+I, [2013-09-12T22:57:05.781787 #71085]  INFO -- package-ubuntu-1204: Finished destroying <package-ubuntu-1204> (0m4.89s).
+I, [2013-09-12T22:57:05.782107 #71085]  INFO -- package-ubuntu-1204: -----> Testing <package-ubuntu-1204>
+I, [2013-09-12T22:57:05.782319 #71085]  INFO -- package-ubuntu-1204: -----> Creating <package-ubuntu-1204>
+I, [2013-09-12T22:57:05.784662 #71085]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant up --no-provision)
+I, [2013-09-12T22:57:07.785209 #71085]  INFO -- package-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2013-09-12T22:57:08.019452 #71085]  INFO -- package-ubuntu-1204: [default] Importing base box 'precise64'...
+Progress: 40%Progress: 50%Progress: 60%Progress: 70%Progress: 80%Progress: 90%I, [2013-09-12T22:57:14.965471 #71085]  INFO -- package-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2013-09-12T22:57:15.638660 #71085]  INFO -- package-ubuntu-1204: [default] Setting the name of the VM...
+I, [2013-09-12T22:57:15.690656 #71085]  INFO -- package-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2013-09-12T22:57:15.961034 #71085]  INFO -- package-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2013-09-12T22:57:16.752372 #71085]  INFO -- package-ubuntu-1204: [default] Creating shared folders metadata...
+I, [2013-09-12T22:57:16.752585 #71085]  INFO -- package-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2013-09-12T22:57:16.802852 #71085]  INFO -- package-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2013-09-12T22:57:16.858650 #71085]  INFO -- package-ubuntu-1204: [default] Forwarding ports...
+I, [2013-09-12T22:57:16.964352 #71085]  INFO -- package-ubuntu-1204: [default] -- 22 => 2222 (adapter 1)
+I, [2013-09-12T22:57:17.138320 #71085]  INFO -- package-ubuntu-1204: [default] Running any VM customizations...
+I, [2013-09-12T22:57:17.228757 #71085]  INFO -- package-ubuntu-1204: [default] Booting VM...
+I, [2013-09-12T22:57:17.551894 #71085]  INFO -- package-ubuntu-1204: [default] Waiting for VM to boot. This can take a few minutes.
+I, [2013-09-12T22:57:37.881324 #71085]  INFO -- package-ubuntu-1204: [default] VM booted and ready for use!
+I, [2013-09-12T22:57:38.707292 #71085]  INFO -- package-ubuntu-1204: [default] Setting hostname...
+I, [2013-09-12T22:57:39.068491 #71085]  INFO -- package-ubuntu-1204: [default] Configuring and enabling network interfaces...
+I, [2013-09-12T22:57:39.217902 #71085]  INFO -- package-ubuntu-1204: [default] Mounting shared folders...
+I, [2013-09-12T22:57:39.301234 #71085]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m30.58s)
+I, [2013-09-12T22:57:39.301740 #71085]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant ssh-config)
+I, [2013-09-12T22:57:41.514471 #71085]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m2.02s)
+I, [2013-09-12T22:57:41.514810 #71085]  INFO -- package-ubuntu-1204: Vagrant instance <package-ubuntu-1204> created.
+I, [2013-09-12T22:57:41.516073 #71085]  INFO -- package-ubuntu-1204: Finished creating <package-ubuntu-1204> (0m35.73s).
+I, [2013-09-12T22:57:41.516207 #71085]  INFO -- package-ubuntu-1204: -----> Converging <package-ubuntu-1204>
+I, [2013-09-12T22:57:41.612504 #71085]  INFO -- package-ubuntu-1204: -----> Installing Chef Omnibus (true)
+I, [2013-09-12T22:57:41.620988 #71085]  INFO -- package-ubuntu-1204: --2013-09-12 20:57:40--  https://www.opscode.com/chef/install.sh
+Resolving www.opscode.com (www.opscode.com)... I, [2013-09-12T22:57:42.178150 #71085]  INFO -- package-ubuntu-1204: 184.106.28.83
+I, [2013-09-12T22:57:42.178225 #71085]  INFO -- package-ubuntu-1204: Connecting to www.opscode.com (www.opscode.com)|184.106.28.83|:443... 
+I, [2013-09-12T22:57:42.337404 #71085]  INFO -- package-ubuntu-1204: connected.
+HTTP request sent, awaiting response... I, [2013-09-12T22:57:43.002735 #71085]  INFO -- package-ubuntu-1204: 200 OK
+I, [2013-09-12T22:57:43.002821 #71085]  INFO -- package-ubuntu-1204: Length: 6790 (6.6K) [application/x-sh]
+I, [2013-09-12T22:57:43.002867 #71085]  INFO -- package-ubuntu-1204: Saving to: `STDOUT'
+I, [2013-09-12T22:57:43.003131 #71085]  INFO -- package-ubuntu-1204: 
+ 0% [                                       ] 0           --.-K/s              I, [2013-09-12T22:57:43.003664 #71085]  INFO -- package-ubuntu-1204: 100%[======================================>] 6,790       --.-K/s   in 0s      
+I, [2013-09-12T22:57:43.003739 #71085]  INFO -- package-ubuntu-1204: 
+I, [2013-09-12T22:57:43.003786 #71085]  INFO -- package-ubuntu-1204: 2013-09-12 20:57:41 (146 MB/s) - written to stdout [6790/6790]
+I, [2013-09-12T22:57:43.003828 #71085]  INFO -- package-ubuntu-1204: 
+I, [2013-09-12T22:57:43.016923 #71085]  INFO -- package-ubuntu-1204: Downloading Chef  for ubuntu...
+I, [2013-09-12T23:03:29.484234 #71085]  INFO -- package-ubuntu-1204: Installing Chef 
+I, [2013-09-12T23:03:29.536861 #71085]  INFO -- package-ubuntu-1204: Selecting previously unselected package chef.
+I, [2013-09-12T23:03:29.536948 #71085]  INFO -- package-ubuntu-1204: (Reading database ... 
+(Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%I, [2013-09-12T23:03:29.627602 #71085]  INFO -- package-ubuntu-1204: (Reading database ... 100%(Reading database ... 51095 files and directories currently installed.)
+I, [2013-09-12T23:03:29.629351 #71085]  INFO -- package-ubuntu-1204: Unpacking chef (from .../tmp.dwcWOsgr/chef__amd64.deb) ...
+I, [2013-09-12T23:03:32.586620 #71085]  INFO -- package-ubuntu-1204: Setting up chef (11.6.0-1.ubuntu.12.04) ...
+I, [2013-09-12T23:03:32.609612 #71085]  INFO -- package-ubuntu-1204: Thank you for installing Chef!
+I, [2013-09-12T23:03:32.647764 #71085]  INFO -- package-ubuntu-1204: Resolving cookbook dependencies with Berkshelf
+F, [2013-09-12T23:03:32.650110 #71085] FATAL -- package-ubuntu-1204: The `berkself' gem is missing and must be installed. Run `gem install berkshelf` or add the following to your Gemfile if you are using Bundler: `gem 'berkshelf'`.
+E, [2013-09-12T23:03:32.650636 #71085] ERROR -- package-ubuntu-1204: Converge failed on instance <package-ubuntu-1204>.
+E, [2013-09-12T23:03:32.650723 #71085] ERROR -- package-ubuntu-1204: ------Exception-------
+E, [2013-09-12T23:03:32.650754 #71085] ERROR -- package-ubuntu-1204: Class: Kitchen::UserError
+E, [2013-09-12T23:03:32.650779 #71085] ERROR -- package-ubuntu-1204: Message: Could not load Berkshelf
+E, [2013-09-12T23:03:32.650803 #71085] ERROR -- package-ubuntu-1204: ---Nested Exception---
+E, [2013-09-12T23:03:32.650827 #71085] ERROR -- package-ubuntu-1204: Class: Gem::LoadError
+E, [2013-09-12T23:03:32.650850 #71085] ERROR -- package-ubuntu-1204: Message: Unable to activate berkshelf-1.3.1, because thor-0.18.1 conflicts with thor (~> 0.16.0)
+E, [2013-09-12T23:03:32.650872 #71085] ERROR -- package-ubuntu-1204: ------Backtrace-------
+E, [2013-09-12T23:03:32.650894 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:258:in `rescue in resolve_with_berkshelf'
+E, [2013-09-12T23:03:32.650918 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:252:in `resolve_with_berkshelf'
+E, [2013-09-12T23:03:32.650941 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:150:in `prepare_cookbooks'
+E, [2013-09-12T23:03:32.650964 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:92:in `create_chef_sandbox'
+E, [2013-09-12T23:03:32.650987 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_solo.rb:31:in `create_sandbox'
+E, [2013-09-12T23:03:32.651010 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:44:in `block in converge'
+E, [2013-09-12T23:03:32.651032 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-09-12T23:03:32.651055 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `new'
+E, [2013-09-12T23:03:32.651078 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `converge'
+E, [2013-09-12T23:03:32.651101 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:64:in `converge'
+E, [2013-09-12T23:03:32.651125 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-09-12T23:03:32.651166 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-09-12T23:03:32.651191 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `call'
+E, [2013-09-12T23:03:32.651212 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `synchronize_or_call'
+E, [2013-09-12T23:03:32.651234 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-09-12T23:03:32.651256 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T23:03:32.651276 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:272:in `action'
+E, [2013-09-12T23:03:32.651298 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-09-12T23:03:32.651319 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:246:in `converge_action'
+E, [2013-09-12T23:03:32.651340 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-09-12T23:03:32.651361 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `each'
+E, [2013-09-12T23:03:32.651382 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-09-12T23:03:32.651403 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:124:in `verify'
+E, [2013-09-12T23:03:32.651426 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:153:in `block in test'
+E, [2013-09-12T23:03:32.651572 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T23:03:32.651595 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:149:in `test'
+E, [2013-09-12T23:03:32.651618 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-09-12T23:03:32.651649 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-09-12T23:03:32.651670 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `map'
+E, [2013-09-12T23:03:32.651692 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-09-12T23:03:32.651713 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:114:in `block in test'
+E, [2013-09-12T23:03:32.651745 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T23:03:32.651767 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-09-12T23:03:32.651789 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-09-12T23:03:32.651830 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-09-12T23:03:32.651867 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-09-12T23:03:32.651905 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-09-12T23:03:32.651935 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-09-12T23:03:32.651958 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-09-12T23:03:32.651981 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-09-12T23:03:32.652004 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-09-12T23:03:32.652026 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-09-12T23:03:32.652048 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-09-12T23:03:32.652071 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `eval'
+E, [2013-09-12T23:03:32.652093 #71085] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `<main>'
+E, [2013-09-12T23:03:32.652116 #71085] ERROR -- package-ubuntu-1204: ----------------------
+I, [2013-09-12T23:16:43.349852 #72335]  INFO -- package-ubuntu-1204: -----> Cleaning up any prior instances of <package-ubuntu-1204>
+I, [2013-09-12T23:16:43.353595 #72335]  INFO -- package-ubuntu-1204: -----> Destroying <package-ubuntu-1204>
+I, [2013-09-12T23:16:43.358836 #72335]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant destroy -f)
+I, [2013-09-12T23:16:46.472136 #72335]  INFO -- package-ubuntu-1204: [default] Forcing shutdown of VM...
+I, [2013-09-12T23:16:47.641818 #72335]  INFO -- package-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2013-09-12T23:16:48.536682 #72335]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m4.76s)
+I, [2013-09-12T23:16:48.537662 #72335]  INFO -- package-ubuntu-1204: Vagrant instance <package-ubuntu-1204> destroyed.
+I, [2013-09-12T23:16:48.540266 #72335]  INFO -- package-ubuntu-1204: Finished destroying <package-ubuntu-1204> (0m5.18s).
+I, [2013-09-12T23:16:48.541463 #72335]  INFO -- package-ubuntu-1204: -----> Testing <package-ubuntu-1204>
+I, [2013-09-12T23:16:48.541681 #72335]  INFO -- package-ubuntu-1204: -----> Creating <package-ubuntu-1204>
+I, [2013-09-12T23:16:48.542325 #72335]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant up --no-provision)
+I, [2013-09-12T23:16:50.494539 #72335]  INFO -- package-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2013-09-12T23:16:50.702535 #72335]  INFO -- package-ubuntu-1204: [default] Importing base box 'precise64'...
+Progress: 40%Progress: 50%Progress: 60%Progress: 70%Progress: 80%Progress: 90%I, [2013-09-12T23:16:57.723121 #72335]  INFO -- package-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2013-09-12T23:16:58.382715 #72335]  INFO -- package-ubuntu-1204: [default] Setting the name of the VM...
+I, [2013-09-12T23:16:58.431602 #72335]  INFO -- package-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2013-09-12T23:16:58.688615 #72335]  INFO -- package-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2013-09-12T23:16:59.444584 #72335]  INFO -- package-ubuntu-1204: [default] Creating shared folders metadata...
+I, [2013-09-12T23:16:59.444891 #72335]  INFO -- package-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2013-09-12T23:16:59.492648 #72335]  INFO -- package-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2013-09-12T23:16:59.542425 #72335]  INFO -- package-ubuntu-1204: [default] Forwarding ports...
+I, [2013-09-12T23:16:59.612309 #72335]  INFO -- package-ubuntu-1204: [default] -- 22 => 2222 (adapter 1)
+I, [2013-09-12T23:16:59.839469 #72335]  INFO -- package-ubuntu-1204: [default] Running any VM customizations...
+I, [2013-09-12T23:16:59.927651 #72335]  INFO -- package-ubuntu-1204: [default] Booting VM...
+I, [2013-09-12T23:17:00.202011 #72335]  INFO -- package-ubuntu-1204: [default] Waiting for VM to boot. This can take a few minutes.
+I, [2013-09-12T23:17:19.666837 #72335]  INFO -- package-ubuntu-1204: [default] VM booted and ready for use!
+I, [2013-09-12T23:17:20.423984 #72335]  INFO -- package-ubuntu-1204: [default] Setting hostname...
+I, [2013-09-12T23:17:20.713607 #72335]  INFO -- package-ubuntu-1204: [default] Configuring and enabling network interfaces...
+I, [2013-09-12T23:17:20.868991 #72335]  INFO -- package-ubuntu-1204: [default] Mounting shared folders...
+I, [2013-09-12T23:17:20.942621 #72335]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m29.70s)
+I, [2013-09-12T23:17:20.942954 #72335]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant ssh-config)
+I, [2013-09-12T23:17:23.294962 #72335]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m2.16s)
+I, [2013-09-12T23:17:23.295362 #72335]  INFO -- package-ubuntu-1204: Vagrant instance <package-ubuntu-1204> created.
+I, [2013-09-12T23:17:23.296779 #72335]  INFO -- package-ubuntu-1204: Finished creating <package-ubuntu-1204> (0m34.75s).
+I, [2013-09-12T23:17:23.296930 #72335]  INFO -- package-ubuntu-1204: -----> Converging <package-ubuntu-1204>
+I, [2013-09-12T23:17:23.381337 #72335]  INFO -- package-ubuntu-1204: -----> Installing Chef Omnibus (true)
+I, [2013-09-12T23:17:23.386509 #72335]  INFO -- package-ubuntu-1204: --2013-09-12 21:17:21--  https://www.opscode.com/chef/install.sh
+Resolving www.opscode.com (www.opscode.com)... I, [2013-09-12T23:17:23.834664 #72335]  INFO -- package-ubuntu-1204: 184.106.28.83
+I, [2013-09-12T23:17:23.834730 #72335]  INFO -- package-ubuntu-1204: Connecting to www.opscode.com (www.opscode.com)|184.106.28.83|:443... 
+I, [2013-09-12T23:17:23.987471 #72335]  INFO -- package-ubuntu-1204: connected.
+HTTP request sent, awaiting response... I, [2013-09-12T23:17:24.654118 #72335]  INFO -- package-ubuntu-1204: 200 OK
+I, [2013-09-12T23:17:24.654208 #72335]  INFO -- package-ubuntu-1204: Length: 6790 (6.6K) [application/x-sh]
+I, [2013-09-12T23:17:24.654256 #72335]  INFO -- package-ubuntu-1204: Saving to: `STDOUT'
+I, [2013-09-12T23:17:24.654305 #72335]  INFO -- package-ubuntu-1204: 
+I, [2013-09-12T23:17:24.654352 #72335]  INFO -- package-ubuntu-1204:  0% [                                       ] 0           --.-K/s              
+100%[======================================>] 6,790       --.-K/s   in 0s      I, [2013-09-12T23:17:24.654836 #72335]  INFO -- package-ubuntu-1204: 
+I, [2013-09-12T23:17:24.654888 #72335]  INFO -- package-ubuntu-1204: 
+I, [2013-09-12T23:17:24.655127 #72335]  INFO -- package-ubuntu-1204: 2013-09-12 21:17:23 (799 MB/s) - written to stdout [6790/6790]
+I, [2013-09-12T23:17:24.655179 #72335]  INFO -- package-ubuntu-1204: 
+I, [2013-09-12T23:17:24.669491 #72335]  INFO -- package-ubuntu-1204: Downloading Chef  for ubuntu...
+I, [2013-09-12T23:17:26.021054 #72335]  INFO -- package-ubuntu-1204: Unable to retrieve a valid package!
+I, [2013-09-12T23:17:26.021136 #72335]  INFO -- package-ubuntu-1204: Please file a bug report at http://tickets.opscode.com
+I, [2013-09-12T23:17:26.021186 #72335]  INFO -- package-ubuntu-1204: Project: Chef
+I, [2013-09-12T23:17:26.021231 #72335]  INFO -- package-ubuntu-1204: Component: Packages
+I, [2013-09-12T23:17:26.021301 #72335]  INFO -- package-ubuntu-1204: Label: Omnibus
+I, [2013-09-12T23:17:26.021334 #72335]  INFO -- package-ubuntu-1204: Version: 
+I, [2013-09-12T23:17:26.021626 #72335]  INFO -- package-ubuntu-1204:  
+I, [2013-09-12T23:17:26.021662 #72335]  INFO -- package-ubuntu-1204: Please detail your operating system type, version and any other relevant details
+I, [2013-09-12T23:17:26.021701 #72335]  INFO -- package-ubuntu-1204: URL: https://www.opscode.com/chef/download?v=&prerelease=false&p=ubuntu&pv=12.04&m=x86_64
+I, [2013-09-12T23:17:26.021949 #72335]  INFO -- package-ubuntu-1204: 
+E, [2013-09-12T23:17:26.022645 #72335] ERROR -- package-ubuntu-1204: Converge failed on instance <package-ubuntu-1204>.
+E, [2013-09-12T23:17:26.022731 #72335] ERROR -- package-ubuntu-1204: ------Exception-------
+E, [2013-09-12T23:17:26.022772 #72335] ERROR -- package-ubuntu-1204: Class: Kitchen::ActionFailed
+E, [2013-09-12T23:17:26.022802 #72335] ERROR -- package-ubuntu-1204: Message: SSH exited (1) for command: [bash -c '
+should_update_chef() {
+  case "true" in
+    true|$(chef-solo -v | cut -d " " -f 2)) return 1 ;;
+    latest|*) return 0 ;;
+  esac
+}
+
+if [ ! -d "/opt/chef" ] || should_update_chef ; then
+  PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+  export PATH
+  echo "-----> Installing Chef Omnibus (true)"
+  if command -v wget >/dev/null ; then
+    wget https://www.opscode.com/chef/install.sh -O - | sudo -E bash 
+  elif command -v curl >/dev/null ; then
+    curl -sSL https://www.opscode.com/chef/install.sh | sudo -E bash 
+  else
+    echo ">>>>>> Neither wget nor curl found on this instance."
+    exit 16
+  fi
+fi'
+]
+E, [2013-09-12T23:17:26.022833 #72335] ERROR -- package-ubuntu-1204: ---Nested Exception---
+E, [2013-09-12T23:17:26.022855 #72335] ERROR -- package-ubuntu-1204: Class: Kitchen::SSHFailed
+E, [2013-09-12T23:17:26.022878 #72335] ERROR -- package-ubuntu-1204: Message: SSH exited (1) for command: [bash -c '
+should_update_chef() {
+  case "true" in
+    true|$(chef-solo -v | cut -d " " -f 2)) return 1 ;;
+    latest|*) return 0 ;;
+  esac
+}
+
+if [ ! -d "/opt/chef" ] || should_update_chef ; then
+  PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+  export PATH
+  echo "-----> Installing Chef Omnibus (true)"
+  if command -v wget >/dev/null ; then
+    wget https://www.opscode.com/chef/install.sh -O - | sudo -E bash 
+  elif command -v curl >/dev/null ; then
+    curl -sSL https://www.opscode.com/chef/install.sh | sudo -E bash 
+  else
+    echo ">>>>>> Neither wget nor curl found on this instance."
+    exit 16
+  fi
+fi'
+]
+E, [2013-09-12T23:17:26.022901 #72335] ERROR -- package-ubuntu-1204: ------Backtrace-------
+E, [2013-09-12T23:17:26.022923 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:114:in `rescue in run_remote'
+E, [2013-09-12T23:17:26.022946 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:110:in `run_remote'
+E, [2013-09-12T23:17:26.022969 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:42:in `block in converge'
+E, [2013-09-12T23:17:26.022992 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-09-12T23:17:26.023015 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `new'
+E, [2013-09-12T23:17:26.023038 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `converge'
+E, [2013-09-12T23:17:26.023061 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:64:in `converge'
+E, [2013-09-12T23:17:26.023085 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-09-12T23:17:26.023125 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-09-12T23:17:26.023150 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `call'
+E, [2013-09-12T23:17:26.023177 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `synchronize_or_call'
+E, [2013-09-12T23:17:26.023231 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-09-12T23:17:26.023260 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T23:17:26.023283 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:272:in `action'
+E, [2013-09-12T23:17:26.023307 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-09-12T23:17:26.023330 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:246:in `converge_action'
+E, [2013-09-12T23:17:26.023352 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-09-12T23:17:26.023376 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `each'
+E, [2013-09-12T23:17:26.023399 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-09-12T23:17:26.023421 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:124:in `verify'
+E, [2013-09-12T23:17:26.023444 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:153:in `block in test'
+E, [2013-09-12T23:17:26.023467 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T23:17:26.023490 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:149:in `test'
+E, [2013-09-12T23:17:26.023513 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-09-12T23:17:26.023536 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-09-12T23:17:26.023559 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `map'
+E, [2013-09-12T23:17:26.023581 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-09-12T23:17:26.023604 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:114:in `block in test'
+E, [2013-09-12T23:17:26.023627 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T23:17:26.023650 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-09-12T23:17:26.023673 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-09-12T23:17:26.023703 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-09-12T23:17:26.023728 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-09-12T23:17:26.023755 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-09-12T23:17:26.023783 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-09-12T23:17:26.023806 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-09-12T23:17:26.023828 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-09-12T23:17:26.023860 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-09-12T23:17:26.023882 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-09-12T23:17:26.023903 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-09-12T23:17:26.023924 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `eval'
+E, [2013-09-12T23:17:26.023946 #72335] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `<main>'
+E, [2013-09-12T23:17:26.023966 #72335] ERROR -- package-ubuntu-1204: ----------------------
+I, [2013-09-12T23:33:10.640213 #72871]  INFO -- package-ubuntu-1204: -----> Cleaning up any prior instances of <package-ubuntu-1204>
+I, [2013-09-12T23:33:10.642888 #72871]  INFO -- package-ubuntu-1204: -----> Destroying <package-ubuntu-1204>
+I, [2013-09-12T23:33:10.645073 #72871]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant destroy -f)
+I, [2013-09-12T23:33:13.403154 #72871]  INFO -- package-ubuntu-1204: [default] Forcing shutdown of VM...
+I, [2013-09-12T23:33:14.636420 #72871]  INFO -- package-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2013-09-12T23:33:15.510679 #72871]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m4.46s)
+I, [2013-09-12T23:33:15.511962 #72871]  INFO -- package-ubuntu-1204: Vagrant instance <package-ubuntu-1204> destroyed.
+I, [2013-09-12T23:33:15.513445 #72871]  INFO -- package-ubuntu-1204: Finished destroying <package-ubuntu-1204> (0m4.87s).
+I, [2013-09-12T23:33:15.515011 #72871]  INFO -- package-ubuntu-1204: -----> Testing <package-ubuntu-1204>
+I, [2013-09-12T23:33:15.515246 #72871]  INFO -- package-ubuntu-1204: -----> Creating <package-ubuntu-1204>
+I, [2013-09-12T23:33:15.515722 #72871]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant up --no-provision)
+I, [2013-09-12T23:33:17.286453 #72871]  INFO -- package-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2013-09-12T23:33:17.493397 #72871]  INFO -- package-ubuntu-1204: [default] Importing base box 'precise64'...
+Progress: 40%Progress: 50%Progress: 60%Progress: 70%Progress: 80%Progress: 90%I, [2013-09-12T23:33:24.427803 #72871]  INFO -- package-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2013-09-12T23:33:25.056638 #72871]  INFO -- package-ubuntu-1204: [default] Setting the name of the VM...
+I, [2013-09-12T23:33:25.102444 #72871]  INFO -- package-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2013-09-12T23:33:25.358460 #72871]  INFO -- package-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2013-09-12T23:33:26.085774 #72871]  INFO -- package-ubuntu-1204: [default] Creating shared folders metadata...
+I, [2013-09-12T23:33:26.085959 #72871]  INFO -- package-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2013-09-12T23:33:26.132034 #72871]  INFO -- package-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2013-09-12T23:33:26.183386 #72871]  INFO -- package-ubuntu-1204: [default] Forwarding ports...
+I, [2013-09-12T23:33:26.252936 #72871]  INFO -- package-ubuntu-1204: [default] -- 22 => 2222 (adapter 1)
+I, [2013-09-12T23:33:26.461455 #72871]  INFO -- package-ubuntu-1204: [default] Running any VM customizations...
+I, [2013-09-12T23:33:26.547297 #72871]  INFO -- package-ubuntu-1204: [default] Booting VM...
+I, [2013-09-12T23:33:26.851160 #72871]  INFO -- package-ubuntu-1204: [default] Waiting for VM to boot. This can take a few minutes.
+I, [2013-09-12T23:33:46.667503 #72871]  INFO -- package-ubuntu-1204: [default] VM booted and ready for use!
+I, [2013-09-12T23:33:47.390649 #72871]  INFO -- package-ubuntu-1204: [default] Setting hostname...
+I, [2013-09-12T23:33:47.676192 #72871]  INFO -- package-ubuntu-1204: [default] Configuring and enabling network interfaces...
+I, [2013-09-12T23:33:47.831770 #72871]  INFO -- package-ubuntu-1204: [default] Mounting shared folders...
+I, [2013-09-12T23:33:47.907704 #72871]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m29.54s)
+I, [2013-09-12T23:33:47.907890 #72871]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant ssh-config)
+I, [2013-09-12T23:33:49.976384 #72871]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m1.89s)
+I, [2013-09-12T23:33:49.976987 #72871]  INFO -- package-ubuntu-1204: Vagrant instance <package-ubuntu-1204> created.
+I, [2013-09-12T23:33:49.978476 #72871]  INFO -- package-ubuntu-1204: Finished creating <package-ubuntu-1204> (0m34.46s).
+I, [2013-09-12T23:33:49.978680 #72871]  INFO -- package-ubuntu-1204: -----> Converging <package-ubuntu-1204>
+I, [2013-09-12T23:33:50.065944 #72871]  INFO -- package-ubuntu-1204: -----> Installing Chef Omnibus (true)
+I, [2013-09-12T23:33:50.075827 #72871]  INFO -- package-ubuntu-1204: --2013-09-12 21:33:48--  https://www.opscode.com/chef/install.sh
+Resolving www.opscode.com (www.opscode.com)... I, [2013-09-12T23:33:50.594607 #72871]  INFO -- package-ubuntu-1204: 184.106.28.83
+I, [2013-09-12T23:33:50.594709 #72871]  INFO -- package-ubuntu-1204: Connecting to www.opscode.com (www.opscode.com)|184.106.28.83|:443... 
+I, [2013-09-12T23:33:50.757239 #72871]  INFO -- package-ubuntu-1204: connected.
+HTTP request sent, awaiting response... I, [2013-09-12T23:33:51.418164 #72871]  INFO -- package-ubuntu-1204: 200 OK
+I, [2013-09-12T23:33:51.418276 #72871]  INFO -- package-ubuntu-1204: Length: 6790 (6.6K) [application/x-sh]
+I, [2013-09-12T23:33:51.418323 #72871]  INFO -- package-ubuntu-1204: Saving to: `STDOUT'
+I, [2013-09-12T23:33:51.418366 #72871]  INFO -- package-ubuntu-1204: 
+I, [2013-09-12T23:33:51.418412 #72871]  INFO -- package-ubuntu-1204:  0% [                                       ] 0           --.-K/s              
+I, [2013-09-12T23:33:51.418809 #72871]  INFO -- package-ubuntu-1204: 100%[======================================>] 6,790       --.-K/s   in 0s      
+I, [2013-09-12T23:33:51.418866 #72871]  INFO -- package-ubuntu-1204: 
+I, [2013-09-12T23:33:51.419104 #72871]  INFO -- package-ubuntu-1204: 2013-09-12 21:33:49 (799 MB/s) - written to stdout [6790/6790]
+I, [2013-09-12T23:33:51.419159 #72871]  INFO -- package-ubuntu-1204: 
+I, [2013-09-12T23:33:51.431382 #72871]  INFO -- package-ubuntu-1204: Downloading Chef  for ubuntu...
+I, [2013-09-12T23:37:35.857524 #72871]  INFO -- package-ubuntu-1204: Installing Chef 
+I, [2013-09-12T23:37:35.908170 #72871]  INFO -- package-ubuntu-1204: Selecting previously unselected package chef.
+I, [2013-09-12T23:37:35.908232 #72871]  INFO -- package-ubuntu-1204: (Reading database ... 
+(Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%I, [2013-09-12T23:37:35.993752 #72871]  INFO -- package-ubuntu-1204: (Reading database ... 100%(Reading database ... 51095 files and directories currently installed.)
+I, [2013-09-12T23:37:35.995759 #72871]  INFO -- package-ubuntu-1204: Unpacking chef (from .../tmp.FH0ehczr/chef__amd64.deb) ...
+I, [2013-09-12T23:37:38.934708 #72871]  INFO -- package-ubuntu-1204: Setting up chef (11.6.0-1.ubuntu.12.04) ...
+I, [2013-09-12T23:37:38.958129 #72871]  INFO -- package-ubuntu-1204: Thank you for installing Chef!
+I, [2013-09-12T23:37:38.994061 #72871]  INFO -- package-ubuntu-1204: Resolving cookbook dependencies with Berkshelf
+F, [2013-09-12T23:37:38.996097 #72871] FATAL -- package-ubuntu-1204: The `berkself' gem is missing and must be installed. Run `gem install berkshelf` or add the following to your Gemfile if you are using Bundler: `gem 'berkshelf'`.
+E, [2013-09-12T23:37:38.996640 #72871] ERROR -- package-ubuntu-1204: Converge failed on instance <package-ubuntu-1204>.
+E, [2013-09-12T23:37:38.996705 #72871] ERROR -- package-ubuntu-1204: ------Exception-------
+E, [2013-09-12T23:37:38.996733 #72871] ERROR -- package-ubuntu-1204: Class: Kitchen::UserError
+E, [2013-09-12T23:37:38.996756 #72871] ERROR -- package-ubuntu-1204: Message: Could not load Berkshelf
+E, [2013-09-12T23:37:38.996778 #72871] ERROR -- package-ubuntu-1204: ---Nested Exception---
+E, [2013-09-12T23:37:38.996800 #72871] ERROR -- package-ubuntu-1204: Class: Gem::LoadError
+E, [2013-09-12T23:37:38.996822 #72871] ERROR -- package-ubuntu-1204: Message: Unable to activate berkshelf-1.3.1, because thor-0.18.1 conflicts with thor (~> 0.16.0)
+E, [2013-09-12T23:37:38.996844 #72871] ERROR -- package-ubuntu-1204: ------Backtrace-------
+E, [2013-09-12T23:37:38.996865 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:258:in `rescue in resolve_with_berkshelf'
+E, [2013-09-12T23:37:38.996888 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:252:in `resolve_with_berkshelf'
+E, [2013-09-12T23:37:38.996911 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:150:in `prepare_cookbooks'
+E, [2013-09-12T23:37:38.996933 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:92:in `create_chef_sandbox'
+E, [2013-09-12T23:37:38.996955 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_solo.rb:31:in `create_sandbox'
+E, [2013-09-12T23:37:38.996976 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:44:in `block in converge'
+E, [2013-09-12T23:37:38.996998 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-09-12T23:37:38.997019 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `new'
+E, [2013-09-12T23:37:38.997041 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `converge'
+E, [2013-09-12T23:37:38.997062 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:64:in `converge'
+E, [2013-09-12T23:37:38.997093 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-09-12T23:37:38.997117 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-09-12T23:37:38.997138 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `call'
+E, [2013-09-12T23:37:38.997160 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `synchronize_or_call'
+E, [2013-09-12T23:37:38.997181 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-09-12T23:37:38.997203 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T23:37:38.997224 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:272:in `action'
+E, [2013-09-12T23:37:38.997246 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-09-12T23:37:38.997267 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:246:in `converge_action'
+E, [2013-09-12T23:37:38.997289 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-09-12T23:37:38.997310 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `each'
+E, [2013-09-12T23:37:38.997331 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-09-12T23:37:38.997352 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:124:in `verify'
+E, [2013-09-12T23:37:38.997374 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:153:in `block in test'
+E, [2013-09-12T23:37:38.997395 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T23:37:38.997417 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:149:in `test'
+E, [2013-09-12T23:37:38.997438 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-09-12T23:37:38.997460 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-09-12T23:37:38.997482 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `map'
+E, [2013-09-12T23:37:38.997503 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-09-12T23:37:38.997524 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:114:in `block in test'
+E, [2013-09-12T23:37:38.997546 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T23:37:38.997567 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-09-12T23:37:38.997594 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-09-12T23:37:38.997617 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-09-12T23:37:38.997639 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-09-12T23:37:38.997660 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-09-12T23:37:38.997682 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-09-12T23:37:38.997704 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-09-12T23:37:38.997725 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-09-12T23:37:38.997747 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-09-12T23:37:38.997768 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-09-12T23:37:38.997790 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-09-12T23:37:38.997811 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `eval'
+E, [2013-09-12T23:37:38.997832 #72871] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `<main>'
+E, [2013-09-12T23:37:38.997854 #72871] ERROR -- package-ubuntu-1204: ----------------------
+I, [2013-09-12T23:43:12.970618 #73690]  INFO -- package-ubuntu-1204: -----> Cleaning up any prior instances of <package-ubuntu-1204>
+I, [2013-09-12T23:43:12.972317 #73690]  INFO -- package-ubuntu-1204: -----> Destroying <package-ubuntu-1204>
+I, [2013-09-12T23:43:12.973875 #73690]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant destroy -f)
+I, [2013-09-12T23:43:15.894393 #73690]  INFO -- package-ubuntu-1204: [default] Forcing shutdown of VM...
+I, [2013-09-12T23:43:17.101220 #73690]  INFO -- package-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2013-09-12T23:43:18.127966 #73690]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m4.66s)
+I, [2013-09-12T23:43:18.129080 #73690]  INFO -- package-ubuntu-1204: Vagrant instance <package-ubuntu-1204> destroyed.
+I, [2013-09-12T23:43:18.130823 #73690]  INFO -- package-ubuntu-1204: Finished destroying <package-ubuntu-1204> (0m5.16s).
+I, [2013-09-12T23:43:18.132039 #73690]  INFO -- package-ubuntu-1204: -----> Testing <package-ubuntu-1204>
+I, [2013-09-12T23:43:18.132267 #73690]  INFO -- package-ubuntu-1204: -----> Creating <package-ubuntu-1204>
+I, [2013-09-12T23:43:18.132890 #73690]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant up --no-provision)
+I, [2013-09-12T23:43:20.089739 #73690]  INFO -- package-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2013-09-12T23:43:20.303951 #73690]  INFO -- package-ubuntu-1204: [default] Importing base box 'precise64'...
+Progress: 40%Progress: 50%Progress: 60%Progress: 70%Progress: 80%Progress: 90%I, [2013-09-12T23:43:27.212668 #73690]  INFO -- package-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2013-09-12T23:43:27.881251 #73690]  INFO -- package-ubuntu-1204: [default] Setting the name of the VM...
+I, [2013-09-12T23:43:27.941516 #73690]  INFO -- package-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2013-09-12T23:43:28.205402 #73690]  INFO -- package-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2013-09-12T23:43:28.936518 #73690]  INFO -- package-ubuntu-1204: [default] Creating shared folders metadata...
+I, [2013-09-12T23:43:28.936866 #73690]  INFO -- package-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2013-09-12T23:43:28.980432 #73690]  INFO -- package-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2013-09-12T23:43:29.028749 #73690]  INFO -- package-ubuntu-1204: [default] Forwarding ports...
+I, [2013-09-12T23:43:29.099386 #73690]  INFO -- package-ubuntu-1204: [default] -- 22 => 2222 (adapter 1)
+I, [2013-09-12T23:43:29.309900 #73690]  INFO -- package-ubuntu-1204: [default] Running any VM customizations...
+I, [2013-09-12T23:43:29.401955 #73690]  INFO -- package-ubuntu-1204: [default] Booting VM...
+I, [2013-09-12T23:43:29.638042 #73690]  INFO -- package-ubuntu-1204: [default] Waiting for VM to boot. This can take a few minutes.
+I, [2013-09-12T23:43:49.736518 #73690]  INFO -- package-ubuntu-1204: [default] VM booted and ready for use!
+I, [2013-09-12T23:43:50.657999 #73690]  INFO -- package-ubuntu-1204: [default] Setting hostname...
+I, [2013-09-12T23:43:50.966249 #73690]  INFO -- package-ubuntu-1204: [default] Configuring and enabling network interfaces...
+I, [2013-09-12T23:43:51.147232 #73690]  INFO -- package-ubuntu-1204: [default] Mounting shared folders...
+I, [2013-09-12T23:43:51.242581 #73690]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m30.16s)
+I, [2013-09-12T23:43:51.242802 #73690]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] BEGIN (vagrant ssh-config)
+I, [2013-09-12T23:43:53.372699 #73690]  INFO -- package-ubuntu-1204: [kitchen::driver::vagrant command] END (0m1.93s)
+I, [2013-09-12T23:43:53.373228 #73690]  INFO -- package-ubuntu-1204: Vagrant instance <package-ubuntu-1204> created.
+I, [2013-09-12T23:43:53.374675 #73690]  INFO -- package-ubuntu-1204: Finished creating <package-ubuntu-1204> (0m35.24s).
+I, [2013-09-12T23:43:53.374815 #73690]  INFO -- package-ubuntu-1204: -----> Converging <package-ubuntu-1204>
+I, [2013-09-12T23:43:53.561659 #73690]  INFO -- package-ubuntu-1204: -----> Installing Chef Omnibus (true)
+I, [2013-09-12T23:43:53.573091 #73690]  INFO -- package-ubuntu-1204: --2013-09-12 21:43:53--  https://www.opscode.com/chef/install.sh
+Resolving www.opscode.com (www.opscode.com)... I, [2013-09-12T23:43:53.638321 #73690]  INFO -- package-ubuntu-1204: 184.106.28.83
+I, [2013-09-12T23:43:53.638413 #73690]  INFO -- package-ubuntu-1204: Connecting to www.opscode.com (www.opscode.com)|184.106.28.83|:443... 
+I, [2013-09-12T23:43:53.791313 #73690]  INFO -- package-ubuntu-1204: connected.
+HTTP request sent, awaiting response... I, [2013-09-12T23:43:54.431202 #73690]  INFO -- package-ubuntu-1204: 200 OK
+I, [2013-09-12T23:43:54.431298 #73690]  INFO -- package-ubuntu-1204: Length: 6790 (6.6K) [application/x-sh]
+I, [2013-09-12T23:43:54.431347 #73690]  INFO -- package-ubuntu-1204: Saving to: `STDOUT'
+I, [2013-09-12T23:43:54.431391 #73690]  INFO -- package-ubuntu-1204: 
+I, [2013-09-12T23:43:54.431435 #73690]  INFO -- package-ubuntu-1204:  0% [                                       ] 0           --.-K/s              
+I, [2013-09-12T23:43:54.431742 #73690]  INFO -- package-ubuntu-1204: 100%[======================================>] 6,790       --.-K/s   in 0s      
+I, [2013-09-12T23:43:54.431782 #73690]  INFO -- package-ubuntu-1204: 
+I, [2013-09-12T23:43:54.431985 #73690]  INFO -- package-ubuntu-1204: 2013-09-12 21:43:54 (682 MB/s) - written to stdout [6790/6790]
+I, [2013-09-12T23:43:54.432033 #73690]  INFO -- package-ubuntu-1204: 
+I, [2013-09-12T23:43:54.446566 #73690]  INFO -- package-ubuntu-1204: Downloading Chef  for ubuntu...
+I, [2013-09-12T23:45:50.533825 #73690]  INFO -- package-ubuntu-1204: Installing Chef 
+I, [2013-09-12T23:45:50.587602 #73690]  INFO -- package-ubuntu-1204: Selecting previously unselected package chef.
+I, [2013-09-12T23:45:50.587686 #73690]  INFO -- package-ubuntu-1204: (Reading database ... 
+(Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%I, [2013-09-12T23:45:50.681497 #73690]  INFO -- package-ubuntu-1204: (Reading database ... 100%(Reading database ... 51095 files and directories currently installed.)
+I, [2013-09-12T23:45:50.683431 #73690]  INFO -- package-ubuntu-1204: Unpacking chef (from .../tmp.PzqnjUpe/chef__amd64.deb) ...
+I, [2013-09-12T23:45:53.614317 #73690]  INFO -- package-ubuntu-1204: Setting up chef (11.6.0-1.ubuntu.12.04) ...
+I, [2013-09-12T23:45:53.638230 #73690]  INFO -- package-ubuntu-1204: Thank you for installing Chef!
+I, [2013-09-12T23:45:53.676184 #73690]  INFO -- package-ubuntu-1204: Resolving cookbook dependencies with Berkshelf
+F, [2013-09-12T23:45:53.680315 #73690] FATAL -- package-ubuntu-1204: The `berkself' gem is missing and must be installed. Run `gem install berkshelf` or add the following to your Gemfile if you are using Bundler: `gem 'berkshelf'`.
+E, [2013-09-12T23:45:53.680940 #73690] ERROR -- package-ubuntu-1204: Converge failed on instance <package-ubuntu-1204>.
+E, [2013-09-12T23:45:53.681011 #73690] ERROR -- package-ubuntu-1204: ------Exception-------
+E, [2013-09-12T23:45:53.681039 #73690] ERROR -- package-ubuntu-1204: Class: Kitchen::UserError
+E, [2013-09-12T23:45:53.681079 #73690] ERROR -- package-ubuntu-1204: Message: Could not load Berkshelf
+E, [2013-09-12T23:45:53.681116 #73690] ERROR -- package-ubuntu-1204: ---Nested Exception---
+E, [2013-09-12T23:45:53.681162 #73690] ERROR -- package-ubuntu-1204: Class: Gem::LoadError
+E, [2013-09-12T23:45:53.681199 #73690] ERROR -- package-ubuntu-1204: Message: Unable to activate berkshelf-1.3.1, because thor-0.18.1 conflicts with thor (~> 0.16.0)
+E, [2013-09-12T23:45:53.681245 #73690] ERROR -- package-ubuntu-1204: ------Backtrace-------
+E, [2013-09-12T23:45:53.681285 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:258:in `rescue in resolve_with_berkshelf'
+E, [2013-09-12T23:45:53.681323 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:252:in `resolve_with_berkshelf'
+E, [2013-09-12T23:45:53.681368 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:150:in `prepare_cookbooks'
+E, [2013-09-12T23:45:53.681399 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:92:in `create_chef_sandbox'
+E, [2013-09-12T23:45:53.681422 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_solo.rb:31:in `create_sandbox'
+E, [2013-09-12T23:45:53.681445 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:44:in `block in converge'
+E, [2013-09-12T23:45:53.681468 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-09-12T23:45:53.681491 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `new'
+E, [2013-09-12T23:45:53.681514 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `converge'
+E, [2013-09-12T23:45:53.681537 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:64:in `converge'
+E, [2013-09-12T23:45:53.681570 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-09-12T23:45:53.681610 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-09-12T23:45:53.681649 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `call'
+E, [2013-09-12T23:45:53.681687 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `synchronize_or_call'
+E, [2013-09-12T23:45:53.681712 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-09-12T23:45:53.681735 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T23:45:53.681757 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:272:in `action'
+E, [2013-09-12T23:45:53.681780 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-09-12T23:45:53.681802 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:246:in `converge_action'
+E, [2013-09-12T23:45:53.681825 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-09-12T23:45:53.681848 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `each'
+E, [2013-09-12T23:45:53.681878 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-09-12T23:45:53.681901 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:124:in `verify'
+E, [2013-09-12T23:45:53.681924 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:153:in `block in test'
+E, [2013-09-12T23:45:53.681951 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T23:45:53.681975 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:149:in `test'
+E, [2013-09-12T23:45:53.681997 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-09-12T23:45:53.682028 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-09-12T23:45:53.682054 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `map'
+E, [2013-09-12T23:45:53.682083 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-09-12T23:45:53.682105 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:114:in `block in test'
+E, [2013-09-12T23:45:53.682133 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-09-12T23:45:53.682171 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-09-12T23:45:53.682199 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-09-12T23:45:53.682240 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-09-12T23:45:53.682265 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-09-12T23:45:53.682288 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-09-12T23:45:53.682316 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-09-12T23:45:53.682354 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-09-12T23:45:53.682382 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-09-12T23:45:53.682411 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-09-12T23:45:53.682434 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-09-12T23:45:53.682461 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-09-12T23:45:53.682484 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `eval'
+E, [2013-09-12T23:45:53.682512 #73690] ERROR -- package-ubuntu-1204: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `<main>'
+E, [2013-09-12T23:45:53.682541 #73690] ERROR -- package-ubuntu-1204: ----------------------
