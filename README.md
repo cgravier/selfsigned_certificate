@@ -10,12 +10,12 @@ No requirement. Openssl package will be installed along the default recipe.
 
 You can generate the self-signed certificate once, using : 
 <code>
-if !(File.exist? milkcert['destination'])
-	log "No self-signed certificate found (targeted destination, you can override this by editing milkdata cert databag: #{milkcert['destination']}"
+if !(File.exist? node['selfsigned_certificate']['destination'])
+	log "No self-signed certificate found (targeted destination: #{node['selfsigned_certificate']['destination']}"
 	include_recipe "selfsigned_certificate::default" 
-	log "created th server self-signed certificate to #{milkcert['destination']}"
+	log "created th server self-signed certificate to #{node['selfsigned_certificate']['destination']}"
 else 
-	log "Certificate already exists in #{milkcert['destination']}, no overriding."
+	log "Certificate already exists in #{node['selfsigned_certificate']['destination']}, no overriding."
 end
 </code>
 
