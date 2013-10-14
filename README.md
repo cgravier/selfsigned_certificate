@@ -8,6 +8,19 @@ No requirement. Openssl package will be installed along the default recipe.
 
 # Usage
 
+You can generate the self-signed certificate once, using : 
+<code>
+if !(File.exist? milkcert['destination'])
+	log "No self-signed certificate found (targeted destination, you can override this by editing milkdata cert databag: #{milkcert['destination']}"
+	include_recipe "selfsigned_certificate::default" 
+	log "created th server self-signed certificate to #{milkcert['destination']}"
+else 
+	log "Certificate already exists in #{milkcert['destination']}, no overriding."
+end
+</code>
+
+(because include_recipe is a ruby instruction !)
+
 ## Testing 
 
 You can test the cookbook using the provided <code>Vagrantfile</code>. Make sure you edit sample attribute provided in the Vagrantfile to match your test needs.
