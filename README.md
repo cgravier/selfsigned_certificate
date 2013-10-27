@@ -25,7 +25,7 @@ end
 
 You can test the cookbook using the provided <code>Vagrantfile</code>. Make sure you edit sample attribute provided in the Vagrantfile to match your test needs.
 
-Unit tests are provided by the mean of code>kitchen-test</code>. You can run the test (for now only one teesting certificate creation) by running :
+Unit tests are provided by the mean of <code>kitchen-test</code>. You can run the test (for now only one teesting certificate creation) by running :
     kitchen test
 
 
@@ -54,10 +54,6 @@ Beware: vagrant 1.2.x aka Vagrant 2 is mandatory.
 # Recipes
 
 Default recipe in current version.
-
-# Todo
-
-* Unit tests
 
 # Author
 
