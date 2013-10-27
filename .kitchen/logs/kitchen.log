@@ -1,0 +1,1149 @@
+I, [2013-10-24T23:20:23.639015 #17955]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+E, [2013-10-24T23:20:23.640988 #17955] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-24T23:20:23.641035 #17955] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-24T23:20:23.641064 #17955] ERROR -- Kitchen: Message: Error parsing /Users/cgravier/Coding/cooking/selfsigned_certificate/.kitchen.yml
+E, [2013-10-24T23:20:23.641090 #17955] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-24T23:20:23.641121 #17955] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2013-10-24T23:20:23.641157 #17955] ERROR -- Kitchen: Message: (<unknown>): did not find expected '-' indicator while parsing a block collection at line 7 column 3
+E, [2013-10-24T23:20:23.641181 #17955] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-24T23:20:23.641215 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:114:in `rescue in parse_yaml_string'
+E, [2013-10-24T23:20:23.641243 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:110:in `parse_yaml_string'
+E, [2013-10-24T23:20:23.641269 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:80:in `yaml'
+E, [2013-10-24T23:20:23.641292 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:72:in `combined_hash'
+E, [2013-10-24T23:20:23.641315 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:62:in `read'
+E, [2013-10-24T23:20:23.641347 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:219:in `data'
+E, [2013-10-24T23:20:23.641369 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:70:in `suites'
+E, [2013-10-24T23:20:23.641395 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:119:in `build_instances'
+E, [2013-10-24T23:20:23.641418 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:76:in `instances'
+E, [2013-10-24T23:20:23.641448 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:312:in `get_filtered_instances'
+E, [2013-10-24T23:20:23.641478 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:291:in `parse_subcommand'
+E, [2013-10-24T23:20:23.641501 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:109:in `block in test'
+E, [2013-10-24T23:20:23.641526 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-24T23:20:23.641557 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-10-24T23:20:23.641580 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-24T23:20:23.641614 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-24T23:20:23.641637 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-24T23:20:23.641672 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-24T23:20:23.641711 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-24T23:20:23.641734 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-24T23:20:23.641766 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-24T23:20:23.641800 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-24T23:20:23.641822 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-24T23:20:23.641845 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-24T23:20:23.641872 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-24T23:20:23.641900 #17955] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-24T23:20:23.641931 #17955] ERROR -- Kitchen: ----------------------
+I, [2013-10-24T23:21:37.970336 #17990]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+E, [2013-10-24T23:21:37.972394 #17990] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-24T23:21:37.972465 #17990] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-24T23:21:37.972512 #17990] ERROR -- Kitchen: Message: Error parsing /Users/cgravier/Coding/cooking/selfsigned_certificate/.kitchen.yml
+E, [2013-10-24T23:21:37.972568 #17990] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-24T23:21:37.972611 #17990] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2013-10-24T23:21:37.972646 #17990] ERROR -- Kitchen: Message: (<unknown>): did not find expected '-' indicator while parsing a block collection at line 7 column 2
+E, [2013-10-24T23:21:37.972674 #17990] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-24T23:21:37.972706 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:114:in `rescue in parse_yaml_string'
+E, [2013-10-24T23:21:37.972734 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:110:in `parse_yaml_string'
+E, [2013-10-24T23:21:37.972758 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:80:in `yaml'
+E, [2013-10-24T23:21:37.972790 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:72:in `combined_hash'
+E, [2013-10-24T23:21:37.972814 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:62:in `read'
+E, [2013-10-24T23:21:37.972838 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:219:in `data'
+E, [2013-10-24T23:21:37.972866 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:70:in `suites'
+E, [2013-10-24T23:21:37.972894 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:119:in `build_instances'
+E, [2013-10-24T23:21:37.972918 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:76:in `instances'
+E, [2013-10-24T23:21:37.972950 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:312:in `get_filtered_instances'
+E, [2013-10-24T23:21:37.972974 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:291:in `parse_subcommand'
+E, [2013-10-24T23:21:37.973003 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:109:in `block in test'
+E, [2013-10-24T23:21:37.973030 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-24T23:21:37.973060 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-10-24T23:21:37.973126 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-24T23:21:37.973152 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-24T23:21:37.973176 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-24T23:21:37.973214 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-24T23:21:37.973237 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-24T23:21:37.973261 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-24T23:21:37.973284 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-24T23:21:37.973313 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-24T23:21:37.973341 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-24T23:21:37.973370 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-24T23:21:37.973401 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-24T23:21:37.973425 #17990] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-24T23:21:37.973454 #17990] ERROR -- Kitchen: ----------------------
+I, [2013-10-24T23:22:23.071199 #18018]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+E, [2013-10-24T23:22:23.073052 #18018] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-24T23:22:23.073094 #18018] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-24T23:22:23.073130 #18018] ERROR -- Kitchen: Message: Error parsing /Users/cgravier/Coding/cooking/selfsigned_certificate/.kitchen.yml
+E, [2013-10-24T23:22:23.073157 #18018] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-24T23:22:23.073188 #18018] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2013-10-24T23:22:23.073213 #18018] ERROR -- Kitchen: Message: (<unknown>): did not find expected '-' indicator while parsing a block collection at line 7 column 3
+E, [2013-10-24T23:22:23.073253 #18018] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-24T23:22:23.073280 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:114:in `rescue in parse_yaml_string'
+E, [2013-10-24T23:22:23.073304 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:110:in `parse_yaml_string'
+E, [2013-10-24T23:22:23.073334 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:80:in `yaml'
+E, [2013-10-24T23:22:23.073358 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:72:in `combined_hash'
+E, [2013-10-24T23:22:23.073389 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:62:in `read'
+E, [2013-10-24T23:22:23.073412 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:219:in `data'
+E, [2013-10-24T23:22:23.073438 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:70:in `suites'
+E, [2013-10-24T23:22:23.073461 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:119:in `build_instances'
+E, [2013-10-24T23:22:23.073503 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:76:in `instances'
+E, [2013-10-24T23:22:23.073535 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:312:in `get_filtered_instances'
+E, [2013-10-24T23:22:23.073559 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:291:in `parse_subcommand'
+E, [2013-10-24T23:22:23.073583 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:109:in `block in test'
+E, [2013-10-24T23:22:23.073612 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-24T23:22:23.073640 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-10-24T23:22:23.073677 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-24T23:22:23.073713 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-24T23:22:23.073736 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-24T23:22:23.073758 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-24T23:22:23.073794 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-24T23:22:23.073817 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-24T23:22:23.073839 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-24T23:22:23.073866 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-24T23:22:23.073894 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-24T23:22:23.073917 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-24T23:22:23.073945 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-24T23:22:23.073976 #18018] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-24T23:22:23.074001 #18018] ERROR -- Kitchen: ----------------------
+I, [2013-10-24T23:24:05.644475 #18042]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+E, [2013-10-24T23:24:05.646349 #18042] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-24T23:24:05.646390 #18042] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-24T23:24:05.646427 #18042] ERROR -- Kitchen: Message: Error parsing /Users/cgravier/Coding/cooking/selfsigned_certificate/.kitchen.yml
+E, [2013-10-24T23:24:05.646453 #18042] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-24T23:24:05.646484 #18042] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2013-10-24T23:24:05.646516 #18042] ERROR -- Kitchen: Message: (<unknown>): did not find expected '-' indicator while parsing a block collection at line 7 column 4
+E, [2013-10-24T23:24:05.646550 #18042] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-24T23:24:05.646578 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:114:in `rescue in parse_yaml_string'
+E, [2013-10-24T23:24:05.646605 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:110:in `parse_yaml_string'
+E, [2013-10-24T23:24:05.646646 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:80:in `yaml'
+E, [2013-10-24T23:24:05.646671 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:72:in `combined_hash'
+E, [2013-10-24T23:24:05.646737 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:62:in `read'
+E, [2013-10-24T23:24:05.646761 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:219:in `data'
+E, [2013-10-24T23:24:05.646787 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:70:in `suites'
+E, [2013-10-24T23:24:05.646814 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:119:in `build_instances'
+E, [2013-10-24T23:24:05.646837 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:76:in `instances'
+E, [2013-10-24T23:24:05.646868 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:312:in `get_filtered_instances'
+E, [2013-10-24T23:24:05.646891 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:291:in `parse_subcommand'
+E, [2013-10-24T23:24:05.646915 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:109:in `block in test'
+E, [2013-10-24T23:24:05.646944 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-24T23:24:05.646972 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-10-24T23:24:05.647006 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-24T23:24:05.647043 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-24T23:24:05.647066 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-24T23:24:05.647088 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-24T23:24:05.647124 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-24T23:24:05.647147 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-24T23:24:05.647169 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-24T23:24:05.647196 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-24T23:24:05.647224 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-24T23:24:05.647247 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-24T23:24:05.647274 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-24T23:24:05.647304 #18042] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-24T23:24:05.647327 #18042] ERROR -- Kitchen: ----------------------
+I, [2013-10-24T23:25:29.586263 #18063]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+E, [2013-10-24T23:25:29.588296 #18063] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-24T23:25:29.588359 #18063] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-24T23:25:29.588388 #18063] ERROR -- Kitchen: Message: Error parsing /Users/cgravier/Coding/cooking/selfsigned_certificate/.kitchen.yml
+E, [2013-10-24T23:25:29.588421 #18063] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-24T23:25:29.588446 #18063] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2013-10-24T23:25:29.588471 #18063] ERROR -- Kitchen: Message: (<unknown>): mapping values are not allowed in this context at line 13 column 13
+E, [2013-10-24T23:25:29.588495 #18063] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-24T23:25:29.588527 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:114:in `rescue in parse_yaml_string'
+E, [2013-10-24T23:25:29.588552 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:110:in `parse_yaml_string'
+E, [2013-10-24T23:25:29.588580 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:80:in `yaml'
+E, [2013-10-24T23:25:29.588609 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:72:in `combined_hash'
+E, [2013-10-24T23:25:29.588634 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:62:in `read'
+E, [2013-10-24T23:25:29.588667 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:219:in `data'
+E, [2013-10-24T23:25:29.588692 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:70:in `suites'
+E, [2013-10-24T23:25:29.588721 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:119:in `build_instances'
+E, [2013-10-24T23:25:29.588749 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:76:in `instances'
+E, [2013-10-24T23:25:29.588783 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:312:in `get_filtered_instances'
+E, [2013-10-24T23:25:29.588822 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:291:in `parse_subcommand'
+E, [2013-10-24T23:25:29.588872 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:109:in `block in test'
+E, [2013-10-24T23:25:29.588897 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-24T23:25:29.588929 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-10-24T23:25:29.588963 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-24T23:25:29.588989 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-24T23:25:29.589014 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-24T23:25:29.589047 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-24T23:25:29.589073 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-24T23:25:29.589103 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-24T23:25:29.589133 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-24T23:25:29.589165 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-24T23:25:29.589199 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-24T23:25:29.589224 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-24T23:25:29.589254 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-24T23:25:29.589279 #18063] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-24T23:25:29.589310 #18063] ERROR -- Kitchen: ----------------------
+I, [2013-10-24T23:25:57.636671 #18103]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+E, [2013-10-24T23:25:57.638667 #18103] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-24T23:25:57.638707 #18103] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-24T23:25:57.638745 #18103] ERROR -- Kitchen: Message: Error parsing /Users/cgravier/Coding/cooking/selfsigned_certificate/.kitchen.yml
+E, [2013-10-24T23:25:57.638772 #18103] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-24T23:25:57.638798 #18103] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2013-10-24T23:25:57.638832 #18103] ERROR -- Kitchen: Message: (<unknown>): mapping values are not allowed in this context at line 13 column 13
+E, [2013-10-24T23:25:57.638856 #18103] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-24T23:25:57.638888 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:114:in `rescue in parse_yaml_string'
+E, [2013-10-24T23:25:57.638912 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:110:in `parse_yaml_string'
+E, [2013-10-24T23:25:57.638940 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:80:in `yaml'
+E, [2013-10-24T23:25:57.638969 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:72:in `combined_hash'
+E, [2013-10-24T23:25:57.639000 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:62:in `read'
+E, [2013-10-24T23:25:57.639025 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:219:in `data'
+E, [2013-10-24T23:25:57.639052 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:70:in `suites'
+E, [2013-10-24T23:25:57.639092 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:119:in `build_instances'
+E, [2013-10-24T23:25:57.639118 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:76:in `instances'
+E, [2013-10-24T23:25:57.639150 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:312:in `get_filtered_instances'
+E, [2013-10-24T23:25:57.639200 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:291:in `parse_subcommand'
+E, [2013-10-24T23:25:57.639227 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:109:in `block in test'
+E, [2013-10-24T23:25:57.639268 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-24T23:25:57.639293 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-10-24T23:25:57.639329 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-24T23:25:57.639370 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-24T23:25:57.639396 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-24T23:25:57.639428 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-24T23:25:57.639457 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-24T23:25:57.639481 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-24T23:25:57.639509 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-24T23:25:57.639540 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-24T23:25:57.639564 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-24T23:25:57.639588 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-24T23:25:57.639616 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-24T23:25:57.639640 #18103] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-24T23:25:57.639670 #18103] ERROR -- Kitchen: ----------------------
+I, [2013-10-24T23:26:35.339379 #18142]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-24T23:27:19.868562 #18162]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+E, [2013-10-24T23:27:19.870830 #18162] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-24T23:27:19.870890 #18162] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-24T23:27:19.870938 #18162] ERROR -- Kitchen: Message: Error parsing /Users/cgravier/Coding/cooking/selfsigned_certificate/.kitchen.yml
+E, [2013-10-24T23:27:19.870970 #18162] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-24T23:27:19.870995 #18162] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2013-10-24T23:27:19.871029 #18162] ERROR -- Kitchen: Message: (<unknown>): mapping values are not allowed in this context at line 15 column 15
+E, [2013-10-24T23:27:19.871062 #18162] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-24T23:27:19.871085 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:114:in `rescue in parse_yaml_string'
+E, [2013-10-24T23:27:19.871110 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:110:in `parse_yaml_string'
+E, [2013-10-24T23:27:19.871137 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:80:in `yaml'
+E, [2013-10-24T23:27:19.871164 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:72:in `combined_hash'
+E, [2013-10-24T23:27:19.871195 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:62:in `read'
+E, [2013-10-24T23:27:19.871218 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:219:in `data'
+E, [2013-10-24T23:27:19.871244 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:70:in `suites'
+E, [2013-10-24T23:27:19.871272 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:119:in `build_instances'
+E, [2013-10-24T23:27:19.871300 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:76:in `instances'
+E, [2013-10-24T23:27:19.871352 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:312:in `get_filtered_instances'
+E, [2013-10-24T23:27:19.871391 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:291:in `parse_subcommand'
+E, [2013-10-24T23:27:19.871414 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:109:in `block in test'
+E, [2013-10-24T23:27:19.871440 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-24T23:27:19.871477 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-10-24T23:27:19.871500 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-24T23:27:19.871522 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-24T23:27:19.871549 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-24T23:27:19.871577 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-24T23:27:19.871599 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-24T23:27:19.871627 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-24T23:27:19.871658 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-24T23:27:19.871684 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-24T23:27:19.871711 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-24T23:27:19.871733 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-24T23:27:19.871755 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-24T23:27:19.871783 #18162] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-24T23:27:19.871812 #18162] ERROR -- Kitchen: ----------------------
+I, [2013-10-24T23:28:16.726663 #18197]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+E, [2013-10-24T23:28:16.728758 #18197] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-24T23:28:16.728810 #18197] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-24T23:28:16.728839 #18197] ERROR -- Kitchen: Message: Error parsing /Users/cgravier/Coding/cooking/selfsigned_certificate/.kitchen.yml
+E, [2013-10-24T23:28:16.728874 #18197] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-24T23:28:16.728905 #18197] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2013-10-24T23:28:16.728930 #18197] ERROR -- Kitchen: Message: (<unknown>): mapping values are not allowed in this context at line 15 column 15
+E, [2013-10-24T23:28:16.728964 #18197] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-24T23:28:16.728996 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:114:in `rescue in parse_yaml_string'
+E, [2013-10-24T23:28:16.729020 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:110:in `parse_yaml_string'
+E, [2013-10-24T23:28:16.729050 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:80:in `yaml'
+E, [2013-10-24T23:28:16.729095 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:72:in `combined_hash'
+E, [2013-10-24T23:28:16.729120 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:62:in `read'
+E, [2013-10-24T23:28:16.729151 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:219:in `data'
+E, [2013-10-24T23:28:16.729188 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:70:in `suites'
+E, [2013-10-24T23:28:16.729221 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:119:in `build_instances'
+E, [2013-10-24T23:28:16.729251 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:76:in `instances'
+E, [2013-10-24T23:28:16.729301 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:312:in `get_filtered_instances'
+E, [2013-10-24T23:28:16.729337 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:291:in `parse_subcommand'
+E, [2013-10-24T23:28:16.729360 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:109:in `block in test'
+E, [2013-10-24T23:28:16.729383 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-24T23:28:16.729418 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-10-24T23:28:16.729441 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-24T23:28:16.729464 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-24T23:28:16.729490 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-24T23:28:16.729518 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-24T23:28:16.729542 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-24T23:28:16.729568 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-24T23:28:16.729599 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-24T23:28:16.729622 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-24T23:28:16.729648 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-24T23:28:16.729671 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-24T23:28:16.729694 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-24T23:28:16.729723 #18197] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-24T23:28:16.729754 #18197] ERROR -- Kitchen: ----------------------
+I, [2013-10-24T23:29:06.436283 #18230]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+E, [2013-10-24T23:29:06.438478 #18230] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-24T23:29:06.438556 #18230] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-24T23:29:06.438600 #18230] ERROR -- Kitchen: Message: Error parsing /Users/cgravier/Coding/cooking/selfsigned_certificate/.kitchen.yml
+E, [2013-10-24T23:29:06.438667 #18230] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-24T23:29:06.438702 #18230] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2013-10-24T23:29:06.438726 #18230] ERROR -- Kitchen: Message: (<unknown>): mapping values are not allowed in this context at line 15 column 15
+E, [2013-10-24T23:29:06.438759 #18230] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-24T23:29:06.438782 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:114:in `rescue in parse_yaml_string'
+E, [2013-10-24T23:29:06.438805 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:110:in `parse_yaml_string'
+E, [2013-10-24T23:29:06.438831 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:80:in `yaml'
+E, [2013-10-24T23:29:06.438859 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:72:in `combined_hash'
+E, [2013-10-24T23:29:06.438882 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:62:in `read'
+E, [2013-10-24T23:29:06.438913 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:219:in `data'
+E, [2013-10-24T23:29:06.438936 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:70:in `suites'
+E, [2013-10-24T23:29:06.438966 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:119:in `build_instances'
+E, [2013-10-24T23:29:06.438994 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:76:in `instances'
+E, [2013-10-24T23:29:06.439033 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:312:in `get_filtered_instances'
+E, [2013-10-24T23:29:06.439057 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:291:in `parse_subcommand'
+E, [2013-10-24T23:29:06.439092 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:109:in `block in test'
+E, [2013-10-24T23:29:06.439115 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-24T23:29:06.439138 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-10-24T23:29:06.439173 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-24T23:29:06.439196 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-24T23:29:06.439219 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-24T23:29:06.439247 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-24T23:29:06.439276 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-24T23:29:06.439303 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-24T23:29:06.439334 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-24T23:29:06.439357 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-24T23:29:06.439389 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-24T23:29:06.439418 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-24T23:29:06.439441 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-24T23:29:06.439468 #18230] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-24T23:29:06.439497 #18230] ERROR -- Kitchen: ----------------------
+I, [2013-10-24T23:31:42.136743 #18277]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-24T23:38:07.635693 #18479]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-24T23:40:08.747235 #18496]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-24T23:41:36.736661 #18508]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+E, [2013-10-24T23:41:36.738735 #18508] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-24T23:41:36.738782 #18508] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-24T23:41:36.738809 #18508] ERROR -- Kitchen: Message: Error parsing /Users/cgravier/Coding/cooking/selfsigned_certificate/.kitchen.yml
+E, [2013-10-24T23:41:36.738838 #18508] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-24T23:41:36.738874 #18508] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2013-10-24T23:41:36.738905 #18508] ERROR -- Kitchen: Message: (<unknown>): mapping values are not allowed in this context at line 15 column 43
+E, [2013-10-24T23:41:36.738955 #18508] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-24T23:41:36.738989 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:114:in `rescue in parse_yaml_string'
+E, [2013-10-24T23:41:36.739023 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:110:in `parse_yaml_string'
+E, [2013-10-24T23:41:36.739070 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:80:in `yaml'
+E, [2013-10-24T23:41:36.744248 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:72:in `combined_hash'
+E, [2013-10-24T23:41:36.744276 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:62:in `read'
+E, [2013-10-24T23:41:36.744300 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:219:in `data'
+E, [2013-10-24T23:41:36.744323 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:70:in `suites'
+E, [2013-10-24T23:41:36.744346 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:119:in `build_instances'
+E, [2013-10-24T23:41:36.744369 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:76:in `instances'
+E, [2013-10-24T23:41:36.744393 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:312:in `get_filtered_instances'
+E, [2013-10-24T23:41:36.744430 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:291:in `parse_subcommand'
+E, [2013-10-24T23:41:36.744454 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:109:in `block in test'
+E, [2013-10-24T23:41:36.744478 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-24T23:41:36.744500 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-10-24T23:41:36.745012 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-24T23:41:36.745040 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-24T23:41:36.745069 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-24T23:41:36.745092 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-24T23:41:36.745115 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-24T23:41:36.745137 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-24T23:41:36.745160 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-24T23:41:36.745196 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-24T23:41:36.745219 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-24T23:41:36.745242 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-24T23:41:36.745264 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-24T23:41:36.745287 #18508] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-24T23:41:36.745309 #18508] ERROR -- Kitchen: ----------------------
+I, [2013-10-24T23:42:14.852241 #18554]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+E, [2013-10-24T23:42:14.854264 #18554] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-24T23:42:14.854313 #18554] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-24T23:42:14.854341 #18554] ERROR -- Kitchen: Message: Error parsing /Users/cgravier/Coding/cooking/selfsigned_certificate/.kitchen.yml
+E, [2013-10-24T23:42:14.854372 #18554] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-24T23:42:14.854409 #18554] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2013-10-24T23:42:14.854462 #18554] ERROR -- Kitchen: Message: (<unknown>): mapping values are not allowed in this context at line 15 column 15
+E, [2013-10-24T23:42:14.854498 #18554] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-24T23:42:14.854534 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:114:in `rescue in parse_yaml_string'
+E, [2013-10-24T23:42:14.854564 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:110:in `parse_yaml_string'
+E, [2013-10-24T23:42:14.859765 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:80:in `yaml'
+E, [2013-10-24T23:42:14.859812 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:72:in `combined_hash'
+E, [2013-10-24T23:42:14.859841 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:62:in `read'
+E, [2013-10-24T23:42:14.859869 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:219:in `data'
+E, [2013-10-24T23:42:14.859897 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:70:in `suites'
+E, [2013-10-24T23:42:14.859926 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:119:in `build_instances'
+E, [2013-10-24T23:42:14.859976 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:76:in `instances'
+E, [2013-10-24T23:42:14.860006 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:312:in `get_filtered_instances'
+E, [2013-10-24T23:42:14.860041 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:291:in `parse_subcommand'
+E, [2013-10-24T23:42:14.860070 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:109:in `block in test'
+E, [2013-10-24T23:42:14.860099 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-24T23:42:14.860127 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-10-24T23:42:14.860155 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-24T23:42:14.860183 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-24T23:42:14.860211 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-24T23:42:14.860251 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-24T23:42:14.860279 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-24T23:42:14.860307 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-24T23:42:14.860335 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-24T23:42:14.860363 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-24T23:42:14.860403 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-24T23:42:14.860431 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-24T23:42:14.860459 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-24T23:42:14.860487 #18554] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-24T23:42:14.860515 #18554] ERROR -- Kitchen: ----------------------
+I, [2013-10-24T23:42:34.467488 #18581]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+E, [2013-10-24T23:42:34.469554 #18581] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-24T23:42:34.469633 #18581] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-24T23:42:34.469690 #18581] ERROR -- Kitchen: Message: Error parsing /Users/cgravier/Coding/cooking/selfsigned_certificate/.kitchen.yml
+E, [2013-10-24T23:42:34.469739 #18581] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-24T23:42:34.469772 #18581] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2013-10-24T23:42:34.469811 #18581] ERROR -- Kitchen: Message: (<unknown>): mapping values are not allowed in this context at line 15 column 15
+E, [2013-10-24T23:42:34.469864 #18581] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-24T23:42:34.469898 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:114:in `rescue in parse_yaml_string'
+E, [2013-10-24T23:42:34.469934 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:110:in `parse_yaml_string'
+E, [2013-10-24T23:42:34.475122 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:80:in `yaml'
+E, [2013-10-24T23:42:34.475189 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:72:in `combined_hash'
+E, [2013-10-24T23:42:34.475220 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:62:in `read'
+E, [2013-10-24T23:42:34.475249 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:219:in `data'
+E, [2013-10-24T23:42:34.475277 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:70:in `suites'
+E, [2013-10-24T23:42:34.475305 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:119:in `build_instances'
+E, [2013-10-24T23:42:34.475333 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:76:in `instances'
+E, [2013-10-24T23:42:34.475361 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:312:in `get_filtered_instances'
+E, [2013-10-24T23:42:34.475395 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:291:in `parse_subcommand'
+E, [2013-10-24T23:42:34.475424 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:109:in `block in test'
+E, [2013-10-24T23:42:34.475452 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-24T23:42:34.475480 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-10-24T23:42:34.475508 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-24T23:42:34.475536 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-24T23:42:34.475564 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-24T23:42:34.475603 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-24T23:42:34.475631 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-24T23:42:34.475667 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-24T23:42:34.475693 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-24T23:42:34.475718 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-24T23:42:34.475754 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-24T23:42:34.475779 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-24T23:42:34.475804 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-24T23:42:34.475829 #18581] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-24T23:42:34.475854 #18581] ERROR -- Kitchen: ----------------------
+I, [2013-10-24T23:43:20.134923 #18608]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-24T23:44:01.045306 #18616]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-24T23:52:05.443368 #18688]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-25T00:09:20.839244 #18759]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-25T00:10:31.064520 #18908]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-25T00:33:04.029890 #19099]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-25T00:37:34.839562 #19121]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-25T00:38:21.383566 #19137]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-25T00:44:50.424113 #19195]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-25T10:00:00.146811 #19652]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-25T10:40:40.048296 #21501]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+E, [2013-10-25T10:40:40.050955 #21501] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-25T10:40:40.051108 #21501] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-25T10:40:40.051165 #21501] ERROR -- Kitchen: Message: Error parsing /Users/cgravier/Coding/cooking/selfsigned_certificate/.kitchen.yml
+E, [2013-10-25T10:40:40.051196 #21501] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-25T10:40:40.051224 #21501] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2013-10-25T10:40:40.051250 #21501] ERROR -- Kitchen: Message: (<unknown>): mapping values are not allowed in this context at line 9 column 19
+E, [2013-10-25T10:40:40.051277 #21501] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-25T10:40:40.051308 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:114:in `rescue in parse_yaml_string'
+E, [2013-10-25T10:40:40.051343 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:110:in `parse_yaml_string'
+E, [2013-10-25T10:40:40.051392 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:80:in `yaml'
+E, [2013-10-25T10:40:40.051428 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:72:in `combined_hash'
+E, [2013-10-25T10:40:40.051460 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/loader/yaml.rb:62:in `read'
+E, [2013-10-25T10:40:40.056948 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:219:in `data'
+E, [2013-10-25T10:40:40.056983 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:70:in `suites'
+E, [2013-10-25T10:40:40.057007 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:119:in `build_instances'
+E, [2013-10-25T10:40:40.057030 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/config.rb:76:in `instances'
+E, [2013-10-25T10:40:40.057053 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:312:in `get_filtered_instances'
+E, [2013-10-25T10:40:40.057076 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:291:in `parse_subcommand'
+E, [2013-10-25T10:40:40.057099 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:109:in `block in test'
+E, [2013-10-25T10:40:40.057127 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-25T10:40:40.057154 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-10-25T10:40:40.057192 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-25T10:40:40.057240 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-25T10:40:40.057304 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-25T10:40:40.057334 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-25T10:40:40.057357 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-25T10:40:40.057386 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-25T10:40:40.057409 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-25T10:40:40.057432 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-25T10:40:40.057454 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-25T10:40:40.057491 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-25T10:40:40.057555 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-25T10:40:40.057591 #21501] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-25T10:40:40.057628 #21501] ERROR -- Kitchen: ----------------------
+I, [2013-10-25T10:41:10.983195 #21544]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-25T10:41:11.345241 #21544]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1210>
+I, [2013-10-25T10:41:11.345766 #21544]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1210>
+I, [2013-10-25T10:41:11.353698 #21544]  INFO -- Kitchen: -----> Testing <default-ubuntu-1210>
+I, [2013-10-25T10:41:11.353820 #21544]  INFO -- Kitchen: -----> Creating <default-ubuntu-1210>
+I, [2013-10-25T10:44:19.492155 #21544]  INFO -- Kitchen: -----> Converging <default-ubuntu-1210>
+E, [2013-10-25T10:50:53.095463 #21544] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-25T10:50:53.096630 #21544] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2013-10-25T10:50:53.097245 #21544] ERROR -- Kitchen: Message: Failed to complete #converge action: [exit]
+E, [2013-10-25T10:50:53.097306 #21544] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-25T10:50:53.097349 #21544] ERROR -- Kitchen: Class: SystemExit
+E, [2013-10-25T10:50:53.097391 #21544] ERROR -- Kitchen: Message: exit
+E, [2013-10-25T10:50:53.097428 #21544] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-25T10:50:53.097479 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:6:in `exit'
+E, [2013-10-25T10:50:53.097528 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:6:in `block in <top (required)>'
+E, [2013-10-25T10:50:53.097555 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `call'
+E, [2013-10-25T10:50:53.097584 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `select'
+E, [2013-10-25T10:50:53.097609 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `io_select'
+E, [2013-10-25T10:50:53.097637 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:209:in `process'
+E, [2013-10-25T10:50:53.097664 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `block in loop'
+E, [2013-10-25T10:50:53.097689 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2013-10-25T10:50:53.097727 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2013-10-25T10:50:53.097752 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/ssh.rb:162:in `exec_with_exit'
+E, [2013-10-25T10:50:53.097775 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/ssh.rb:54:in `exec'
+E, [2013-10-25T10:50:53.097804 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:112:in `run_remote'
+E, [2013-10-25T10:50:53.097827 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:42:in `block in converge'
+E, [2013-10-25T10:50:53.097850 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-10-25T10:50:53.097878 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `new'
+E, [2013-10-25T10:50:53.097908 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `converge'
+E, [2013-10-25T10:50:53.097933 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:64:in `converge'
+E, [2013-10-25T10:50:53.097960 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-10-25T10:50:53.097984 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-10-25T10:50:53.098007 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `call'
+E, [2013-10-25T10:50:53.098038 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `synchronize_or_call'
+E, [2013-10-25T10:50:53.098066 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-10-25T10:50:53.098089 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-25T10:50:53.098117 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:272:in `action'
+E, [2013-10-25T10:50:53.098143 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-10-25T10:50:53.098167 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:246:in `converge_action'
+E, [2013-10-25T10:50:53.098190 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-10-25T10:50:53.098213 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `each'
+E, [2013-10-25T10:50:53.098242 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-10-25T10:50:53.098265 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:124:in `verify'
+E, [2013-10-25T10:50:53.098288 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:153:in `block in test'
+E, [2013-10-25T10:50:53.098316 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-25T10:50:53.098346 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:149:in `test'
+E, [2013-10-25T10:50:53.098373 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-10-25T10:50:53.098401 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-10-25T10:50:53.098425 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `map'
+E, [2013-10-25T10:50:53.098448 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-10-25T10:50:53.098476 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:114:in `block in test'
+E, [2013-10-25T10:50:53.098500 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-25T10:50:53.098523 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-10-25T10:50:53.098551 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-25T10:50:53.098580 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-25T10:50:53.098607 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-25T10:50:53.098630 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-25T10:50:53.098657 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-25T10:50:53.098681 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-25T10:50:53.098704 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-25T10:50:53.098727 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-25T10:50:53.098754 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-25T10:50:53.098777 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-25T10:50:53.098803 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-25T10:50:53.098831 #21544] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-25T10:50:53.098854 #21544] ERROR -- Kitchen: ----------------------
+I, [2013-10-25T10:51:06.586932 #21761]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-25T10:51:06.955220 #21761]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1210>
+I, [2013-10-25T10:51:06.957664 #21761]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1210>
+I, [2013-10-25T10:52:32.030691 #21761]  INFO -- Kitchen: -----> Testing <default-ubuntu-1210>
+I, [2013-10-25T10:52:32.030888 #21761]  INFO -- Kitchen: -----> Creating <default-ubuntu-1210>
+I, [2013-10-25T10:54:47.585006 #21761]  INFO -- Kitchen: -----> Converging <default-ubuntu-1210>
+E, [2013-10-25T10:57:04.389444 #21761] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-25T10:57:04.389483 #21761] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2013-10-25T10:57:04.389509 #21761] ERROR -- Kitchen: Message: Failed to complete #converge action: [exit]
+E, [2013-10-25T10:57:04.389543 #21761] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-25T10:57:04.389569 #21761] ERROR -- Kitchen: Class: SystemExit
+E, [2013-10-25T10:57:04.389593 #21761] ERROR -- Kitchen: Message: exit
+E, [2013-10-25T10:57:04.389638 #21761] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-25T10:57:04.389671 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:6:in `exit'
+E, [2013-10-25T10:57:04.389695 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:6:in `block in <top (required)>'
+E, [2013-10-25T10:57:04.389718 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `call'
+E, [2013-10-25T10:57:04.389741 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `select'
+E, [2013-10-25T10:57:04.389764 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `io_select'
+E, [2013-10-25T10:57:04.389787 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:209:in `process'
+E, [2013-10-25T10:57:04.389811 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `block in loop'
+E, [2013-10-25T10:57:04.389850 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2013-10-25T10:57:04.389873 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2013-10-25T10:57:04.389896 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/ssh.rb:162:in `exec_with_exit'
+E, [2013-10-25T10:57:04.389920 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/ssh.rb:54:in `exec'
+E, [2013-10-25T10:57:04.389943 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:112:in `run_remote'
+E, [2013-10-25T10:57:04.389970 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:42:in `block in converge'
+E, [2013-10-25T10:57:04.389995 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-10-25T10:57:04.390029 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `new'
+E, [2013-10-25T10:57:04.390053 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `converge'
+E, [2013-10-25T10:57:04.390102 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:64:in `converge'
+E, [2013-10-25T10:57:04.390127 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-10-25T10:57:04.390151 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-10-25T10:57:04.390176 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `call'
+E, [2013-10-25T10:57:04.390200 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `synchronize_or_call'
+E, [2013-10-25T10:57:04.390233 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-10-25T10:57:04.390263 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-25T10:57:04.390287 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:272:in `action'
+E, [2013-10-25T10:57:04.390311 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-10-25T10:57:04.390377 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:246:in `converge_action'
+E, [2013-10-25T10:57:04.390402 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-10-25T10:57:04.390427 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `each'
+E, [2013-10-25T10:57:04.390460 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-10-25T10:57:04.390483 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:124:in `verify'
+E, [2013-10-25T10:57:04.390506 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:153:in `block in test'
+E, [2013-10-25T10:57:04.390529 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-25T10:57:04.390552 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:149:in `test'
+E, [2013-10-25T10:57:04.390574 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-10-25T10:57:04.390619 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-10-25T10:57:04.390643 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `map'
+E, [2013-10-25T10:57:04.390666 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-10-25T10:57:04.390689 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:114:in `block in test'
+E, [2013-10-25T10:57:04.390712 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-25T10:57:04.390734 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-10-25T10:57:04.390757 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-25T10:57:04.390780 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-25T10:57:04.390810 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-25T10:57:04.390834 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-25T10:57:04.390857 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-25T10:57:04.390880 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-25T10:57:04.390902 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-25T10:57:04.390931 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-25T10:57:04.390955 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-25T10:57:04.390978 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-25T10:57:04.391007 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-25T10:57:04.391036 #21761] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-25T10:57:04.391060 #21761] ERROR -- Kitchen: ----------------------
+I, [2013-10-25T10:57:30.837703 #21970]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-25T10:57:31.169796 #21970]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1210>
+I, [2013-10-25T10:57:31.172343 #21970]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1210>
+I, [2013-10-25T10:58:56.379388 #21970]  INFO -- Kitchen: -----> Testing <default-ubuntu-1210>
+I, [2013-10-25T10:58:56.379595 #21970]  INFO -- Kitchen: -----> Creating <default-ubuntu-1210>
+I, [2013-10-25T11:01:05.814971 #21970]  INFO -- Kitchen: -----> Converging <default-ubuntu-1210>
+E, [2013-10-25T11:24:40.768663 #21970] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-25T11:24:40.770313 #21970] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2013-10-25T11:24:40.770846 #21970] ERROR -- Kitchen: Message: Failed to complete #converge action: [Could not load Berkshelf]
+E, [2013-10-25T11:24:40.770904 #21970] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-25T11:24:40.770947 #21970] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-25T11:24:40.770974 #21970] ERROR -- Kitchen: Message: Could not load Berkshelf
+E, [2013-10-25T11:24:40.771009 #21970] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-25T11:24:40.771055 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:258:in `rescue in resolve_with_berkshelf'
+E, [2013-10-25T11:24:40.771101 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:252:in `resolve_with_berkshelf'
+E, [2013-10-25T11:24:40.771152 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:150:in `prepare_cookbooks'
+E, [2013-10-25T11:24:40.771192 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:92:in `create_chef_sandbox'
+E, [2013-10-25T11:24:40.771219 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_solo.rb:31:in `create_sandbox'
+E, [2013-10-25T11:24:40.771244 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:44:in `block in converge'
+E, [2013-10-25T11:24:40.771275 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-10-25T11:24:40.771300 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `new'
+E, [2013-10-25T11:24:40.771324 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `converge'
+E, [2013-10-25T11:24:40.771354 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:64:in `converge'
+E, [2013-10-25T11:24:40.771380 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-10-25T11:24:40.771405 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-10-25T11:24:40.771446 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `call'
+E, [2013-10-25T11:24:40.771472 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `synchronize_or_call'
+E, [2013-10-25T11:24:40.771497 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-10-25T11:24:40.771527 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-25T11:24:40.771552 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:272:in `action'
+E, [2013-10-25T11:24:40.771577 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-10-25T11:24:40.771606 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:246:in `converge_action'
+E, [2013-10-25T11:24:40.771632 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-10-25T11:24:40.771659 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `each'
+E, [2013-10-25T11:24:40.771691 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-10-25T11:24:40.771724 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:124:in `verify'
+E, [2013-10-25T11:24:40.771749 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:153:in `block in test'
+E, [2013-10-25T11:24:40.771803 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-25T11:24:40.771833 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:149:in `test'
+E, [2013-10-25T11:24:40.771858 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-10-25T11:24:40.771887 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-10-25T11:24:40.771913 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `map'
+E, [2013-10-25T11:24:40.771951 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-10-25T11:24:40.771979 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:114:in `block in test'
+E, [2013-10-25T11:24:40.772003 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-25T11:24:40.772026 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-10-25T11:24:40.772049 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-25T11:24:40.772078 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-25T11:24:40.772101 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-25T11:24:40.772124 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-25T11:24:40.772159 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-25T11:24:40.772188 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-25T11:24:40.772213 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-25T11:24:40.772242 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-25T11:24:40.772272 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-25T11:24:40.772296 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-25T11:24:40.772352 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-25T11:24:40.772394 #21970] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-25T11:24:40.772434 #21970] ERROR -- Kitchen: ----------------------
+I, [2013-10-27T09:43:08.480360 #28204]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-27T09:43:09.049263 #28204]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1210>
+I, [2013-10-27T09:43:09.053614 #28204]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1210>
+I, [2013-10-27T09:43:19.170565 #28204]  INFO -- Kitchen: -----> Testing <default-ubuntu-1210>
+I, [2013-10-27T09:43:19.170763 #28204]  INFO -- Kitchen: -----> Creating <default-ubuntu-1210>
+I, [2013-10-27T09:44:18.266703 #28204]  INFO -- Kitchen: -----> Converging <default-ubuntu-1210>
+E, [2013-10-27T09:46:04.649098 #28204] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-27T09:46:04.649161 #28204] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2013-10-27T09:46:04.649204 #28204] ERROR -- Kitchen: Message: Failed to complete #converge action: [Could not load Berkshelf]
+E, [2013-10-27T09:46:04.649248 #28204] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-27T09:46:04.649288 #28204] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-27T09:46:04.649313 #28204] ERROR -- Kitchen: Message: Could not load Berkshelf
+E, [2013-10-27T09:46:04.649337 #28204] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-27T09:46:04.649360 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:258:in `rescue in resolve_with_berkshelf'
+E, [2013-10-27T09:46:04.649383 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:252:in `resolve_with_berkshelf'
+E, [2013-10-27T09:46:04.649406 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:150:in `prepare_cookbooks'
+E, [2013-10-27T09:46:04.649431 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:92:in `create_chef_sandbox'
+E, [2013-10-27T09:46:04.649454 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_solo.rb:31:in `create_sandbox'
+E, [2013-10-27T09:46:04.649477 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:44:in `block in converge'
+E, [2013-10-27T09:46:04.649500 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-10-27T09:46:04.649524 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `new'
+E, [2013-10-27T09:46:04.649555 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `converge'
+E, [2013-10-27T09:46:04.649580 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:64:in `converge'
+E, [2013-10-27T09:46:04.649604 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-10-27T09:46:04.649627 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-10-27T09:46:04.649650 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `call'
+E, [2013-10-27T09:46:04.649673 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `synchronize_or_call'
+E, [2013-10-27T09:46:04.649697 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-10-27T09:46:04.649719 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-27T09:46:04.649742 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:272:in `action'
+E, [2013-10-27T09:46:04.649765 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-10-27T09:46:04.649789 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:246:in `converge_action'
+E, [2013-10-27T09:46:04.649812 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-10-27T09:46:04.649835 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `each'
+E, [2013-10-27T09:46:04.649859 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-10-27T09:46:04.649882 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:124:in `verify'
+E, [2013-10-27T09:46:04.649909 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:153:in `block in test'
+E, [2013-10-27T09:46:04.649937 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-27T09:46:04.649966 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:149:in `test'
+E, [2013-10-27T09:46:04.650017 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-10-27T09:46:04.650058 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-10-27T09:46:04.650098 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `map'
+E, [2013-10-27T09:46:04.650139 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-10-27T09:46:04.650175 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:114:in `block in test'
+E, [2013-10-27T09:46:04.650199 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-27T09:46:04.650222 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-10-27T09:46:04.650252 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-27T09:46:04.650277 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-27T09:46:04.650300 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-27T09:46:04.650323 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-27T09:46:04.650346 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-27T09:46:04.650369 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-27T09:46:04.650392 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-27T09:46:04.650415 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-27T09:46:04.650438 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-27T09:46:04.650461 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-27T09:46:04.650484 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-27T09:46:04.650506 #28204] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-27T09:46:04.650529 #28204] ERROR -- Kitchen: ----------------------
+I, [2013-10-27T09:51:13.707032 #28631]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-27T09:51:14.055769 #28631]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1210>
+I, [2013-10-27T09:51:14.057547 #28631]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1210>
+I, [2013-10-27T09:51:20.411929 #28631]  INFO -- Kitchen: -----> Testing <default-ubuntu-1210>
+I, [2013-10-27T09:51:20.412130 #28631]  INFO -- Kitchen: -----> Creating <default-ubuntu-1210>
+I, [2013-10-27T09:52:26.104565 #28631]  INFO -- Kitchen: -----> Converging <default-ubuntu-1210>
+E, [2013-10-27T09:54:03.903965 #28631] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-27T09:54:03.904398 #28631] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2013-10-27T09:54:03.904444 #28631] ERROR -- Kitchen: Message: Failed to complete #converge action: [Could not load Berkshelf]
+E, [2013-10-27T09:54:03.904473 #28631] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-27T09:54:03.904499 #28631] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-27T09:54:03.904524 #28631] ERROR -- Kitchen: Message: Could not load Berkshelf
+E, [2013-10-27T09:54:03.904549 #28631] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-27T09:54:03.904573 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:258:in `rescue in resolve_with_berkshelf'
+E, [2013-10-27T09:54:03.904599 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:252:in `resolve_with_berkshelf'
+E, [2013-10-27T09:54:03.904632 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:150:in `prepare_cookbooks'
+E, [2013-10-27T09:54:03.904659 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:92:in `create_chef_sandbox'
+E, [2013-10-27T09:54:03.904697 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_solo.rb:31:in `create_sandbox'
+E, [2013-10-27T09:54:03.904751 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:44:in `block in converge'
+E, [2013-10-27T09:54:03.904792 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-10-27T09:54:03.904833 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `new'
+E, [2013-10-27T09:54:03.904860 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `converge'
+E, [2013-10-27T09:54:03.904886 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:64:in `converge'
+E, [2013-10-27T09:54:03.904911 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-10-27T09:54:03.904936 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-10-27T09:54:03.904961 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `call'
+E, [2013-10-27T09:54:03.904986 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `synchronize_or_call'
+E, [2013-10-27T09:54:03.905011 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-10-27T09:54:03.905035 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-27T09:54:03.905060 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:272:in `action'
+E, [2013-10-27T09:54:03.905085 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-10-27T09:54:03.905110 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:246:in `converge_action'
+E, [2013-10-27T09:54:03.905136 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-10-27T09:54:03.905160 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `each'
+E, [2013-10-27T09:54:03.905185 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-10-27T09:54:03.905210 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:124:in `verify'
+E, [2013-10-27T09:54:03.905235 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:153:in `block in test'
+E, [2013-10-27T09:54:03.905259 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-27T09:54:03.905284 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:149:in `test'
+E, [2013-10-27T09:54:03.905309 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-10-27T09:54:03.905334 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-10-27T09:54:03.905359 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `map'
+E, [2013-10-27T09:54:03.905400 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-10-27T09:54:03.905431 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:114:in `block in test'
+E, [2013-10-27T09:54:03.905461 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-27T09:54:03.905488 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:105:in `test'
+E, [2013-10-27T09:54:03.905512 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-27T09:54:03.905539 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-27T09:54:03.905568 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-27T09:54:03.905594 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-27T09:54:03.905618 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-27T09:54:03.905642 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-27T09:54:03.905668 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-27T09:54:03.905697 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-27T09:54:03.905723 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-27T09:54:03.905746 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-27T09:54:03.905770 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-27T09:54:03.905796 #28631] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-27T09:54:03.905823 #28631] ERROR -- Kitchen: ----------------------
+I, [2013-10-27T09:55:45.685805 #28782]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-27T09:55:46.025874 #28782]  INFO -- Kitchen: -----> Converging <default-ubuntu-1210>
+E, [2013-10-27T09:55:46.294635 #28782] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-27T09:55:46.294733 #28782] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2013-10-27T09:55:46.294780 #28782] ERROR -- Kitchen: Message: Failed to complete #converge action: [Could not load Berkshelf]
+E, [2013-10-27T09:55:46.294812 #28782] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-27T09:55:46.294837 #28782] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-27T09:55:46.294862 #28782] ERROR -- Kitchen: Message: Could not load Berkshelf
+E, [2013-10-27T09:55:46.294886 #28782] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-27T09:55:46.294911 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:258:in `rescue in resolve_with_berkshelf'
+E, [2013-10-27T09:55:46.294936 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:252:in `resolve_with_berkshelf'
+E, [2013-10-27T09:55:46.294960 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:150:in `prepare_cookbooks'
+E, [2013-10-27T09:55:46.294985 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:92:in `create_chef_sandbox'
+E, [2013-10-27T09:55:46.295022 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_solo.rb:31:in `create_sandbox'
+E, [2013-10-27T09:55:46.295049 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:44:in `block in converge'
+E, [2013-10-27T09:55:46.295074 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-10-27T09:55:46.295099 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `new'
+E, [2013-10-27T09:55:46.295123 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `converge'
+E, [2013-10-27T09:55:46.295147 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:64:in `converge'
+E, [2013-10-27T09:55:46.295172 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-10-27T09:55:46.295196 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-10-27T09:55:46.295220 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `call'
+E, [2013-10-27T09:55:46.295245 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `synchronize_or_call'
+E, [2013-10-27T09:55:46.295269 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-10-27T09:55:46.295293 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-27T09:55:46.295318 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:272:in `action'
+E, [2013-10-27T09:55:46.295342 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-10-27T09:55:46.295366 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:246:in `converge_action'
+E, [2013-10-27T09:55:46.295391 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-10-27T09:55:46.295415 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `each'
+E, [2013-10-27T09:55:46.295440 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-10-27T09:55:46.295464 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:102:in `converge'
+E, [2013-10-27T09:55:46.295489 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-10-27T09:55:46.295513 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-10-27T09:55:46.295537 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `map'
+E, [2013-10-27T09:55:46.295561 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-10-27T09:55:46.295593 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:276:in `block in exec_action'
+E, [2013-10-27T09:55:46.295619 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-27T09:55:46.295643 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:273:in `exec_action'
+E, [2013-10-27T09:55:46.295668 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:76:in `block (2 levels) in <class:CLI>'
+E, [2013-10-27T09:55:46.295693 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-27T09:55:46.295717 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-27T09:55:46.295742 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-27T09:55:46.295766 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-27T09:55:46.295790 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-27T09:55:46.295814 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-27T09:55:46.295839 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-27T09:55:46.295863 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-27T09:55:46.295888 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-27T09:55:46.295912 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-27T09:55:46.295937 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-27T09:55:46.295961 #28782] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-27T09:55:46.295986 #28782] ERROR -- Kitchen: ----------------------
+I, [2013-10-27T09:56:06.835275 #28808]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.dev)
+I, [2013-10-27T09:56:07.155161 #28808]  INFO -- Kitchen: -----> Converging <default-ubuntu-1210>
+E, [2013-10-27T09:56:07.396466 #28808] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-27T09:56:07.396524 #28808] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2013-10-27T09:56:07.396568 #28808] ERROR -- Kitchen: Message: Failed to complete #converge action: [Could not load Berkshelf]
+E, [2013-10-27T09:56:07.396620 #28808] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-27T09:56:07.396663 #28808] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-27T09:56:07.396699 #28808] ERROR -- Kitchen: Message: Could not load Berkshelf
+E, [2013-10-27T09:56:07.396725 #28808] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-27T09:56:07.396752 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:258:in `rescue in resolve_with_berkshelf'
+E, [2013-10-27T09:56:07.396785 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:252:in `resolve_with_berkshelf'
+E, [2013-10-27T09:56:07.396810 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:150:in `prepare_cookbooks'
+E, [2013-10-27T09:56:07.396835 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_base.rb:92:in `create_chef_sandbox'
+E, [2013-10-27T09:56:07.396869 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/provisioner/chef_solo.rb:31:in `create_sandbox'
+E, [2013-10-27T09:56:07.396895 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:44:in `block in converge'
+E, [2013-10-27T09:56:07.396924 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-10-27T09:56:07.396950 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `new'
+E, [2013-10-27T09:56:07.396974 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/driver/ssh_base.rb:41:in `converge'
+E, [2013-10-27T09:56:07.396998 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:64:in `converge'
+E, [2013-10-27T09:56:07.397022 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-10-27T09:56:07.397046 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-10-27T09:56:07.397071 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `call'
+E, [2013-10-27T09:56:07.397095 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:298:in `synchronize_or_call'
+E, [2013-10-27T09:56:07.397119 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-10-27T09:56:07.397148 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-27T09:56:07.397174 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:272:in `action'
+E, [2013-10-27T09:56:07.397198 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-10-27T09:56:07.397222 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:246:in `converge_action'
+E, [2013-10-27T09:56:07.397246 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-10-27T09:56:07.397271 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `each'
+E, [2013-10-27T09:56:07.397305 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-10-27T09:56:07.397339 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/instance.rb:102:in `converge'
+E, [2013-10-27T09:56:07.397362 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-10-27T09:56:07.397389 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-10-27T09:56:07.397413 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `map'
+E, [2013-10-27T09:56:07.397436 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-10-27T09:56:07.397458 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:276:in `block in exec_action'
+E, [2013-10-27T09:56:07.397488 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-27T09:56:07.397512 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:273:in `exec_action'
+E, [2013-10-27T09:56:07.397535 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:76:in `block (2 levels) in <class:CLI>'
+E, [2013-10-27T09:56:07.397557 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-27T09:56:07.397583 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-27T09:56:07.397608 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-27T09:56:07.397631 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-27T09:56:07.397654 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-27T09:56:07.397676 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-27T09:56:07.397699 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-27T09:56:07.397722 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.dev/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-27T09:56:07.397745 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-27T09:56:07.397767 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-27T09:56:07.397794 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-27T09:56:07.397818 #28808] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-27T09:56:07.397853 #28808] ERROR -- Kitchen: ----------------------
+I, [2013-10-27T09:59:31.154911 #28856]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.beta.3)
+I, [2013-10-27T09:59:31.460961 #28856]  INFO -- Kitchen: -----> Converging <default-ubuntu-1210>
+E, [2013-10-27T09:59:31.701729 #28856] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-27T09:59:31.701783 #28856] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2013-10-27T09:59:31.701846 #28856] ERROR -- Kitchen: Message: Failed to complete #converge action: [Could not load Berkshelf]
+E, [2013-10-27T09:59:31.707207 #28856] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-27T09:59:31.707247 #28856] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-27T09:59:31.707277 #28856] ERROR -- Kitchen: Message: Could not load Berkshelf
+E, [2013-10-27T09:59:31.707306 #28856] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-27T09:59:31.707333 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:257:in `rescue in resolve_with_berkshelf'
+E, [2013-10-27T09:59:31.707362 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:251:in `resolve_with_berkshelf'
+E, [2013-10-27T09:59:31.707399 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:149:in `prepare_cookbooks'
+E, [2013-10-27T09:59:31.707428 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:91:in `create_chef_sandbox'
+E, [2013-10-27T09:59:31.707478 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_solo.rb:31:in `create_sandbox'
+E, [2013-10-27T09:59:31.707508 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:44:in `block in converge'
+E, [2013-10-27T09:59:31.707537 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-10-27T09:59:31.707575 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:41:in `new'
+E, [2013-10-27T09:59:31.707603 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:41:in `converge'
+E, [2013-10-27T09:59:31.707632 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:64:in `converge'
+E, [2013-10-27T09:59:31.707660 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-10-27T09:59:31.707687 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-10-27T09:59:31.707726 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:298:in `call'
+E, [2013-10-27T09:59:31.707754 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:298:in `synchronize_or_call'
+E, [2013-10-27T09:59:31.707782 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-10-27T09:59:31.707810 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-27T09:59:31.707838 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:272:in `action'
+E, [2013-10-27T09:59:31.707866 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-10-27T09:59:31.707932 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:246:in `converge_action'
+E, [2013-10-27T09:59:31.707961 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-10-27T09:59:31.707989 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:235:in `each'
+E, [2013-10-27T09:59:31.708016 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-10-27T09:59:31.708044 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:102:in `converge'
+E, [2013-10-27T09:59:31.708163 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-10-27T09:59:31.708200 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-10-27T09:59:31.708223 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `map'
+E, [2013-10-27T09:59:31.708245 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-10-27T09:59:31.708268 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:276:in `block in exec_action'
+E, [2013-10-27T09:59:31.708301 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-27T09:59:31.708325 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:273:in `exec_action'
+E, [2013-10-27T09:59:31.708348 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:76:in `block (2 levels) in <class:CLI>'
+E, [2013-10-27T09:59:31.708556 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-27T09:59:31.708603 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-27T09:59:31.708643 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-27T09:59:31.708683 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-27T09:59:31.708720 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-27T09:59:31.708758 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-27T09:59:31.708795 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-27T09:59:31.708833 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-27T09:59:31.708910 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/bin/kitchen:23:in `load'
+E, [2013-10-27T09:59:31.708951 #28856] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/bin/kitchen:23:in `<main>'
+E, [2013-10-27T09:59:31.708989 #28856] ERROR -- Kitchen: ----------------------
+I, [2013-10-27T09:59:47.349939 #28872]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.beta.3)
+I, [2013-10-27T09:59:47.642552 #28872]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1210>
+I, [2013-10-27T09:59:47.643921 #28872]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1210>
+I, [2013-10-27T09:59:53.793676 #28872]  INFO -- Kitchen: -----> Testing <default-ubuntu-1210>
+I, [2013-10-27T09:59:53.793988 #28872]  INFO -- Kitchen: -----> Creating <default-ubuntu-1210>
+I, [2013-10-27T10:00:56.515484 #28872]  INFO -- Kitchen: -----> Converging <default-ubuntu-1210>
+E, [2013-10-27T10:03:09.888634 #28872] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-27T10:03:09.888712 #28872] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2013-10-27T10:03:09.888761 #28872] ERROR -- Kitchen: Message: Failed to complete #converge action: [Could not load Berkshelf]
+E, [2013-10-27T10:03:09.888807 #28872] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-27T10:03:09.888850 #28872] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-10-27T10:03:09.888893 #28872] ERROR -- Kitchen: Message: Could not load Berkshelf
+E, [2013-10-27T10:03:09.888953 #28872] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-27T10:03:09.889016 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:257:in `rescue in resolve_with_berkshelf'
+E, [2013-10-27T10:03:09.889078 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:251:in `resolve_with_berkshelf'
+E, [2013-10-27T10:03:09.889122 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:149:in `prepare_cookbooks'
+E, [2013-10-27T10:03:09.889180 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:91:in `create_chef_sandbox'
+E, [2013-10-27T10:03:09.889224 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_solo.rb:31:in `create_sandbox'
+E, [2013-10-27T10:03:09.889266 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:44:in `block in converge'
+E, [2013-10-27T10:03:09.889307 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-10-27T10:03:09.889351 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:41:in `new'
+E, [2013-10-27T10:03:09.889397 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:41:in `converge'
+E, [2013-10-27T10:03:09.889446 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:64:in `converge'
+E, [2013-10-27T10:03:09.889492 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-10-27T10:03:09.889545 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-10-27T10:03:09.889584 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:298:in `call'
+E, [2013-10-27T10:03:09.889636 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:298:in `synchronize_or_call'
+E, [2013-10-27T10:03:09.889683 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-10-27T10:03:09.889731 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-27T10:03:09.889772 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:272:in `action'
+E, [2013-10-27T10:03:09.889816 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-10-27T10:03:09.889861 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:246:in `converge_action'
+E, [2013-10-27T10:03:09.889903 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-10-27T10:03:09.889946 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:235:in `each'
+E, [2013-10-27T10:03:09.889987 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-10-27T10:03:09.890028 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:124:in `verify'
+E, [2013-10-27T10:03:09.890072 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:153:in `block in test'
+E, [2013-10-27T10:03:09.890112 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-27T10:03:09.890152 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:149:in `test'
+E, [2013-10-27T10:03:09.890201 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-10-27T10:03:09.890258 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-10-27T10:03:09.890301 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `map'
+E, [2013-10-27T10:03:09.890348 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-10-27T10:03:09.890391 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:114:in `block in test'
+E, [2013-10-27T10:03:09.890434 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-27T10:03:09.890473 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:105:in `test'
+E, [2013-10-27T10:03:09.890514 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-10-27T10:03:09.890558 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-10-27T10:03:09.890599 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-27T10:03:09.890644 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-10-27T10:03:09.890686 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-10-27T10:03:09.890724 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-27T10:03:09.890765 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-27T10:03:09.890806 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-27T10:03:09.890850 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/bin/kitchen:23:in `load'
+E, [2013-10-27T10:03:09.890890 #28872] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/bin/kitchen:23:in `<main>'
+E, [2013-10-27T10:03:09.890935 #28872] ERROR -- Kitchen: ----------------------
+I, [2013-10-27T10:06:10.646664 #29196]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.beta.3)
+I, [2013-10-27T10:06:10.996140 #29196]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1210>
+I, [2013-10-27T10:06:10.998609 #29196]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1210>
+I, [2013-10-27T10:06:17.245730 #29196]  INFO -- Kitchen: -----> Testing <default-ubuntu-1210>
+I, [2013-10-27T10:06:17.246314 #29196]  INFO -- Kitchen: -----> Creating <default-ubuntu-1210>
+I, [2013-10-27T10:07:07.949307 #29196]  INFO -- Kitchen: -----> Converging <default-ubuntu-1210>
+E, [2013-10-27T10:09:03.796612 #29196] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1210>.
+I, [2013-10-27T10:13:07.706772 #29714]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.beta.3)
+I, [2013-10-27T10:13:08.043308 #29714]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1210>
+I, [2013-10-27T10:13:08.060927 #29714]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1210>
+I, [2013-10-27T10:13:14.540642 #29714]  INFO -- Kitchen: -----> Testing <default-ubuntu-1210>
+I, [2013-10-27T10:13:14.540913 #29714]  INFO -- Kitchen: -----> Creating <default-ubuntu-1210>
+I, [2013-10-27T10:14:21.514181 #29714]  INFO -- Kitchen: -----> Converging <default-ubuntu-1210>
+E, [2013-10-27T10:16:44.486730 #29714] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1210>.
+I, [2013-10-27T10:22:11.924687 #29920]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.beta.3)
+I, [2013-10-27T10:22:12.313675 #29920]  INFO -- Kitchen: -----> Converging <default-ubuntu-1210>
+E, [2013-10-27T10:22:15.581976 #29920] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1210>.
+E, [2013-10-27T10:24:33.629845 #29939] ERROR -- Kitchen: 
+No instances for regex `default-ubuntu-1204', try running `kitchen list'
+
+
+I, [2013-10-27T10:25:36.990232 #29994]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.beta.3)
+I, [2013-10-27T10:25:37.315730 #29994]  INFO -- Kitchen: -----> Converging <default-ubuntu-1210>
+E, [2013-10-27T10:25:40.464036 #29994] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1210>.
+I, [2013-10-27T10:28:32.924899 #30234]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.beta.3)
+I, [2013-10-27T10:28:33.251955 #30234]  INFO -- Kitchen: -----> Converging <default-ubuntu-1210>
+E, [2013-10-27T10:28:34.177022 #30234] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-27T10:28:34.177074 #30234] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2013-10-27T10:28:34.177124 #30234] ERROR -- Kitchen: Message: Failed to complete #converge action: [An error occurred while reading the Berksfile: Berkshelf::CookbookNotFound]
+E, [2013-10-27T10:28:34.177163 #30234] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-27T10:28:34.177202 #30234] ERROR -- Kitchen: Class: Berkshelf::BerksfileReadError
+E, [2013-10-27T10:28:34.177246 #30234] ERROR -- Kitchen: Message: An error occurred while reading the Berksfile: Berkshelf::CookbookNotFound
+E, [2013-10-27T10:28:34.177286 #30234] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-27T10:28:34.177325 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/berkshelf-1.3.1/lib/berkshelf/berksfile.rb:556:in `rescue in load'
+E, [2013-10-27T10:28:34.177355 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/berkshelf-1.3.1/lib/berkshelf/berksfile.rb:553:in `load'
+E, [2013-10-27T10:28:34.177378 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/berkshelf-1.3.1/lib/berkshelf/berksfile.rb:14:in `from_file'
+E, [2013-10-27T10:28:34.177400 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:261:in `block in resolve_with_berkshelf'
+E, [2013-10-27T10:28:34.177436 #30234] ERROR -- Kitchen: <internal:prelude>:10:in `synchronize'
+E, [2013-10-27T10:28:34.177460 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:260:in `resolve_with_berkshelf'
+E, [2013-10-27T10:28:34.177482 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:149:in `prepare_cookbooks'
+E, [2013-10-27T10:28:34.177508 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_base.rb:91:in `create_chef_sandbox'
+E, [2013-10-27T10:28:34.177531 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/provisioner/chef_solo.rb:31:in `create_sandbox'
+E, [2013-10-27T10:28:34.177553 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:44:in `block in converge'
+E, [2013-10-27T10:28:34.177575 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-10-27T10:28:34.177597 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:41:in `new'
+E, [2013-10-27T10:28:34.177620 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:41:in `converge'
+E, [2013-10-27T10:28:34.177641 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:64:in `converge'
+E, [2013-10-27T10:28:34.177673 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-10-27T10:28:34.177697 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-10-27T10:28:34.177723 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:298:in `call'
+E, [2013-10-27T10:28:34.177759 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:298:in `synchronize_or_call'
+E, [2013-10-27T10:28:34.177782 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-10-27T10:28:34.177804 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-27T10:28:34.177826 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:272:in `action'
+E, [2013-10-27T10:28:34.177848 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-10-27T10:28:34.177870 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:246:in `converge_action'
+E, [2013-10-27T10:28:34.177892 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-10-27T10:28:34.177920 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:235:in `each'
+E, [2013-10-27T10:28:34.177957 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-10-27T10:28:34.177981 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:102:in `converge'
+E, [2013-10-27T10:28:34.178005 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-10-27T10:28:34.178037 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-10-27T10:28:34.178073 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `map'
+E, [2013-10-27T10:28:34.178096 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-10-27T10:28:34.178118 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:276:in `block in exec_action'
+E, [2013-10-27T10:28:34.178140 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-27T10:28:34.178164 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:273:in `exec_action'
+E, [2013-10-27T10:28:34.178188 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:76:in `block (2 levels) in <class:CLI>'
+E, [2013-10-27T10:28:34.178210 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.16.0/lib/thor/task.rb:27:in `run'
+E, [2013-10-27T10:28:34.178232 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.16.0/lib/thor/invocation.rb:120:in `invoke_task'
+E, [2013-10-27T10:28:34.178254 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-27T10:28:34.178282 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.16.0/lib/thor.rb:275:in `dispatch'
+E, [2013-10-27T10:28:34.178306 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.16.0/lib/thor/base.rb:425:in `start'
+E, [2013-10-27T10:28:34.178328 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-27T10:28:34.178350 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-27T10:28:34.178401 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-27T10:28:34.178432 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-27T10:28:34.178480 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-27T10:28:34.178519 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-27T10:28:34.178554 #30234] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-27T10:28:34.178578 #30234] ERROR -- Kitchen: ----------------------
+I, [2013-10-27T10:28:52.496172 #30263]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.beta.3)
+I, [2013-10-27T10:28:52.787115 #30263]  INFO -- Kitchen: -----> Converging <default-ubuntu-1210>
+I, [2013-10-27T10:29:44.501471 #30263]  INFO -- Kitchen: -----> Kitchen is finished. (0m52.01s)
+I, [2013-10-27T10:30:39.618681 #30319]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.beta.3)
+I, [2013-10-27T10:30:39.912592 #30319]  INFO -- Kitchen: -----> Converging <default-ubuntu-1210>
+E, [2013-10-27T10:30:44.232563 #30319] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1210>.
+I, [2013-10-27T10:30:56.409602 #30348]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.beta.3)
+I, [2013-10-27T10:30:56.706460 #30348]  INFO -- Kitchen: -----> Converging <default-ubuntu-1210>
+E, [2013-10-27T10:34:21.510910 #30348] ERROR -- Kitchen: ------Exception-------
+E, [2013-10-27T10:34:21.512939 #30348] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2013-10-27T10:34:21.513522 #30348] ERROR -- Kitchen: Message: Failed to complete #converge action: [exit]
+E, [2013-10-27T10:34:21.513580 #30348] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-10-27T10:34:21.513648 #30348] ERROR -- Kitchen: Class: SystemExit
+E, [2013-10-27T10:34:21.513694 #30348] ERROR -- Kitchen: Message: exit
+E, [2013-10-27T10:34:21.513739 #30348] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-10-27T10:34:21.513786 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:6:in `exit'
+E, [2013-10-27T10:34:21.513834 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:6:in `block in <top (required)>'
+E, [2013-10-27T10:34:21.513948 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `call'
+E, [2013-10-27T10:34:21.513996 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `select'
+E, [2013-10-27T10:34:21.514035 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `io_select'
+E, [2013-10-27T10:34:21.514071 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:209:in `process'
+E, [2013-10-27T10:34:21.514105 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `block in loop'
+E, [2013-10-27T10:34:21.514140 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2013-10-27T10:34:21.514187 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2013-10-27T10:34:21.514223 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/ssh.rb:162:in `exec_with_exit'
+E, [2013-10-27T10:34:21.514257 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/ssh.rb:54:in `exec'
+E, [2013-10-27T10:34:21.514291 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:112:in `run_remote'
+E, [2013-10-27T10:34:21.514325 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:46:in `block in converge'
+E, [2013-10-27T10:34:21.514360 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-10-27T10:34:21.514423 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:41:in `new'
+E, [2013-10-27T10:34:21.514458 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/driver/ssh_base.rb:41:in `converge'
+E, [2013-10-27T10:34:21.514492 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/kitchen-vagrant-0.11.1/lib/kitchen/driver/vagrant.rb:64:in `converge'
+E, [2013-10-27T10:34:21.514526 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `public_send'
+E, [2013-10-27T10:34:21.514560 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `block in perform_action'
+E, [2013-10-27T10:34:21.514594 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:298:in `call'
+E, [2013-10-27T10:34:21.514629 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:298:in `synchronize_or_call'
+E, [2013-10-27T10:34:21.514663 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:273:in `block in action'
+E, [2013-10-27T10:34:21.514697 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-27T10:34:21.514731 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:272:in `action'
+E, [2013-10-27T10:34:21.514765 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:263:in `perform_action'
+E, [2013-10-27T10:34:21.514799 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:246:in `converge_action'
+E, [2013-10-27T10:34:21.514863 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:236:in `block in transition_to'
+E, [2013-10-27T10:34:21.514898 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:235:in `each'
+E, [2013-10-27T10:34:21.514932 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:235:in `transition_to'
+E, [2013-10-27T10:34:21.514965 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/instance.rb:102:in `converge'
+E, [2013-10-27T10:34:21.514999 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `public_send'
+E, [2013-10-27T10:34:21.515042 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `block in run_serial'
+E, [2013-10-27T10:34:21.515078 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `map'
+E, [2013-10-27T10:34:21.515112 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:282:in `run_serial'
+E, [2013-10-27T10:34:21.515145 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:276:in `block in exec_action'
+E, [2013-10-27T10:34:21.515179 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-10-27T10:34:21.515213 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:273:in `exec_action'
+E, [2013-10-27T10:34:21.515247 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:76:in `block (2 levels) in <class:CLI>'
+E, [2013-10-27T10:34:21.515315 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.16.0/lib/thor/task.rb:27:in `run'
+E, [2013-10-27T10:34:21.515350 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.16.0/lib/thor/invocation.rb:120:in `invoke_task'
+E, [2013-10-27T10:34:21.515384 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/cli.rb:256:in `invoke_task'
+E, [2013-10-27T10:34:21.515419 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.16.0/lib/thor.rb:275:in `dispatch'
+E, [2013-10-27T10:34:21.515454 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/thor-0.16.0/lib/thor/base.rb:425:in `start'
+E, [2013-10-27T10:34:21.515490 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-10-27T10:34:21.515526 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-10-27T10:34:21.515561 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/gems/test-kitchen-1.0.0.beta.3/bin/kitchen:13:in `<top (required)>'
+E, [2013-10-27T10:34:21.515598 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `load'
+E, [2013-10-27T10:34:21.515634 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/kitchen:19:in `<main>'
+E, [2013-10-27T10:34:21.515670 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-10-27T10:34:21.515706 #30348] ERROR -- Kitchen: /Users/cgravier/.rvm/gems/ruby-1.9.3-p194/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-10-27T10:34:21.515742 #30348] ERROR -- Kitchen: ----------------------
+I, [2013-10-27T10:39:38.164548 #30875]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.beta.3)
+I, [2013-10-27T10:39:38.486663 #30875]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1210>
+I, [2013-10-27T10:39:38.502382 #30875]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1210>
+I, [2013-10-27T10:39:41.350816 #30875]  INFO -- Kitchen: -----> Testing <default-ubuntu-1210>
+I, [2013-10-27T10:39:41.351023 #30875]  INFO -- Kitchen: -----> Creating <default-ubuntu-1210>
+I, [2013-10-27T10:40:49.858284 #30875]  INFO -- Kitchen: -----> Converging <default-ubuntu-1210>
+I, [2013-10-27T10:43:58.509147 #30875]  INFO -- Kitchen: -----> Setting up <default-ubuntu-1210>
+I, [2013-10-27T10:43:58.541043 #30875]  INFO -- Kitchen: -----> Verifying <default-ubuntu-1210>
+I, [2013-10-27T10:43:58.548592 #30875]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1210>
+I, [2013-10-27T10:44:05.252855 #30875]  INFO -- Kitchen: -----> Kitchen is finished. (4m27.09s)

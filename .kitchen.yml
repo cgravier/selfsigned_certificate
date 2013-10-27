@@ -1,0 +1,22 @@
+---
+driver_plugin: vagrant
+use_vagrant_berkshelf_plugin: true
+driver_config:
+  require_chef_omnibus: true
+
+chef_http_proxy: http://cache.univ-st-etienne.fr:3128
+chef_https_proxy: http://cache.univ-st-etienne.fr:3128
+
+platforms:
+- name: ubuntu-12.10
+  driver_config:
+    box: precis64-chef-ruby-java-mvn2
+  run_list:
+  - recipe[selfsigned_certificate::default]
+
+suites:
+- name: default
+  run_list:
+  - recipe[minitest-handler]
+  - recipe[selfsignedcertificate_test]
+  attributes: {selfsigned_certificate: { country: "FR", state: "My state", city: "City I live in", orga: "Big Corporation LTD", depart: "my dept", cn: "My very own Cert Authoritate",email: "some@host.com", destination: "/usr/local/nginx/ssl/", sslpassphrase: "reallychangethis" } }
