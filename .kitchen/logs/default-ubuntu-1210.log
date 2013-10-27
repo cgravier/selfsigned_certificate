@@ -2416,3 +2416,273 @@ I, [2013-10-27T10:44:05.250270 #30875]  INFO -- default-ubuntu-1210: [kitchen::d
 I, [2013-10-27T10:44:05.251172 #30875]  INFO -- default-ubuntu-1210: Vagrant instance <default-ubuntu-1210> destroyed.
 I, [2013-10-27T10:44:05.252107 #30875]  INFO -- default-ubuntu-1210: Finished destroying <default-ubuntu-1210> (0m6.70s).
 I, [2013-10-27T10:44:05.252743 #30875]  INFO -- default-ubuntu-1210: Finished testing <default-ubuntu-1210> (4m26.77s).
+I, [2013-10-27T13:18:20.510003 #34356]  INFO -- default-ubuntu-1210: -----> Creating <default-ubuntu-1210>
+I, [2013-10-27T13:18:20.515362 #34356]  INFO -- default-ubuntu-1210: [kitchen::driver::vagrant command] BEGIN (vagrant up --no-provision)
+I, [2013-10-27T13:18:22.926032 #34356]  INFO -- default-ubuntu-1210: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2013-10-27T13:18:27.245824 #34356]  INFO -- default-ubuntu-1210: [default] Importing base box 'precis64-chef-ruby-java-mvn2'...
+Progress: 10%Progress: 20%Progress: 30%Progress: 40%Progress: 50%Progress: 60%Progress: 70%Progress: 80%Progress: 90%I, [2013-10-27T13:18:51.496985 #34356]  INFO -- default-ubuntu-1210: [default] Matching MAC address for NAT networking...
+I, [2013-10-27T13:18:52.386924 #34356]  INFO -- default-ubuntu-1210: [default] Setting the name of the VM...
+I, [2013-10-27T13:18:52.434679 #34356]  INFO -- default-ubuntu-1210: [default] Clearing any previously set forwarded ports...
+I, [2013-10-27T13:18:52.528662 #34356]  INFO -- default-ubuntu-1210: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2013-10-27T13:18:53.192449 #34356]  INFO -- default-ubuntu-1210: [default] Fixed port collision for 22 => 2222. Now on port 2201.
+I, [2013-10-27T13:18:53.319269 #34356]  INFO -- default-ubuntu-1210: [default] Creating shared folders metadata...
+I, [2013-10-27T13:18:53.319599 #34356]  INFO -- default-ubuntu-1210: [default] Clearing any previously set network interfaces...
+I, [2013-10-27T13:18:53.381179 #34356]  INFO -- default-ubuntu-1210: [default] Preparing network interfaces based on configuration...
+I, [2013-10-27T13:18:53.509785 #34356]  INFO -- default-ubuntu-1210: [default] Forwarding ports...
+I, [2013-10-27T13:18:53.593097 #34356]  INFO -- default-ubuntu-1210: [default] -- 22 => 2201 (adapter 1)
+I, [2013-10-27T13:18:53.818159 #34356]  INFO -- default-ubuntu-1210: [default] Running 'pre-boot' VM customizations...
+I, [2013-10-27T13:18:53.867494 #34356]  INFO -- default-ubuntu-1210: [default] Booting VM...
+I, [2013-10-27T13:18:54.118851 #34356]  INFO -- default-ubuntu-1210: [default] Waiting for machine to boot. This may take a few minutes...
+I, [2013-10-27T13:19:24.025457 #34356]  INFO -- default-ubuntu-1210: [default] Machine booted and ready!
+I, [2013-10-27T13:19:24.056294 #34356]  INFO -- default-ubuntu-1210: [default] The guest additions on this VM do not match the installed version of
+I, [2013-10-27T13:19:24.056389 #34356]  INFO -- default-ubuntu-1210: VirtualBox! In most cases this is fine, but in rare cases it can
+I, [2013-10-27T13:19:24.056442 #34356]  INFO -- default-ubuntu-1210: cause things such as shared folders to not work properly. If you see
+I, [2013-10-27T13:19:24.056488 #34356]  INFO -- default-ubuntu-1210: shared folder errors, please update the guest additions within the
+I, [2013-10-27T13:19:24.056531 #34356]  INFO -- default-ubuntu-1210: virtual machine and reload your VM.
+I, [2013-10-27T13:19:24.056588 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:19:24.056644 #34356]  INFO -- default-ubuntu-1210: Guest Additions Version: 4.1.18
+I, [2013-10-27T13:19:24.056688 #34356]  INFO -- default-ubuntu-1210: VirtualBox Version: 4.2
+I, [2013-10-27T13:19:24.056975 #34356]  INFO -- default-ubuntu-1210: [default] Setting hostname...
+I, [2013-10-27T13:19:28.524854 #34356]  INFO -- default-ubuntu-1210: [default] Mounting shared folders...
+I, [2013-10-27T13:19:28.622996 #34356]  INFO -- default-ubuntu-1210: [kitchen::driver::vagrant command] END (1m2.56s)
+I, [2013-10-27T13:19:28.623233 #34356]  INFO -- default-ubuntu-1210: [kitchen::driver::vagrant command] BEGIN (vagrant ssh-config)
+I, [2013-10-27T13:19:31.235663 #34356]  INFO -- default-ubuntu-1210: [kitchen::driver::vagrant command] END (0m2.35s)
+I, [2013-10-27T13:19:31.236124 #34356]  INFO -- default-ubuntu-1210: Vagrant instance <default-ubuntu-1210> created.
+I, [2013-10-27T13:19:31.267509 #34356]  INFO -- default-ubuntu-1210: Finished creating <default-ubuntu-1210> (1m10.72s).
+I, [2013-10-27T13:19:31.267759 #34356]  INFO -- default-ubuntu-1210: -----> Converging <default-ubuntu-1210>
+I, [2013-10-27T13:19:31.472627 #34356]  INFO -- default-ubuntu-1210: -----> Installing Chef Omnibus (true)
+I, [2013-10-27T13:19:31.480455 #34356]  INFO -- default-ubuntu-1210: --2013-10-27 12:19:28--  https://www.opscode.com/chef/install.sh
+Resolving www.opscode.com (www.opscode.com)... I, [2013-10-27T13:19:31.584724 #34356]  INFO -- default-ubuntu-1210: 184.106.28.83
+I, [2013-10-27T13:19:31.584825 #34356]  INFO -- default-ubuntu-1210: Connecting to www.opscode.com (www.opscode.com)|184.106.28.83|:443... 
+I, [2013-10-27T13:19:31.733133 #34356]  INFO -- default-ubuntu-1210: connected.
+HTTP request sent, awaiting response... I, [2013-10-27T13:19:32.377212 #34356]  INFO -- default-ubuntu-1210: 200 OK
+I, [2013-10-27T13:19:32.377290 #34356]  INFO -- default-ubuntu-1210: Length: 6790 (6.6K) [application/x-sh]
+I, [2013-10-27T13:19:32.377327 #34356]  INFO -- default-ubuntu-1210: Saving to: `STDOUT'
+I, [2013-10-27T13:19:32.377353 #34356]  INFO -- default-ubuntu-1210: 
+ 0% [                                       ] 0           --.-K/s              I, [2013-10-27T13:19:32.378744 #34356]  INFO -- default-ubuntu-1210: 100%[======================================>] 6,790       --.-K/s   in 0s      
+I, [2013-10-27T13:19:32.378791 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:19:32.378823 #34356]  INFO -- default-ubuntu-1210: 2013-10-27 12:19:29 (773 MB/s) - written to stdout [6790/6790]
+I, [2013-10-27T13:19:32.378849 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:19:32.390490 #34356]  INFO -- default-ubuntu-1210: Downloading Chef  for ubuntu...
+I, [2013-10-27T13:21:47.129224 #34356]  INFO -- default-ubuntu-1210: Installing Chef 
+I, [2013-10-27T13:21:47.190739 #34356]  INFO -- default-ubuntu-1210: Selecting previously unselected package chef.
+I, [2013-10-27T13:21:47.190808 #34356]  INFO -- default-ubuntu-1210: (Reading database ... 
+(Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%I, [2013-10-27T13:21:47.438355 #34356]  INFO -- default-ubuntu-1210: (Reading database ... 100%(Reading database ... 75838 files and directories currently installed.)
+I, [2013-10-27T13:21:47.441452 #34356]  INFO -- default-ubuntu-1210: Unpacking chef (from .../tmp.82MjhYwF/chef__amd64.deb) ...
+I, [2013-10-27T13:21:51.104483 #34356]  INFO -- default-ubuntu-1210: Setting up chef (11.6.2-1.ubuntu.12.04) ...
+I, [2013-10-27T13:21:51.152512 #34356]  INFO -- default-ubuntu-1210: Thank you for installing Chef!
+I, [2013-10-27T13:21:51.210637 #34356]  INFO -- default-ubuntu-1210: Resolving cookbook dependencies with Berkshelf
+I, [2013-10-27T13:21:53.103108 #34356]  INFO -- default-ubuntu-1210: Removing non-cookbook files in sandbox
+I, [2013-10-27T13:21:53.119914 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/chef_handler/attributes/default.rb (1043 bytes)
+I, [2013-10-27T13:21:53.124421 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/chef_handler/files/default/handlers/README (67 bytes)
+I, [2013-10-27T13:21:53.127816 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/chef_handler/metadata.json (4737 bytes)
+I, [2013-10-27T13:21:53.129771 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/chef_handler/metadata.rb (310 bytes)
+I, [2013-10-27T13:21:53.132110 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/chef_handler/providers/default.rb (2950 bytes)
+I, [2013-10-27T13:21:53.134394 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/chef_handler/README.md (4118 bytes)
+I, [2013-10-27T13:21:53.136839 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/chef_handler/recipes/default.rb (1126 bytes)
+I, [2013-10-27T13:21:53.139359 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/chef_handler/recipes/json_file.rb (950 bytes)
+I, [2013-10-27T13:21:53.142789 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/chef_handler/resources/default.rb (1208 bytes)
+I, [2013-10-27T13:21:53.147776 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/minitest-handler/attributes/default.rb (602 bytes)
+I, [2013-10-27T13:21:53.150188 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/minitest-handler/metadata.json (5269 bytes)
+I, [2013-10-27T13:21:53.151869 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/minitest-handler/metadata.rb (326 bytes)
+I, [2013-10-27T13:21:53.153456 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/minitest-handler/README.md (4618 bytes)
+I, [2013-10-27T13:21:53.155842 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/minitest-handler/recipes/default.rb (5593 bytes)
+I, [2013-10-27T13:21:53.160530 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsigned_certificate/attributes/default.rb (1341 bytes)
+I, [2013-10-27T13:21:53.168022 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsigned_certificate/metadata.json (2902 bytes)
+I, [2013-10-27T13:21:53.169795 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsigned_certificate/metadata.rb (398 bytes)
+I, [2013-10-27T13:21:53.172903 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsigned_certificate/README.md (2981 bytes)
+I, [2013-10-27T13:21:53.175577 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsigned_certificate/recipes/default.rb (2712 bytes)
+I, [2013-10-27T13:21:53.188294 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsigned_certificate/test/cookbooks/selfsignedcertificate_test/.git/config (138 bytes)
+I, [2013-10-27T13:21:53.189939 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsigned_certificate/test/cookbooks/selfsignedcertificate_test/.git/description (73 bytes)
+I, [2013-10-27T13:21:53.191613 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsigned_certificate/test/cookbooks/selfsignedcertificate_test/.git/HEAD (23 bytes)
+I, [2013-10-27T13:21:53.194177 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsigned_certificate/test/cookbooks/selfsignedcertificate_test/.git/hooks/applypatch-msg.sample (452 bytes)
+I, [2013-10-27T13:21:53.196146 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsigned_certificate/test/cookbooks/selfsignedcertificate_test/.git/hooks/commit-msg.sample (896 bytes)
+I, [2013-10-27T13:21:53.198491 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsigned_certificate/test/cookbooks/selfsignedcertificate_test/.git/hooks/post-update.sample (189 bytes)
+I, [2013-10-27T13:21:53.200362 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsigned_certificate/test/cookbooks/selfsignedcertificate_test/.git/hooks/pre-applypatch.sample (398 bytes)
+I, [2013-10-27T13:21:53.202058 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsigned_certificate/test/cookbooks/selfsignedcertificate_test/.git/hooks/pre-commit.sample (1704 bytes)
+I, [2013-10-27T13:21:53.203805 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsigned_certificate/test/cookbooks/selfsignedcertificate_test/.git/hooks/pre-rebase.sample (4951 bytes)
+I, [2013-10-27T13:21:53.205528 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsigned_certificate/test/cookbooks/selfsignedcertificate_test/.git/hooks/prepare-commit-msg.sample (1239 bytes)
+I, [2013-10-27T13:21:53.207341 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsigned_certificate/test/cookbooks/selfsignedcertificate_test/.git/hooks/update.sample (3611 bytes)
+I, [2013-10-27T13:21:53.210715 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsigned_certificate/test/cookbooks/selfsignedcertificate_test/.git/info/exclude (240 bytes)
+I, [2013-10-27T13:21:53.222509 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsigned_certificate/test/cookbooks/selfsignedcertificate_test/.gitignore (137 bytes)
+I, [2013-10-27T13:21:53.225347 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsigned_certificate/test/cookbooks/selfsignedcertificate_test/.kitchen.yml (852 bytes)
+I, [2013-10-27T13:21:53.252580 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsignedcertificate_test/files/default/tests/minitest/default_test.rb (264 bytes)
+I, [2013-10-27T13:21:53.255069 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsignedcertificate_test/files/default/tests/minitest/support/helpers.rb (216 bytes)
+I, [2013-10-27T13:21:53.259865 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsignedcertificate_test/metadata.rb (381 bytes)
+I, [2013-10-27T13:21:53.261539 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsignedcertificate_test/README.md (172 bytes)
+I, [2013-10-27T13:21:53.263940 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/cookbooks/selfsignedcertificate_test/recipes/default.rb (199 bytes)
+I, [2013-10-27T13:21:53.291307 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/dna.json (386 bytes)
+I, [2013-10-27T13:21:53.293152 #34356]  INFO -- default-ubuntu-1210: Uploaded /var/folders/5s/01zrdkbj6q91slmfcj_rt08w0000gn/T/default-ubuntu-1210-sandbox-20131027-34356-1tgev7v/solo.rb (168 bytes)
+I, [2013-10-27T13:21:54.016226 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:21:50+00:00] INFO: Forking chef instance to converge...
+I, [2013-10-27T13:21:54.125787 #34356]  INFO -- default-ubuntu-1210: Starting Chef Client, version 11.6.2[0m
+I, [2013-10-27T13:21:54.126071 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:21:51+00:00] INFO: *** Chef 11.6.2 ***
+I, [2013-10-27T13:21:54.927644 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:21:51+00:00] INFO: Setting the run_list to ["recipe[selfsigned_certificate::default]", "recipe[minitest-handler]", "recipe[selfsignedcertificate_test]"] from JSON
+I, [2013-10-27T13:21:54.931367 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:21:51+00:00] INFO: Run List is [recipe[selfsigned_certificate::default], recipe[minitest-handler], recipe[selfsignedcertificate_test]]
+I, [2013-10-27T13:21:54.931448 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:21:51+00:00] INFO: Run List expands to [selfsigned_certificate::default, minitest-handler, selfsignedcertificate_test]
+I, [2013-10-27T13:21:54.931707 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:21:51+00:00] INFO: Starting Chef Run for default-ubuntu-1210
+I, [2013-10-27T13:21:54.931926 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:21:51+00:00] INFO: Running start handlers
+I, [2013-10-27T13:21:54.932136 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:21:51+00:00] INFO: Start handlers complete.
+I, [2013-10-27T13:21:54.936078 #34356]  INFO -- default-ubuntu-1210: Compiling Cookbooks...[0m
+I, [2013-10-27T13:21:54.945356 #34356]  INFO -- default-ubuntu-1210: Recipe: minitest-handler::default[0m
+I, [2013-10-27T13:21:54.945449 #34356]  INFO -- default-ubuntu-1210:   * chef_gem[minitest] action nothing[0m
+I, [2013-10-27T13:21:54.945708 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:21:51+00:00] INFO: Processing chef_gem[minitest] action nothing (minitest-handler::default line 2)
+I, [2013-10-27T13:21:54.945922 #34356]  INFO -- default-ubuntu-1210:  (skipped due to action :nothing)[0m
+  * chef_gem[minitest] action install[0mI, [2013-10-27T13:21:54.946403 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:21:51+00:00] INFO: Processing chef_gem[minitest] action install (minitest-handler::default line 2)
+I, [2013-10-27T13:21:54.946441 #34356]  INFO -- default-ubuntu-1210:  (skipped due to only_if)[0m
+  * chef_gem[minitest-chef-handler] action nothing[0mI, [2013-10-27T13:21:54.947323 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:21:51+00:00] INFO: Processing chef_gem[minitest-chef-handler] action nothing (minitest-handler::default line 9)
+I, [2013-10-27T13:21:54.947363 #34356]  INFO -- default-ubuntu-1210:  (skipped due to action :nothing)[0m
+  * chef_gem[minitest-chef-handler] action install[0mI, [2013-10-27T13:21:54.947765 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:21:51+00:00] INFO: Processing chef_gem[minitest-chef-handler] action install (minitest-handler::default line 9)
+I, [2013-10-27T13:22:45.397388 #34356]  INFO -- default-ubuntu-1210: [32m
+I, [2013-10-27T13:22:45.397467 #34356]  INFO -- default-ubuntu-1210:     - install version 1.0.1 of package minitest-chef-handler[0m
+I, [2013-10-27T13:22:45.397516 #34356]  INFO -- default-ubuntu-1210: [0m
+I, [2013-10-27T13:22:45.480796 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:42+00:00] WARN: Cloning resource attributes for directory[minitest test location] from prior resource (CHEF-3694)
+I, [2013-10-27T13:22:45.480889 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:42+00:00] WARN: Previous directory[minitest test location]: /tmp/kitchen-chef-solo/cookbooks/minitest-handler/recipes/default.rb:20:in `block in from_file'
+[2013-10-27T12:22:42+00:00] WARN: Current  directory[minitest test location]: /tmp/kitchen-chef-solo/cookbooks/minitest-handler/recipes/default.rb:20:in `block in from_file'I, [2013-10-27T13:22:45.481309 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:45.481763 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:42+00:00] WARN: Cloning resource attributes for directory[/tmp/kitchen-chef-solo/cache/minitest_scratch] from prior resource (CHEF-3694)
+I, [2013-10-27T13:22:45.482016 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:42+00:00] WARN: Previous directory[/tmp/kitchen-chef-solo/cache/minitest_scratch]: /tmp/kitchen-chef-solo/cookbooks/minitest-handler/recipes/default.rb:29:in `block in from_file'
+I, [2013-10-27T13:22:45.482189 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:42+00:00] WARN: Current  directory[/tmp/kitchen-chef-solo/cache/minitest_scratch]: /tmp/kitchen-chef-solo/cookbooks/minitest-handler/recipes/default.rb:29:in `block in from_file'
+I, [2013-10-27T13:22:45.482984 #34356]  INFO -- default-ubuntu-1210: Converging 18 resources[0m
+I, [2013-10-27T13:22:45.483509 #34356]  INFO -- default-ubuntu-1210: Recipe: selfsigned_certificate::default[0m
+I, [2013-10-27T13:22:45.483558 #34356]  INFO -- default-ubuntu-1210:   * package[openssl] action install[0m
+I, [2013-10-27T13:22:45.484000 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:42+00:00] INFO: Processing package[openssl] action install (selfsigned_certificate::default line 11)
+I, [2013-10-27T13:22:46.159476 #34356]  INFO -- default-ubuntu-1210:  (up to date)[0m
+  * log[Creating /usr/local/nginx/ssl/ (here is stored the self-signed certificate)] action write[0mI, [2013-10-27T13:22:46.161185 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Processing log[Creating /usr/local/nginx/ssl/ (here is stored the self-signed certificate)] action write (selfsigned_certificate::default line 16)
+I, [2013-10-27T13:22:46.161977 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Creating /usr/local/nginx/ssl/ (here is stored the self-signed certificate)
+I, [2013-10-27T13:22:46.162222 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.162278 #34356]  INFO -- default-ubuntu-1210: [0m
+  * directory[/usr/local/nginx/ssl/] action create[0mI, [2013-10-27T13:22:46.162862 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Processing directory[/usr/local/nginx/ssl/] action create (selfsigned_certificate::default line 17)
+I, [2013-10-27T13:22:46.169987 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: directory[/usr/local/nginx/ssl/] created directory /usr/local/nginx/ssl/
+I, [2013-10-27T13:22:46.170271 #34356]  INFO -- default-ubuntu-1210: [32m
+I, [2013-10-27T13:22:46.170323 #34356]  INFO -- default-ubuntu-1210:     - create new directory /usr/local/nginx/ssl/[0m
+I, [2013-10-27T13:22:46.171473 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: directory[/usr/local/nginx/ssl/] owner changed to 0
+I, [2013-10-27T13:22:46.171933 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: directory[/usr/local/nginx/ssl/] group changed to 0
+I, [2013-10-27T13:22:46.172427 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: directory[/usr/local/nginx/ssl/] mode changed to 755
+I, [2013-10-27T13:22:46.172478 #34356]  INFO -- default-ubuntu-1210: [32m
+I, [2013-10-27T13:22:46.172508 #34356]  INFO -- default-ubuntu-1210:     - change mode from '' to '0755'[0m[32m
+I, [2013-10-27T13:22:46.172549 #34356]  INFO -- default-ubuntu-1210:     - change owner from '' to 'root'[0m[32m
+I, [2013-10-27T13:22:46.172593 #34356]  INFO -- default-ubuntu-1210:     - change group from '' to 'root'[0m
+I, [2013-10-27T13:22:46.174401 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.174451 #34356]  INFO -- default-ubuntu-1210: [0m
+  * log[Running : openssl genrsa -passout pass:reallychangethis -des3 -out server.key 1024] action write[0mI, [2013-10-27T13:22:46.174896 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Processing log[Running : openssl genrsa -passout pass:reallychangethis -des3 -out server.key 1024] action write (selfsigned_certificate::default line 27)
+I, [2013-10-27T13:22:46.175477 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Running : openssl genrsa -passout pass:reallychangethis -des3 -out server.key 1024
+I, [2013-10-27T13:22:46.175537 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.175588 #34356]  INFO -- default-ubuntu-1210: [0m
+  * bash[generate certificate] action run[0mI, [2013-10-27T13:22:46.176190 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Processing bash[generate certificate] action run (selfsigned_certificate::default line 28)
+I, [2013-10-27T13:22:46.272572 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: bash[generate certificate] ran successfully
+I, [2013-10-27T13:22:46.272648 #34356]  INFO -- default-ubuntu-1210: [32m
+I, [2013-10-27T13:22:46.272700 #34356]  INFO -- default-ubuntu-1210:     - execute "bash"  "/tmp/chef-script20131027-2092-los545"[0m
+I, [2013-10-27T13:22:46.272973 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.273026 #34356]  INFO -- default-ubuntu-1210: [0m
+  * log[Running : openssl req -passin pass:reallychangethis -subj "/C=FR/ST=My state/L=City I live in/O=Big Corporation LTD/OU=my dept/CN=My very own Cert Authoritate/emailAddress=some@host.com" -new -key server.key -out server.csr] action write[0mI, [2013-10-27T13:22:46.273442 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Processing log[Running : openssl req -passin pass:reallychangethis -subj "/C=FR/ST=My state/L=City I live in/O=Big Corporation LTD/OU=my dept/CN=My very own Cert Authoritate/emailAddress=some@host.com" -new -key server.key -out server.csr] action write (selfsigned_certificate::default line 36)
+I, [2013-10-27T13:22:46.273847 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Running : openssl req -passin pass:reallychangethis -subj "/C=FR/ST=My state/L=City I live in/O=Big Corporation LTD/OU=my dept/CN=My very own Cert Authoritate/emailAddress=some@host.com" -new -key server.key -out server.csr
+I, [2013-10-27T13:22:46.274073 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.274127 #34356]  INFO -- default-ubuntu-1210: [0m
+  * bash[generate signature request] action run[0mI, [2013-10-27T13:22:46.274510 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Processing bash[generate signature request] action run (selfsigned_certificate::default line 37)
+I, [2013-10-27T13:22:46.314865 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: bash[generate signature request] ran successfully
+I, [2013-10-27T13:22:46.314960 #34356]  INFO -- default-ubuntu-1210: [32m
+I, [2013-10-27T13:22:46.315013 #34356]  INFO -- default-ubuntu-1210:     - execute "bash"  "/tmp/chef-script20131027-2092-1i65gw8"[0m
+I, [2013-10-27T13:22:46.315311 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.315362 #34356]  INFO -- default-ubuntu-1210: [0m
+  * log[Running: openssl rsa -passin pass:reallychangethis -in server.key.org -out server.key] action write[0mI, [2013-10-27T13:22:46.315760 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Processing log[Running: openssl rsa -passin pass:reallychangethis -in server.key.org -out server.key] action write (selfsigned_certificate::default line 45)
+I, [2013-10-27T13:22:46.315996 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Running: openssl rsa -passin pass:reallychangethis -in server.key.org -out server.key
+I, [2013-10-27T13:22:46.316050 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.316099 #34356]  INFO -- default-ubuntu-1210: [0m
+I, [2013-10-27T13:22:46.316144 #34356]  INFO -- default-ubuntu-1210:   * bash[sign key] action run[0m
+I, [2013-10-27T13:22:46.316447 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Processing bash[sign key] action run (selfsigned_certificate::default line 46)
+I, [2013-10-27T13:22:46.375287 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: bash[sign key] ran successfully
+I, [2013-10-27T13:22:46.375397 #34356]  INFO -- default-ubuntu-1210: [32m
+I, [2013-10-27T13:22:46.375456 #34356]  INFO -- default-ubuntu-1210:     - execute "bash"  "/tmp/chef-script20131027-2092-1ofdz6e"[0m
+I, [2013-10-27T13:22:46.375813 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.375885 #34356]  INFO -- default-ubuntu-1210: [0m
+  * log[Running: openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt] action write[0m[2013-10-27T12:22:43+00:00] INFO: Processing log[Running: openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt] action write (selfsigned_certificate::default line 55)I, [2013-10-27T13:22:46.376728 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.377068 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Running: openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
+I, [2013-10-27T13:22:46.377143 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.377183 #34356]  INFO -- default-ubuntu-1210: [0m
+I, [2013-10-27T13:22:46.377226 #34356]  INFO -- default-ubuntu-1210:   * bash[signing the certificate] action run[0m[2013-10-27T12:22:43+00:00] INFO: Processing bash[signing the certificate] action run (selfsigned_certificate::default line 56)
+I, [2013-10-27T13:22:46.416209 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: bash[signing the certificate] ran successfully
+I, [2013-10-27T13:22:46.416293 #34356]  INFO -- default-ubuntu-1210: [32m
+I, [2013-10-27T13:22:46.416346 #34356]  INFO -- default-ubuntu-1210:     - execute "bash"  "/tmp/chef-script20131027-2092-17hprwk"[0m
+I, [2013-10-27T13:22:46.416555 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.416604 #34356]  INFO -- default-ubuntu-1210: [0m
+I, [2013-10-27T13:22:46.417046 #34356]  INFO -- default-ubuntu-1210: Recipe: minitest-handler::default[0m
+I, [2013-10-27T13:22:46.417106 #34356]  INFO -- default-ubuntu-1210:   * chef_gem[minitest] action nothing[0m
+I, [2013-10-27T13:22:46.417394 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Processing chef_gem[minitest] action nothing (minitest-handler::default line 2)
+I, [2013-10-27T13:22:46.417864 #34356]  INFO -- default-ubuntu-1210:  (skipped due to action :nothing)[0m
+I, [2013-10-27T13:22:46.417919 #34356]  INFO -- default-ubuntu-1210:   * chef_gem[minitest-chef-handler] action nothing[0m
+I, [2013-10-27T13:22:46.418201 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Processing chef_gem[minitest-chef-handler] action nothing (minitest-handler::default line 9)
+I, [2013-10-27T13:22:46.418435 #34356]  INFO -- default-ubuntu-1210:  (skipped due to action :nothing)[0m
+  * directory[minitest test location] action delete[0mI, [2013-10-27T13:22:46.419154 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Processing directory[minitest test location] action delete (minitest-handler::default line 20)
+I, [2013-10-27T13:22:46.419781 #34356]  INFO -- default-ubuntu-1210:  (up to date)[0m
+  * directory[/tmp/kitchen-chef-solo/cache/minitest_scratch] action delete[0mI, [2013-10-27T13:22:46.420513 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Processing directory[/tmp/kitchen-chef-solo/cache/minitest_scratch] action delete (minitest-handler::default line 29)
+I, [2013-10-27T13:22:46.421076 #34356]  INFO -- default-ubuntu-1210:  (up to date)[0m
+I, [2013-10-27T13:22:46.421120 #34356]  INFO -- default-ubuntu-1210:   * directory[minitest test location] action create[0m
+I, [2013-10-27T13:22:46.421316 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Processing directory[minitest test location] action create (minitest-handler::default line 20)
+I, [2013-10-27T13:22:46.422440 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: directory[minitest test location] created directory /var/chef/minitest
+I, [2013-10-27T13:22:46.422670 #34356]  INFO -- default-ubuntu-1210: [32m
+I, [2013-10-27T13:22:46.422707 #34356]  INFO -- default-ubuntu-1210:     - create new directory /var/chef/minitest[0m
+I, [2013-10-27T13:22:46.423660 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: directory[minitest test location] owner changed to 0
+I, [2013-10-27T13:22:46.424164 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: directory[minitest test location] group changed to 0
+I, [2013-10-27T13:22:46.424940 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: directory[minitest test location] mode changed to 775
+I, [2013-10-27T13:22:46.425014 #34356]  INFO -- default-ubuntu-1210: [32m
+I, [2013-10-27T13:22:46.425054 #34356]  INFO -- default-ubuntu-1210:     - change mode from '' to '0775'[0m
+I, [2013-10-27T13:22:46.425348 #34356]  INFO -- default-ubuntu-1210: [32m
+I, [2013-10-27T13:22:46.425410 #34356]  INFO -- default-ubuntu-1210:     - change owner from '' to 'root'[0m[32m
+I, [2013-10-27T13:22:46.425463 #34356]  INFO -- default-ubuntu-1210:     - change group from '' to 'root'[0m
+I, [2013-10-27T13:22:46.425765 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.425822 #34356]  INFO -- default-ubuntu-1210: [0m
+  * directory[/tmp/kitchen-chef-solo/cache/minitest_scratch] action create[0mI, [2013-10-27T13:22:46.426651 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Processing directory[/tmp/kitchen-chef-solo/cache/minitest_scratch] action create (minitest-handler::default line 29)
+I, [2013-10-27T13:22:46.427335 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: directory[/tmp/kitchen-chef-solo/cache/minitest_scratch] created directory /tmp/kitchen-chef-solo/cache/minitest_scratch
+I, [2013-10-27T13:22:46.427386 #34356]  INFO -- default-ubuntu-1210: [32m
+I, [2013-10-27T13:22:46.427413 #34356]  INFO -- default-ubuntu-1210:     - create new directory /tmp/kitchen-chef-solo/cache/minitest_scratch[0m
+I, [2013-10-27T13:22:46.428153 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: directory[/tmp/kitchen-chef-solo/cache/minitest_scratch] owner changed to 0
+I, [2013-10-27T13:22:46.428816 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: directory[/tmp/kitchen-chef-solo/cache/minitest_scratch] group changed to 0
+I, [2013-10-27T13:22:46.429420 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: directory[/tmp/kitchen-chef-solo/cache/minitest_scratch] mode changed to 775
+I, [2013-10-27T13:22:46.429669 #34356]  INFO -- default-ubuntu-1210: [32m
+I, [2013-10-27T13:22:46.429723 #34356]  INFO -- default-ubuntu-1210:     - change mode from '' to '0775'[0m
+I, [2013-10-27T13:22:46.429933 #34356]  INFO -- default-ubuntu-1210: [32m
+I, [2013-10-27T13:22:46.429967 #34356]  INFO -- default-ubuntu-1210:     - change owner from '' to 'root'[0m
+I, [2013-10-27T13:22:46.430146 #34356]  INFO -- default-ubuntu-1210: [32m
+I, [2013-10-27T13:22:46.430197 #34356]  INFO -- default-ubuntu-1210:     - change group from '' to 'root'[0m
+I, [2013-10-27T13:22:46.430516 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.430551 #34356]  INFO -- default-ubuntu-1210: [0m
+  * ruby_block[load tests] action run[0mI, [2013-10-27T13:22:46.431123 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Processing ruby_block[load tests] action run (minitest-handler::default line 40)
+I, [2013-10-27T13:22:46.432010 #34356]  INFO -- default-ubuntu-1210: Recipe: <Dynamically Defined Resource>[0m
+  * directory[/var/chef/minitest/selfsigned_certificate] action create[0mI, [2013-10-27T13:22:46.432493 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Processing directory[/var/chef/minitest/selfsigned_certificate] action create (dynamically defined)
+I, [2013-10-27T13:22:46.433188 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: directory[/var/chef/minitest/selfsigned_certificate] created directory /var/chef/minitest/selfsigned_certificate
+I, [2013-10-27T13:22:46.433429 #34356]  INFO -- default-ubuntu-1210: [32m
+I, [2013-10-27T13:22:46.433486 #34356]  INFO -- default-ubuntu-1210:     - create new directory /var/chef/minitest/selfsigned_certificate[0m
+I, [2013-10-27T13:22:46.434136 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.434174 #34356]  INFO -- default-ubuntu-1210: [0m
+  * directory[/var/chef/minitest/minitest-handler] action create[0mI, [2013-10-27T13:22:46.434706 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Processing directory[/var/chef/minitest/minitest-handler] action create (dynamically defined)
+I, [2013-10-27T13:22:46.435176 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: directory[/var/chef/minitest/minitest-handler] created directory /var/chef/minitest/minitest-handler
+I, [2013-10-27T13:22:46.435405 #34356]  INFO -- default-ubuntu-1210: [32m
+    - create new directory /var/chef/minitest/minitest-handler[0mI, [2013-10-27T13:22:46.436220 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.436260 #34356]  INFO -- default-ubuntu-1210: [0m
+  * directory[/var/chef/minitest/selfsignedcertificate_test] action create[0mI, [2013-10-27T13:22:46.437075 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Processing directory[/var/chef/minitest/selfsignedcertificate_test] action create (dynamically defined)
+I, [2013-10-27T13:22:46.437573 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: directory[/var/chef/minitest/selfsignedcertificate_test] created directory /var/chef/minitest/selfsignedcertificate_test
+I, [2013-10-27T13:22:46.437908 #34356]  INFO -- default-ubuntu-1210: [32m
+I, [2013-10-27T13:22:46.437945 #34356]  INFO -- default-ubuntu-1210:     - create new directory /var/chef/minitest/selfsignedcertificate_test[0m
+I, [2013-10-27T13:22:46.438413 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.438471 #34356]  INFO -- default-ubuntu-1210: [0m
+I, [2013-10-27T13:22:46.439739 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Enabling minitest-chef-handler as a report handler
+I, [2013-10-27T13:22:46.440138 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: ruby_block[load tests] called
+I, [2013-10-27T13:22:46.440178 #34356]  INFO -- default-ubuntu-1210: [32m
+I, [2013-10-27T13:22:46.440206 #34356]  INFO -- default-ubuntu-1210:     - execute the ruby block load tests[0m
+I, [2013-10-27T13:22:46.440467 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.440539 #34356]  INFO -- default-ubuntu-1210: [0m
+I, [2013-10-27T13:22:46.440895 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Chef Run complete in 51.536794533 seconds
+I, [2013-10-27T13:22:46.441062 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Running report handlers
+I, [2013-10-27T13:22:46.443711 #34356]  INFO -- default-ubuntu-1210: Run options: -v --seed 43224
+I, [2013-10-27T13:22:46.443873 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.443924 #34356]  INFO -- default-ubuntu-1210: # Running tests:
+I, [2013-10-27T13:22:46.443972 #34356]  INFO -- default-ubuntu-1210: 
+recipe::selfsignedcertificate_test::default#test_0001_certificate must exist = I, [2013-10-27T13:22:46.446816 #34356]  INFO -- default-ubuntu-1210: 0.00 s = .
+I, [2013-10-27T13:22:46.447116 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.447176 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.447268 #34356]  INFO -- default-ubuntu-1210: Finished tests in 0.002839s, 352.1759 tests/s, 352.1759 assertions/s.
+I, [2013-10-27T13:22:46.447518 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.447564 #34356]  INFO -- default-ubuntu-1210: 
+I, [2013-10-27T13:22:46.447592 #34356]  INFO -- default-ubuntu-1210: 1 tests, 1 assertions, 0 failures, 0 errors, 0 skips
+I, [2013-10-27T13:22:46.447798 #34356]  INFO -- default-ubuntu-1210: [2013-10-27T12:22:43+00:00] INFO: Report handlers complete
+I, [2013-10-27T13:22:46.447999 #34356]  INFO -- default-ubuntu-1210: Chef Client finished, 17 resources updated[0m
+I, [2013-10-27T13:22:46.582092 #34356]  INFO -- default-ubuntu-1210: Finished converging <default-ubuntu-1210> (3m15.31s).

@@ -1,0 +1,6 @@
+---
+hostname: 127.0.0.1
+username: vagrant
+ssh_key: /Users/cgravier/.vagrant.d/insecure_private_key
+port: '2201'
+last_action: converge

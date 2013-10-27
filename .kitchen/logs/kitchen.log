@@ -1147,3 +1147,7 @@ I, [2013-10-27T10:43:58.509147 #30875]  INFO -- Kitchen: -----> Setting up <defa
 I, [2013-10-27T10:43:58.541043 #30875]  INFO -- Kitchen: -----> Verifying <default-ubuntu-1210>
 I, [2013-10-27T10:43:58.548592 #30875]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1210>
 I, [2013-10-27T10:44:05.252855 #30875]  INFO -- Kitchen: -----> Kitchen is finished. (4m27.09s)
+I, [2013-10-27T13:18:20.190767 #34356]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.beta.3)
+I, [2013-10-27T13:18:20.509827 #34356]  INFO -- Kitchen: -----> Creating <default-ubuntu-1210>
+I, [2013-10-27T13:19:31.267703 #34356]  INFO -- Kitchen: -----> Converging <default-ubuntu-1210>
+I, [2013-10-27T13:22:46.582233 #34356]  INFO -- Kitchen: -----> Kitchen is finished. (4m26.39s)

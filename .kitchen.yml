@@ -4,9 +4,6 @@ use_vagrant_berkshelf_plugin: true
 driver_config:
   require_chef_omnibus: true
 
-chef_http_proxy: http://cache.univ-st-etienne.fr:3128
-chef_https_proxy: http://cache.univ-st-etienne.fr:3128
-
 platforms:
 - name: ubuntu-12.10
   driver_config:
