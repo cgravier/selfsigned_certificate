@@ -42,7 +42,7 @@ Beware: vagrant 1.2.x aka Vagrant 2 is mandatory.
 # Attributes
 
 * <code>node.selfsigned_certifcate[:destination]</code> : Where to store the created self-signed certificate.
-* <code>node.selfsigned_certifcate[:passphrase]</code> : The passphrase used to generate the request for signature and self CA signature. Obviously very sensible, you should configure it in your attribute files using a databag.
+* <code>node.selfsigned_certifcate[:sslpassphrase]</code> : The passphrase used to generate the request for signature and self CA signature. Obviously very sensible, you should configure it in your attribute files using a databag.
 * <code>node.selfsigned_certifcate[:country]</code> : Country code for the certificate.
 * <code>node.selfsigned_certifcate[:state]</code> : State for the certificate.
 * <code>node.selfsigned_certifcate[:city]</code> : City for the certificate.

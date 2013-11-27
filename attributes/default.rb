@@ -21,7 +21,7 @@
 # all attributes, except destination MUST be overriden. They are set to dummy values here but the exhaustive list is here.
 
 default['selfsigned_certificate']['destination'] = "/usr/var/ssl/certs/"
-default['selfsigned_certificate']['passphrase'] = "changeme"
+default['selfsigned_certificate']['sslpassphrase'] = "changeme"
 default['selfsigned_certificate']['country'] = "CO"
 default['selfsigned_certificate']['state'] = "ST"
 default['selfsigned_certificate']['city'] = "CI"
